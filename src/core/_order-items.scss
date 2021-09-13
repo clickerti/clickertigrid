@@ -1,0 +1,9 @@
+@each $size in $sizes {
+	@include from($size) {
+		@for $i from 1 through 20 {
+			.order#{$i}-#{$size} {
+				order: $i;
+			}
+		}
+	}
+}

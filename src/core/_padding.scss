@@ -1,0 +1,168 @@
+@for $i from 0 through 100 {
+	.p#{$i} {
+		@if $i==0 {
+			padding: $i;
+		} @else {
+			padding: toRem($i * 1px);
+		}
+	}
+	.pt#{$i} {
+		@if $i==0 {
+			padding-top: $i;
+		} @else {
+			padding-top: toRem($i * 1px);
+		}
+	}
+	.pr#{$i} {
+		@if $i==0 {
+			padding-right: $i;
+		} @else {
+			padding-right: toRem($i * 1px);
+		}
+	}
+	.pb#{$i} {
+		@if $i==0 {
+			padding-bottom: $i;
+		} @else {
+			padding-bottom: toRem($i * 1px);
+		}
+	}
+	.pl#{$i} {
+		@if $i==0 {
+			padding-left: $i;
+		} @else {
+			padding-left: toRem($i * 1px);
+		}
+	}
+}
+// }
+@each $size in $sizes {
+	// @each $size in $sizes {
+	@include from($size) {
+		@for $i from 0 through 100 {
+			.p#{$i}-#{$size} {
+				@if $i==0 {
+					padding: $i;
+				} @else {
+					padding: toRem($i * 1px);
+				}
+			}
+			.pt#{$i}-#{$size} {
+				@if $i==0 {
+					padding-top: $i;
+				} @else {
+					padding-top: toRem($i * 1px);
+				}
+			}
+			.pl#{$i}-#{$size} {
+				@if $i==0 {
+					padding-left: $i;
+				} @else {
+					padding-left: toRem($i * 1px);
+				}
+			}
+			.pr#{$i}-#{$size} {
+				@if $i==0 {
+					padding-right: $i;
+				} @else {
+					padding-right: toRem($i * 1px);
+				}
+			}
+			.pb#{$i}-#{$size} {
+				@if $i==0 {
+					padding-bottom: $i;
+				} @else {
+					padding-bottom: toRem($i * 1px);
+				}
+			}
+			.ptb#{$i}-#{$size} {
+				@if $i==0 {
+					padding-top: $i;
+					padding-bottom: $i;
+					// padding-bottom: $i;
+				} @else {
+					padding-top: toRem($i * 1px);
+					padding-bottom: toRem($i * 1px);
+				}
+			}
+			.plr#{$i}-#{$size} {
+				@if $i==0 {
+					padding-left: $i;
+					padding-right: $i;
+				} @else {
+					padding-left: toRem($i * 1px);
+					padding-right: toRem($i * 1px);
+				}
+			}
+		}
+		.pa-#{$size} {
+			padding: auto;
+		}
+	}
+	// }
+
+	// @each $size in $sizes {
+	// @include to($size) {
+	// 	@if $size !=s {
+	// 		@for $i from 0 through 100 {
+	// 			.p#{$i}-#{$size} {
+	// 				@if $i==0 {
+	// 					padding: $i;
+	// 				} @else {
+	// 					padding: toRem($i * 1px);
+	// 				}
+	// 			}
+	// 			.pt#{$i}-#{$size} {
+	// 				@if $i==0 {
+	// 					padding-top: $i;
+	// 				} @else {
+	// 					padding-top: toRem($i * 1px);
+	// 				}
+	// 			}
+	// 			.pl#{$i}-#{$size} {
+	// 				@if $i==0 {
+	// 					padding-left: $i;
+	// 				} @else {
+	// 					padding-left: toRem($i * 1px);
+	// 				}
+	// 			}
+	// 			.pr#{$i}-#{$size} {
+	// 				@if $i==0 {
+	// 					padding-right: $i;
+	// 				} @else {
+	// 					padding-right: toRem($i * 1px);
+	// 				}
+	// 			}
+	// 			.pb#{$i}-#{$size} {
+	// 				@if $i==0 {
+	// 					padding-bottom: $i;
+	// 				} @else {
+	// 					padding-bottom: toRem($i * 1px);
+	// 				}
+	// 			}
+	// 			.ptb#{$i}-#{$size} {
+	// 				@if $i==0 {
+	// 					padding-top: $i;
+	// 					padding-bottom: $i;
+	// 					// padding-bottom: $i;
+	// 				} @else {
+	// 					padding-top: toRem($i * 1px);
+	// 					padding-bottom: toRem($i * 1px);
+	// 				}
+	// 			}
+	// 			.plr#{$i}-#{$size} {
+	// 				@if $i==0 {
+	// 					padding-left: $i;
+	// 					padding-right: $i;
+	// 				} @else {
+	// 					padding-left: toRem($i * 1px);
+	// 					padding-right: toRem($i * 1px);
+	// 				}
+	// 			}
+	// 		}
+	// 		.pa-#{$size} {
+	// 			padding: auto;
+	// 		}
+	// 	}
+	// }
+}

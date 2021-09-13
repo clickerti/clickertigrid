@@ -1,0 +1,149 @@
+//Clases width px
+@each $size in $sizes {
+	@include from($size) {
+		@for $i from 1 through 500 {
+			.w#{$i}px-#{$size} {
+				width: #{$i}px;
+			}
+		}
+	}
+	// @include to($size) {
+	// 	@if $size !=s {
+	// 		@for $i from 1 through 500 {
+	// 			.w#{$i}px-#{$size} {
+	// 				width: #{$i}px;
+	// 			}
+	// 		}
+	// 	}
+	// }
+
+	//Clases height px
+	@include from($size) {
+		@for $i from 1 through 500 {
+			// Recorre el mapa de selectores
+			.h#{$i}px-#{$size} {
+				height: #{$i}px;
+			}
+		}
+	}
+	// @include to($size) {
+	// 	@if $size !=s {
+	// 		@for $i from 1 through 500 {
+	// 			// Recorre el mapa de selectores
+	// 			.h#{$i}px-#{$size} {
+	// 				height: #{$i}px;
+	// 			}
+	// 		}
+	// 	}
+	// }
+
+	//Clases width px
+	@include from($size) {
+		@for $i from 1 through 100 {
+			// Recorre el mapa de selectores
+			.w#{$i}-#{$size} {
+				width: #{$i * 1%};
+			}
+		}
+	}
+	// @include to($size) {
+	// 	@if $size !=s {
+	// 		@for $i from 1 through 100 {
+	// 			// Recorre el mapa de selectores
+	// 			.w#{$i}-#{$size} {
+	// 				width: #{$i * 1%};
+	// 			}
+	// 		}
+	// 	}
+	// }
+
+	//Clases height px
+	@include from($size) {
+		@for $i from 1 through 100 {
+			// Recorre el mapa de selectores
+			.h#{$i}-#{$size} {
+				height: #{$i * 1%};
+			}
+		}
+	}
+	// @include to($size) {
+	// 	@if $size !=s {
+	// 		@for $i from 1 through 100 {
+	// 			// Recorre el mapa de selectores
+	// 			.h#{$i}-#{$size} {
+	// 				height: #{$i * 1%};
+	// 			}
+	// 		}
+	// 	}
+	// }
+	@include from($size) {
+		@for $i from 1 through 100 {
+			.w#{$i}vw-#{$size} {
+				width: #{$i}vw;
+			}
+		}
+	}
+	// @include to($size) {
+	// 	@if $size !=s {
+	// 		@for $i from 1 through 100 {
+	// 			.w#{$i}vw-#{$size} {
+	// 				width: #{$i}vw;
+	// 			}
+	// 		}
+	// 	}
+	// }
+
+	//Clases height px
+	@include from($size) {
+		@for $i from 1 through 100 {
+			// Recorre el mapa de selectores
+			.h#{$i}vh-#{$size} {
+				height: #{$i}vh;
+			}
+		}
+	}
+	// @include to($size) {
+	// 	@if $size !=s {
+	// 		@for $i from 1 through 100 {
+	// 			// Recorre el mapa de selectores
+	// 			.h#{$i}vh-#{$size} {
+	// 				height: #{$i}vh;
+	// 			}
+	// 		}
+	// 	}
+	// }
+}
+@for $i from 1 through 100 {
+	// Recorre el mapa de selectores
+	.h#{$i} {
+		height: #{$i * 1%};
+	}
+}
+@for $i from 1 through 500 {
+	// Recorre el mapa de selectores
+	.h#{$i}px {
+		height: #{$i}px;
+	}
+}
+@for $i from 1 through 100 {
+	// Recorre el mapa de selectores
+	.w#{$i} {
+		width: #{$i * 1%};
+	}
+}
+@for $i from 1 through 500 {
+	.w#{$i}px {
+		width: #{$i}px;
+	}
+}
+@for $i from 1 through 100 {
+	// Recorre el mapa de selectores
+	.h#{$i}vh {
+		height: #{$i}vh;
+	}
+}
+@for $i from 1 through 100 {
+	.w#{$i}vw {
+		width: #{$i}vw;
+	}
+}

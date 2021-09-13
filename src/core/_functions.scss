@@ -1,0 +1,58 @@
+/// Convierte un valor en em o rem a px
+/// @group   mq
+/// @author  Raul Sanjuan
+/// @param   {number} $value - var a convertir a pixeles.
+
+@function toPx($value) {
+	@if type-of($value) == number {
+		@if unit($value) == "em" {
+			@return ($value / 1em) * 16px;
+		} @else if unit($value) == "rem" {
+			@return ($value / 1rem) * 16px;
+		} @else if unit($value) == "px" {
+			@return $value;
+		} @else {
+			@error "La funcion toPx() solo acepta números en em o rem o px";
+		}
+	} @else {
+		@error "La funcion toPx() solo acepta números en px, em o rem";
+	}
+}
+
+/// Convierte un valor en em o px a rem
+/// @group   mq
+/// @author  Raul Sanjuan
+/// @param   {number} $value - var a convertir a rem.
+
+@function toRem($value) {
+	@if type-of($value) == number {
+		@if unit($value) == "px" {
+			@return ($value / 16px) * 1rem;
+		} @else {
+			@error "La funcion toRem() solo acepta números en px";
+		}
+	} @else {
+		@error "La funcion toRem() solo acepta números en px";
+	}
+}
+
+/// Convierte un valor en rem o px a em
+/// @group   mq
+/// @author  Raul Sanjuan
+/// @param   {number} $value - var a convertir a em.
+
+@function toEm($value, $context: 16px) {
+	@if type-of($value) == number {
+		@if unit($value) == "px" {
+			@return ($value / $context) * 1em;
+		} 
+		// @else if unit($value) == "rem" {
+		// 	@return ($value / $context) * 1em;
+		// } 
+		@else {
+			@error "La funcion toEm() solo acepta números en px";
+		}
+	} @else {
+		@error 'La función em() requiere una unidad de pixeles como primer argumento (el segundo es opcional)';
+	}
+}

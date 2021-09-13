@@ -1,0 +1,30 @@
+{
+	"name": "clickertigrid",
+	"version": "1.0.1",
+	"description": "Conjunto de clases css para crear layouts responsive web y mobile first ",
+	"main": "style.scss",
+	"scripts": {
+		"sass": "node-sass -w --importer node_modules/node-sass-package-importer/dist/cli.js -o ./css ./"
+	},
+	"author": "Clickerti Tech Consulting",
+	"contributors": [
+		{
+			"name": "Raúl Sanjuán Revilla",
+			"email": "rsanjuan@clickerti.es"
+		},
+		{
+			"name": "César Sanjuán Revilla",
+			"email": "csanjuan@clickerti.es"
+		}
+	],
+	"license": "ISC",
+	"homepage": "https://clickerti.es",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/clickerti/clickertigrid"
+	},
+	"devDependencies": {
+		"node-sass": "^4.9.3",
+		"node-sass-package-importer": "^5.2.0"
+	}
+}

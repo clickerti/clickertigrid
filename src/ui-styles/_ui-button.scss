@@ -1,0 +1,235 @@
+@import "./ui-variable-button.scss";
+
+// Clases para el tamaño del boton
+.blue-color {
+	--color: #1192ee;
+	--color-alt: #0e80d1;
+	--color-disable: #7abdec;
+}
+.green-color {
+	--color: #28a745;
+	--color-alt: #26923f;
+	--color-disable: #9feeb3;
+}
+.red-color {
+	--color: #dc3545;
+	--color-alt: #c52f3e;
+	--color-disable: #e09ba2;
+}
+.celeste-color {
+	--color: #4fc2f3;
+	--color-alt: #44a9d4;
+	--color-disable: #95d5f0;
+}
+.orange-color {
+	--color: #ffc107;
+	--color-alt: #f3b807;
+	--color-disable: #ffd966;
+}
+.dark-color {
+	--color: #343a40;
+	--color-alt: #5e6770;
+	--color-disable: #dfdfdf;
+}
+.sea-color {
+	--color: #30c6ab;
+	--color-alt: #2bac94;
+	--color-disable: #a9d6ce;
+}
+.text-color {
+	--color: #6c757d;
+	--color-alt: #5d646b;
+	--color-disable: #5b6369;
+}
+.light-color {
+	--color: #eff3f5;
+	--color-alt: #f7f7f7;
+	--color-disable: #f8f9fa;
+	--color-button-text: #6d6c6c;
+}
+
+//Clases del buton por defecto
+.button,
+[class*="button"] {
+	display: inline-block;
+	padding: toRem(8px) toRem(16px);
+	font-size: var(--normal-font-size);
+	color: var(--color-button-text);
+	cursor: pointer;
+	text-decoration: none;
+	line-height: inherit;
+	-webkit-transition: -webkit-transform 0.05s;
+	transition: -webkit-transform 0.05s;
+	transition: transform 0.05s;
+	transition: transform 0.05s, -webkit-transform 0.05s;
+	border: toRem(1px) solid var(--color);
+	text-align: center;
+	user-select: none;
+	background: var(--color);
+	&:hover,
+	[class*="button"]:hover {
+		background: var(--color-alt);
+		text-decoration: none;
+		color: var(--color-button-text);
+	}
+
+	&:active,
+	[class*="button"]:active {
+		transform: scale(0.97);
+	}
+
+	&:disabled,
+	[class*="button"]:disabled,
+	&[disabled] {
+		background: var(--color-disable);
+		border: solid var(--color-disable) toRem(1px);
+		color: var(--color-button-disable-text);
+		cursor: default;
+		pointer-events: none;
+	}
+}
+
+.disabled {
+	background: var(--color-disable);
+}
+
+//Clases base boton ghost
+.ghost {
+	border: solid var(--color) toRem(1px);
+	color: var(--color);
+	background: none;
+
+	&:disabled,
+	[class*="ghost"]:disabled,
+	&[disabled] {
+		background: none;
+		border: solid var(--color-disable) toRem(1px);
+		color: var(--color-disable);
+	}
+}
+
+.disabled {
+	background: var(--color-disable);
+	border: solid var(--color-disable) toRem(1px);
+	color: var(--color-button-disable-text);
+	cursor: default;
+	pointer-events: none;
+}
+
+[class*="ghost"][class*="disabled"]  {
+	background: none;
+	color: var(--color-disable);
+}
+
+.b-full {
+	@extend .button;
+	width: 100%;
+	justify-content: center;
+}
+
+//Clases diferentes tipos de radio
+.radius-small {
+	border-radius: toRem(5px);
+}
+
+.radius-medium {
+	border-radius: toRem(10px);
+}
+
+.radius-rounded {
+	border-radius: toRem(20px);
+}
+
+
+// Variaciones de tamaños
+.big {
+	font-size: var(--h3-font-size);
+	padding: toRem(12px) toRem(24px);
+}
+
+.small {
+	font-size: var(--small-font-size);
+	padding: toRem(8px) toRem(16px);
+}
+
+.tiny {
+	font-size: var(--small-font-size);
+	padding: toRem(4px) toRem(8px);
+}
+
+.micro {
+	font-size: var(--small-font-size);
+	padding: 0 toRem(4px);
+}
+
+//Estilos para crear un boton redondo en tres tamaños
+.round {
+	width: var(--round-width);
+	height: var(--round-height);
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	line-height: 16px;
+	font-weight: bold;
+}
+
+.round-16 {
+	@extend .round;
+	--round-width: 16px;
+	--round-height: 16px;
+	padding: 0;
+	font-weight: normal;
+	line-height: 0.8;
+	@include supersmall;
+}
+
+.round-24 {
+	@extend .round;
+	--round-width: 24px;
+	--round-height: 24px;
+	padding: 0;
+	font-weight: normal;
+	line-height: 0.8;
+	@include smaller;
+}
+
+.round-32 {
+	@extend .round;
+	--round-width: 32px;
+	--round-height: 32px;
+	@include normal;
+}
+
+.round-40 {
+	@extend .round;
+	--round-width: 40px;
+	--round-height: 40px;
+	@include big;
+}
+
+.round-48 {
+	@extend .round;
+	--round-width: 48px;
+	--round-height: 48px;
+	@include bigger;
+}
+
+.round-64 {
+	@extend .round;
+	--round-width: 64px;
+	--round-height: 64px;
+	@include biggest;
+}
+
+//Estilos sombras en botones
+.btn-sh {
+	-webkit-box-shadow: 4px 4px 4px -3px rgba(0, 0, 0, 0.37);
+	box-shadow: 4px 4px 4px -3px rgba(0, 0, 0, 0.37);
+	// margin: toRem(2px);
+	&:active {
+		box-shadow: none;
+	}
+}
+
+//Estilos imputs

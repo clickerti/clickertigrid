@@ -1,0 +1,197 @@
+[class*="border"].blue-border {
+	--border-color: var(--blue-color);
+}
+[class*="border"].green-border {
+	--border-color: var(--green-color);
+}
+[class*="border"].red-border {
+	--border-color: var(--red-color);
+}
+[class*="border"].celeste-border {
+	--border-color: var(--celeste-color);
+}
+[class*="border"].orange-border {
+	--border-color: var(--orange-color);
+}
+[class*="border"].dark-border {
+	--border-color: var(--dark-color);
+}
+[class*="border"].sea-border {
+	--border-color: var(--sea-color);
+}
+[class*="border"].text-border {
+	--border-color: var(--text-color);
+}
+[class*="border"].light-border {
+	--border-color: var(--light-color);
+}
+[class*="border"].gray-border {
+	--border-color: var(--gray-color);
+}
+
+[class*="border"].dotted {
+	--border-style: var(--dotted-style);
+}
+[class*="border"].dashed {
+	--border-style: var(--dashed-style);
+}
+[class*="border"].double {
+	--border-style: var(--double-style);
+	--border-size: 3px;
+}
+
+.border-size-2 {
+	--border-size: 2px;
+}
+.border-size-3 {
+	--border-size: 3px;
+}
+.border-size-4 {
+	--border-size: 2px;
+}
+.border-size-5 {
+	--border-size: 3px;
+}
+
+.border {
+	border: var(--border-size) var(--border-style) var(--border-color);
+}
+.border-top {
+	border-top: var(--border-size) var(--border-style) var(--border-color);
+}
+.border-left {
+	border-left: var(--border-size) var(--border-style) var(--border-color);
+}
+.border-right {
+	border-right: var(--border-size) var(--border-style) var(--border-color);
+}
+.border-bottom {
+	border-bottom: var(--border-size) var(--border-style) var(--border-color);
+}
+
+@each $size in $sizes {
+	@include from($size) {
+		.border-#{$size} {
+			border: var(--border-size) var(--border-style) var(--border-color);
+		}
+		.border-top-#{$size} {
+			border-top: var(--border-size) var(--border-style)
+				var(--border-color);
+		}
+		.border-left-#{$size} {
+			border-left: var(--border-size) var(--border-style)
+				var(--border-color);
+		}
+		.border-right-#{$size} {
+			border-right: var(--border-size) var(--border-style)
+				var(--border-color);
+		}
+		.border-bottom-#{$size} {
+			border-bottom: var(--border-size) var(--border-style)
+				var(--border-color);
+		}
+	}
+	// @include to($size) {
+	// 	@if $size !=s {
+	// 		.border-#{$size} {
+	// 			border: var(--border-size)
+	// 				var(--border-style)
+	// 				var(--border-color);
+	// 		}
+	// 		.border-top-#{$size} {
+	// 			border-top: var(--border-size)
+	// 				var(--border-style)
+	// 				var(--border-color);
+	// 		}
+	// 		.border-left-#{$size} {
+	// 			border-left: var(--border-size)
+	// 				var(--border-style)
+	// 				var(--border-color);
+	// 		}
+	// 		.border-right-#{$size} {
+	// 			border-right: var(--border-size)
+	// 				var(--border-style)
+	// 				var(--border-color);
+	// 		}
+	// 		.border-bottom-#{$size} {
+	// 			border-bottom: var(--border-size)
+	// 				var(--border-style)
+	// 				var(--border-color);
+	// 		}
+	// 	}
+	// }
+}
+@for $i from 1 through 200 {
+	.border-rounded-#{$i} {
+		border-radius: $i * 1px;
+	}
+	.border-rounded1-#{$i} {
+		border-radius: ($i * 1px) 0 0 0;
+	}
+	.border-rounded2-#{$i} {
+		border-radius: 0 ($i * 1px) 0 0;
+	}
+	.border-rounded3-#{$i} {
+		border-radius: 0 0 ($i * 1px) 0;
+	}
+	.border-rounded4-#{$i} {
+		border-radius: 0 0 0 ($i * 1px);
+	}
+}
+
+@mixin border-rouded($c1, $c2, $c3, $c4, $c5, $c6, $c7, $c8, $unit: pc) {
+	@if $unit == pc {
+		border-radius: ($c1 * 1%)
+			($c2 * 1%)
+			($c5 * 1%)
+			($c6 * 1%)
+			unquote("/")
+			($c8 * 1%)
+			($c3 * 1%)
+			($c4 * 1%)
+			($c7 * 1%);
+	}
+	@if $unit == px {
+		border-radius: ($c1 * 1px)
+			($c2 * 1px)
+			($c5 * 1px)
+			($c6 * 1px)
+			unquote("/")
+			($c8 * 1px)
+			($c3 * 1px)
+			($c4 * 1px)
+			($c7 * 1px);
+	}
+}
+@mixin border-rounded1($c1, $c2, $unit: pc) {
+	@if $unit == pc {
+		border-top-left-radius: $c1 * 1% $c2 * 1%;
+	}
+	@if $unit == px {
+		border-top-left-radius: $c1 * 1px $c2 * 1px;
+	}
+}
+@mixin border-rounded2($c1, $c2, $unit: pc) {
+	@if $unit == pc {
+		border-top-right-radius: $c1 * 1% $c2 * 1%;
+	}
+	@if $unit == px {
+		border-top-right-radius: $c1 * 1px $c2 * 1px;
+	}
+}
+@mixin border-rounded3($c1, $c2, $unit: pc) {
+	@if $unit == pc {
+		border-bottom-right-radius: $c1 * 1% $c2 * 1%;
+	}
+	@if $unit == px {
+		border-bottom-right-radius: $c1 * 1px $c2 * 1px;
+	}
+}
+@mixin border-rounded4($c1, $c2, $unit: pc) {
+	@if $unit == pc {
+		border-bottom-left-radius: $c1 * 1% $c2 * 1%;
+	}
+	@if $unit == px {
+		border-bottom-left-radius: $c1 * 1px $c2 * 1px;
+	}
+}
