@@ -1,36 +1,36 @@
 // //import de configuraciones y funciones
 
 // //Reset styles
-// @import "core/reset-css";
-@import "core/base";
+// @import "src/reset-css";
+@import "src/core/base";
 
 // //Import funtions
-@import "core/functions";
+@import "src/core/functions";
 
 // // @import 'components/utilidades/border';
-@import "color";
-@import "variables";
-@import "font-family";
+@import "src/color";
+@import "src/variables";
+@import "src/font-family";
 
-// //import core components
-@import "core/media-queries";
-@import "core/typography";
-@import "core/alignment";
-@import "core/border";
-@import "core/margin";
-@import "core/padding";
-@import "core/size";
-@import "core/text";
-@import "core/display";
-@import "core/flexbox";
-@import "core/grid";
-@import "core/order-items";
+// //import src components
+@import "src/core/media-queries";
+@import "src/core/typography";
+@import "src/core/alignment";
+@import "src/core/border";
+@import "src/core/margin";
+@import "src/core/padding";
+@import "src/core/size";
+@import "src/core/text";
+@import "src/core/display";
+@import "src/core/flexbox";
+@import "src/core/grid";
+@import "src/core/order-items";
 
 // // // Css creado de estados BEM
-@import "components/states/state";
+@import "src/states/state";
 
 // //Import special class
-@import "components/utilities/extend";
+@import "src/utilities/extend";
 
 // //UI components
-@import "ui-styles/ui-button";
+@import "src/ui-styles/ui-button";
