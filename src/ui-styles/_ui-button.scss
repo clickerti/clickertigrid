@@ -49,8 +49,7 @@
 }
 
 //Clases del buton por defecto
-.button,
-[class*="button"] {
+.button {
 	display: inline-block;
 	padding: toRem(8px) toRem(16px);
 	font-size: var(--normal-font-size);
@@ -66,20 +65,19 @@
 	text-align: center;
 	user-select: none;
 	background: var(--color);
-	&:hover,
-	[class*="button"]:hover {
-		background: var(--color-alt);
+	&:hover {
 		text-decoration: none;
-		color: var(--color-button-text);
+		@include from(lg) {
+			background: var(--color-alt);
+			color: var(--color-button-text);
+		}
 	}
 
-	&:active,
-	[class*="button"]:active {
+	&:active {
 		transform: scale(0.97);
 	}
 
 	&:disabled,
-	[class*="button"]:disabled,
 	&[disabled] {
 		background: var(--color-disable);
 		border: solid var(--color-disable) toRem(1px);
@@ -116,7 +114,7 @@
 	pointer-events: none;
 }
 
-[class*="ghost"][class*="disabled"]  {
+[class*="ghost"][class*="disabled"] {
 	background: none;
 	color: var(--color-disable);
 }
@@ -139,7 +137,6 @@
 .radius-rounded {
 	border-radius: toRem(20px);
 }
-
 
 // Variaciones de tamaños
 .big {
@@ -231,5 +228,3 @@
 		box-shadow: none;
 	}
 }
-
-//Estilos imputs
