@@ -1,7 +1,7 @@
 // //import de configuraciones y funciones
 
 // //Reset styles
-// @import "src/reset-css";
+// @import "core/reset-css";
 @import "src/core/base";
 
 // //Import funtions
@@ -12,7 +12,7 @@
 @import "src/variables";
 @import "src/font-family";
 
-// //import src components
+// //import core components
 @import "src/core/media-queries";
 @import "src/core/typography";
 @import "src/core/alignment";
@@ -33,4 +33,4 @@
 @import "src/utilities/extend";
 
 // //UI components
-@import "src/ui-styles/ui-button";
+@import "src/ui-styles/ui-styles";

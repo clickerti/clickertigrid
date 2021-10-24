@@ -22,14 +22,14 @@
 				--gap: 2rem;
 				grid-template-columns: repeat(
 					#{$i},
-					calc((100% - var(--gap) * (#{$i} - 1)) / #{$i})
+					calc((100% / #{$i}) - (var(--gap) * (#{$i} - 1)))
 				);
 			}
 			.gtr#{$i}-#{$size} {
 				--gap: 2rem;
 				grid-template-rows: repeat(
 					#{$i},
-					calc((100% - var(--gap) * (#{$i} - 1)) / #{$i})
+					calc((100% / #{$i}) - (var(--gap) * (#{$i} - 1)))
 				);
 			}
 			.gtca-#{$size} {

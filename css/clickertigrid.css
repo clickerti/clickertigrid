@@ -40,7 +40,8 @@ a {
   --dotted-style: dotted;
   --dashed-style: dashed;
   --double-style: double;
-  --border-style: var(--solid-style); }
+  --border-style: var(--solid-style);
+  --gap: 1rem; }
 
 :root {
   --heading-font: "Poppins", sans-serif;
@@ -70416,11 +70417,11 @@ a {
 
 .gtc1-s {
   --gap: 2rem;
-  grid-template-columns: repeat(1, calc((100% - var(--gap) * (1 - 1)) / 1)); }
+  grid-template-columns: repeat(1, calc((100% / 1) - (var(--gap) * (1 - 1)))); }
 
 .gtr1-s {
   --gap: 2rem;
-  grid-template-rows: repeat(1, calc((100% - var(--gap) * (1 - 1)) / 1)); }
+  grid-template-rows: repeat(1, calc((100% / 1) - (var(--gap) * (1 - 1)))); }
 
 .gtca-s {
   grid-template-columns: auto; }
@@ -70466,11 +70467,11 @@ a {
 
 .gtc2-s {
   --gap: 2rem;
-  grid-template-columns: repeat(2, calc((100% - var(--gap) * (2 - 1)) / 2)); }
+  grid-template-columns: repeat(2, calc((100% / 2) - (var(--gap) * (2 - 1)))); }
 
 .gtr2-s {
   --gap: 2rem;
-  grid-template-rows: repeat(2, calc((100% - var(--gap) * (2 - 1)) / 2)); }
+  grid-template-rows: repeat(2, calc((100% / 2) - (var(--gap) * (2 - 1)))); }
 
 .gtca-s {
   grid-template-columns: auto; }
@@ -70516,11 +70517,11 @@ a {
 
 .gtc3-s {
   --gap: 2rem;
-  grid-template-columns: repeat(3, calc((100% - var(--gap) * (3 - 1)) / 3)); }
+  grid-template-columns: repeat(3, calc((100% / 3) - (var(--gap) * (3 - 1)))); }
 
 .gtr3-s {
   --gap: 2rem;
-  grid-template-rows: repeat(3, calc((100% - var(--gap) * (3 - 1)) / 3)); }
+  grid-template-rows: repeat(3, calc((100% / 3) - (var(--gap) * (3 - 1)))); }
 
 .gtca-s {
   grid-template-columns: auto; }
@@ -70566,11 +70567,11 @@ a {
 
 .gtc4-s {
   --gap: 2rem;
-  grid-template-columns: repeat(4, calc((100% - var(--gap) * (4 - 1)) / 4)); }
+  grid-template-columns: repeat(4, calc((100% / 4) - (var(--gap) * (4 - 1)))); }
 
 .gtr4-s {
   --gap: 2rem;
-  grid-template-rows: repeat(4, calc((100% - var(--gap) * (4 - 1)) / 4)); }
+  grid-template-rows: repeat(4, calc((100% / 4) - (var(--gap) * (4 - 1)))); }
 
 .gtca-s {
   grid-template-columns: auto; }
@@ -70616,11 +70617,11 @@ a {
 
 .gtc5-s {
   --gap: 2rem;
-  grid-template-columns: repeat(5, calc((100% - var(--gap) * (5 - 1)) / 5)); }
+  grid-template-columns: repeat(5, calc((100% / 5) - (var(--gap) * (5 - 1)))); }
 
 .gtr5-s {
   --gap: 2rem;
-  grid-template-rows: repeat(5, calc((100% - var(--gap) * (5 - 1)) / 5)); }
+  grid-template-rows: repeat(5, calc((100% / 5) - (var(--gap) * (5 - 1)))); }
 
 .gtca-s {
   grid-template-columns: auto; }
@@ -70666,11 +70667,11 @@ a {
 
 .gtc6-s {
   --gap: 2rem;
-  grid-template-columns: repeat(6, calc((100% - var(--gap) * (6 - 1)) / 6)); }
+  grid-template-columns: repeat(6, calc((100% / 6) - (var(--gap) * (6 - 1)))); }
 
 .gtr6-s {
   --gap: 2rem;
-  grid-template-rows: repeat(6, calc((100% - var(--gap) * (6 - 1)) / 6)); }
+  grid-template-rows: repeat(6, calc((100% / 6) - (var(--gap) * (6 - 1)))); }
 
 .gtca-s {
   grid-template-columns: auto; }
@@ -70716,11 +70717,11 @@ a {
 
 .gtc7-s {
   --gap: 2rem;
-  grid-template-columns: repeat(7, calc((100% - var(--gap) * (7 - 1)) / 7)); }
+  grid-template-columns: repeat(7, calc((100% / 7) - (var(--gap) * (7 - 1)))); }
 
 .gtr7-s {
   --gap: 2rem;
-  grid-template-rows: repeat(7, calc((100% - var(--gap) * (7 - 1)) / 7)); }
+  grid-template-rows: repeat(7, calc((100% / 7) - (var(--gap) * (7 - 1)))); }
 
 .gtca-s {
   grid-template-columns: auto; }
@@ -70766,11 +70767,11 @@ a {
 
 .gtc8-s {
   --gap: 2rem;
-  grid-template-columns: repeat(8, calc((100% - var(--gap) * (8 - 1)) / 8)); }
+  grid-template-columns: repeat(8, calc((100% / 8) - (var(--gap) * (8 - 1)))); }
 
 .gtr8-s {
   --gap: 2rem;
-  grid-template-rows: repeat(8, calc((100% - var(--gap) * (8 - 1)) / 8)); }
+  grid-template-rows: repeat(8, calc((100% / 8) - (var(--gap) * (8 - 1)))); }
 
 .gtca-s {
   grid-template-columns: auto; }
@@ -70816,11 +70817,11 @@ a {
 
 .gtc9-s {
   --gap: 2rem;
-  grid-template-columns: repeat(9, calc((100% - var(--gap) * (9 - 1)) / 9)); }
+  grid-template-columns: repeat(9, calc((100% / 9) - (var(--gap) * (9 - 1)))); }
 
 .gtr9-s {
   --gap: 2rem;
-  grid-template-rows: repeat(9, calc((100% - var(--gap) * (9 - 1)) / 9)); }
+  grid-template-rows: repeat(9, calc((100% / 9) - (var(--gap) * (9 - 1)))); }
 
 .gtca-s {
   grid-template-columns: auto; }
@@ -70866,11 +70867,11 @@ a {
 
 .gtc10-s {
   --gap: 2rem;
-  grid-template-columns: repeat(10, calc((100% - var(--gap) * (10 - 1)) / 10)); }
+  grid-template-columns: repeat(10, calc((100% / 10) - (var(--gap) * (10 - 1)))); }
 
 .gtr10-s {
   --gap: 2rem;
-  grid-template-rows: repeat(10, calc((100% - var(--gap) * (10 - 1)) / 10)); }
+  grid-template-rows: repeat(10, calc((100% / 10) - (var(--gap) * (10 - 1)))); }
 
 .gtca-s {
   grid-template-columns: auto; }
@@ -70916,11 +70917,11 @@ a {
 
 .gtc11-s {
   --gap: 2rem;
-  grid-template-columns: repeat(11, calc((100% - var(--gap) * (11 - 1)) / 11)); }
+  grid-template-columns: repeat(11, calc((100% / 11) - (var(--gap) * (11 - 1)))); }
 
 .gtr11-s {
   --gap: 2rem;
-  grid-template-rows: repeat(11, calc((100% - var(--gap) * (11 - 1)) / 11)); }
+  grid-template-rows: repeat(11, calc((100% / 11) - (var(--gap) * (11 - 1)))); }
 
 .gtca-s {
   grid-template-columns: auto; }
@@ -70966,11 +70967,11 @@ a {
 
 .gtc12-s {
   --gap: 2rem;
-  grid-template-columns: repeat(12, calc((100% - var(--gap) * (12 - 1)) / 12)); }
+  grid-template-columns: repeat(12, calc((100% / 12) - (var(--gap) * (12 - 1)))); }
 
 .gtr12-s {
   --gap: 2rem;
-  grid-template-rows: repeat(12, calc((100% - var(--gap) * (12 - 1)) / 12)); }
+  grid-template-rows: repeat(12, calc((100% / 12) - (var(--gap) * (12 - 1)))); }
 
 .gtca-s {
   grid-template-columns: auto; }
@@ -71077,10 +71078,10 @@ a {
 @media screen and (min-width: 280px) {
   .gtc1-fold {
     --gap: 2rem;
-    grid-template-columns: repeat(1, calc((100% - var(--gap) * (1 - 1)) / 1)); }
+    grid-template-columns: repeat(1, calc((100% / 1) - (var(--gap) * (1 - 1)))); }
   .gtr1-fold {
     --gap: 2rem;
-    grid-template-rows: repeat(1, calc((100% - var(--gap) * (1 - 1)) / 1)); }
+    grid-template-rows: repeat(1, calc((100% / 1) - (var(--gap) * (1 - 1)))); }
   .gtca-fold {
     grid-template-columns: auto; }
   .gtra-fold {
@@ -71111,10 +71112,10 @@ a {
     grid-row-end: span 13; }
   .gtc2-fold {
     --gap: 2rem;
-    grid-template-columns: repeat(2, calc((100% - var(--gap) * (2 - 1)) / 2)); }
+    grid-template-columns: repeat(2, calc((100% / 2) - (var(--gap) * (2 - 1)))); }
   .gtr2-fold {
     --gap: 2rem;
-    grid-template-rows: repeat(2, calc((100% - var(--gap) * (2 - 1)) / 2)); }
+    grid-template-rows: repeat(2, calc((100% / 2) - (var(--gap) * (2 - 1)))); }
   .gtca-fold {
     grid-template-columns: auto; }
   .gtra-fold {
@@ -71145,10 +71146,10 @@ a {
     grid-row-end: span 13; }
   .gtc3-fold {
     --gap: 2rem;
-    grid-template-columns: repeat(3, calc((100% - var(--gap) * (3 - 1)) / 3)); }
+    grid-template-columns: repeat(3, calc((100% / 3) - (var(--gap) * (3 - 1)))); }
   .gtr3-fold {
     --gap: 2rem;
-    grid-template-rows: repeat(3, calc((100% - var(--gap) * (3 - 1)) / 3)); }
+    grid-template-rows: repeat(3, calc((100% / 3) - (var(--gap) * (3 - 1)))); }
   .gtca-fold {
     grid-template-columns: auto; }
   .gtra-fold {
@@ -71179,10 +71180,10 @@ a {
     grid-row-end: span 13; }
   .gtc4-fold {
     --gap: 2rem;
-    grid-template-columns: repeat(4, calc((100% - var(--gap) * (4 - 1)) / 4)); }
+    grid-template-columns: repeat(4, calc((100% / 4) - (var(--gap) * (4 - 1)))); }
   .gtr4-fold {
     --gap: 2rem;
-    grid-template-rows: repeat(4, calc((100% - var(--gap) * (4 - 1)) / 4)); }
+    grid-template-rows: repeat(4, calc((100% / 4) - (var(--gap) * (4 - 1)))); }
   .gtca-fold {
     grid-template-columns: auto; }
   .gtra-fold {
@@ -71213,10 +71214,10 @@ a {
     grid-row-end: span 13; }
   .gtc5-fold {
     --gap: 2rem;
-    grid-template-columns: repeat(5, calc((100% - var(--gap) * (5 - 1)) / 5)); }
+    grid-template-columns: repeat(5, calc((100% / 5) - (var(--gap) * (5 - 1)))); }
   .gtr5-fold {
     --gap: 2rem;
-    grid-template-rows: repeat(5, calc((100% - var(--gap) * (5 - 1)) / 5)); }
+    grid-template-rows: repeat(5, calc((100% / 5) - (var(--gap) * (5 - 1)))); }
   .gtca-fold {
     grid-template-columns: auto; }
   .gtra-fold {
@@ -71247,10 +71248,10 @@ a {
     grid-row-end: span 13; }
   .gtc6-fold {
     --gap: 2rem;
-    grid-template-columns: repeat(6, calc((100% - var(--gap) * (6 - 1)) / 6)); }
+    grid-template-columns: repeat(6, calc((100% / 6) - (var(--gap) * (6 - 1)))); }
   .gtr6-fold {
     --gap: 2rem;
-    grid-template-rows: repeat(6, calc((100% - var(--gap) * (6 - 1)) / 6)); }
+    grid-template-rows: repeat(6, calc((100% / 6) - (var(--gap) * (6 - 1)))); }
   .gtca-fold {
     grid-template-columns: auto; }
   .gtra-fold {
@@ -71281,10 +71282,10 @@ a {
     grid-row-end: span 13; }
   .gtc7-fold {
     --gap: 2rem;
-    grid-template-columns: repeat(7, calc((100% - var(--gap) * (7 - 1)) / 7)); }
+    grid-template-columns: repeat(7, calc((100% / 7) - (var(--gap) * (7 - 1)))); }
   .gtr7-fold {
     --gap: 2rem;
-    grid-template-rows: repeat(7, calc((100% - var(--gap) * (7 - 1)) / 7)); }
+    grid-template-rows: repeat(7, calc((100% / 7) - (var(--gap) * (7 - 1)))); }
   .gtca-fold {
     grid-template-columns: auto; }
   .gtra-fold {
@@ -71315,10 +71316,10 @@ a {
     grid-row-end: span 13; }
   .gtc8-fold {
     --gap: 2rem;
-    grid-template-columns: repeat(8, calc((100% - var(--gap) * (8 - 1)) / 8)); }
+    grid-template-columns: repeat(8, calc((100% / 8) - (var(--gap) * (8 - 1)))); }
   .gtr8-fold {
     --gap: 2rem;
-    grid-template-rows: repeat(8, calc((100% - var(--gap) * (8 - 1)) / 8)); }
+    grid-template-rows: repeat(8, calc((100% / 8) - (var(--gap) * (8 - 1)))); }
   .gtca-fold {
     grid-template-columns: auto; }
   .gtra-fold {
@@ -71349,10 +71350,10 @@ a {
     grid-row-end: span 13; }
   .gtc9-fold {
     --gap: 2rem;
-    grid-template-columns: repeat(9, calc((100% - var(--gap) * (9 - 1)) / 9)); }
+    grid-template-columns: repeat(9, calc((100% / 9) - (var(--gap) * (9 - 1)))); }
   .gtr9-fold {
     --gap: 2rem;
-    grid-template-rows: repeat(9, calc((100% - var(--gap) * (9 - 1)) / 9)); }
+    grid-template-rows: repeat(9, calc((100% / 9) - (var(--gap) * (9 - 1)))); }
   .gtca-fold {
     grid-template-columns: auto; }
   .gtra-fold {
@@ -71383,10 +71384,10 @@ a {
     grid-row-end: span 13; }
   .gtc10-fold {
     --gap: 2rem;
-    grid-template-columns: repeat(10, calc((100% - var(--gap) * (10 - 1)) / 10)); }
+    grid-template-columns: repeat(10, calc((100% / 10) - (var(--gap) * (10 - 1)))); }
   .gtr10-fold {
     --gap: 2rem;
-    grid-template-rows: repeat(10, calc((100% - var(--gap) * (10 - 1)) / 10)); }
+    grid-template-rows: repeat(10, calc((100% / 10) - (var(--gap) * (10 - 1)))); }
   .gtca-fold {
     grid-template-columns: auto; }
   .gtra-fold {
@@ -71417,10 +71418,10 @@ a {
     grid-row-end: span 13; }
   .gtc11-fold {
     --gap: 2rem;
-    grid-template-columns: repeat(11, calc((100% - var(--gap) * (11 - 1)) / 11)); }
+    grid-template-columns: repeat(11, calc((100% / 11) - (var(--gap) * (11 - 1)))); }
   .gtr11-fold {
     --gap: 2rem;
-    grid-template-rows: repeat(11, calc((100% - var(--gap) * (11 - 1)) / 11)); }
+    grid-template-rows: repeat(11, calc((100% / 11) - (var(--gap) * (11 - 1)))); }
   .gtca-fold {
     grid-template-columns: auto; }
   .gtra-fold {
@@ -71451,10 +71452,10 @@ a {
     grid-row-end: span 13; }
   .gtc12-fold {
     --gap: 2rem;
-    grid-template-columns: repeat(12, calc((100% - var(--gap) * (12 - 1)) / 12)); }
+    grid-template-columns: repeat(12, calc((100% / 12) - (var(--gap) * (12 - 1)))); }
   .gtr12-fold {
     --gap: 2rem;
-    grid-template-rows: repeat(12, calc((100% - var(--gap) * (12 - 1)) / 12)); }
+    grid-template-rows: repeat(12, calc((100% / 12) - (var(--gap) * (12 - 1)))); }
   .gtca-fold {
     grid-template-columns: auto; }
   .gtra-fold {
@@ -71532,10 +71533,10 @@ a {
 @media screen and (min-width: 320px) {
   .gtc1-sm {
     --gap: 2rem;
-    grid-template-columns: repeat(1, calc((100% - var(--gap) * (1 - 1)) / 1)); }
+    grid-template-columns: repeat(1, calc((100% / 1) - (var(--gap) * (1 - 1)))); }
   .gtr1-sm {
     --gap: 2rem;
-    grid-template-rows: repeat(1, calc((100% - var(--gap) * (1 - 1)) / 1)); }
+    grid-template-rows: repeat(1, calc((100% / 1) - (var(--gap) * (1 - 1)))); }
   .gtca-sm {
     grid-template-columns: auto; }
   .gtra-sm {
@@ -71566,10 +71567,10 @@ a {
     grid-row-end: span 13; }
   .gtc2-sm {
     --gap: 2rem;
-    grid-template-columns: repeat(2, calc((100% - var(--gap) * (2 - 1)) / 2)); }
+    grid-template-columns: repeat(2, calc((100% / 2) - (var(--gap) * (2 - 1)))); }
   .gtr2-sm {
     --gap: 2rem;
-    grid-template-rows: repeat(2, calc((100% - var(--gap) * (2 - 1)) / 2)); }
+    grid-template-rows: repeat(2, calc((100% / 2) - (var(--gap) * (2 - 1)))); }
   .gtca-sm {
     grid-template-columns: auto; }
   .gtra-sm {
@@ -71600,10 +71601,10 @@ a {
     grid-row-end: span 13; }
   .gtc3-sm {
     --gap: 2rem;
-    grid-template-columns: repeat(3, calc((100% - var(--gap) * (3 - 1)) / 3)); }
+    grid-template-columns: repeat(3, calc((100% / 3) - (var(--gap) * (3 - 1)))); }
   .gtr3-sm {
     --gap: 2rem;
-    grid-template-rows: repeat(3, calc((100% - var(--gap) * (3 - 1)) / 3)); }
+    grid-template-rows: repeat(3, calc((100% / 3) - (var(--gap) * (3 - 1)))); }
   .gtca-sm {
     grid-template-columns: auto; }
   .gtra-sm {
@@ -71634,10 +71635,10 @@ a {
     grid-row-end: span 13; }
   .gtc4-sm {
     --gap: 2rem;
-    grid-template-columns: repeat(4, calc((100% - var(--gap) * (4 - 1)) / 4)); }
+    grid-template-columns: repeat(4, calc((100% / 4) - (var(--gap) * (4 - 1)))); }
   .gtr4-sm {
     --gap: 2rem;
-    grid-template-rows: repeat(4, calc((100% - var(--gap) * (4 - 1)) / 4)); }
+    grid-template-rows: repeat(4, calc((100% / 4) - (var(--gap) * (4 - 1)))); }
   .gtca-sm {
     grid-template-columns: auto; }
   .gtra-sm {
@@ -71668,10 +71669,10 @@ a {
     grid-row-end: span 13; }
   .gtc5-sm {
     --gap: 2rem;
-    grid-template-columns: repeat(5, calc((100% - var(--gap) * (5 - 1)) / 5)); }
+    grid-template-columns: repeat(5, calc((100% / 5) - (var(--gap) * (5 - 1)))); }
   .gtr5-sm {
     --gap: 2rem;
-    grid-template-rows: repeat(5, calc((100% - var(--gap) * (5 - 1)) / 5)); }
+    grid-template-rows: repeat(5, calc((100% / 5) - (var(--gap) * (5 - 1)))); }
   .gtca-sm {
     grid-template-columns: auto; }
   .gtra-sm {
@@ -71702,10 +71703,10 @@ a {
     grid-row-end: span 13; }
   .gtc6-sm {
     --gap: 2rem;
-    grid-template-columns: repeat(6, calc((100% - var(--gap) * (6 - 1)) / 6)); }
+    grid-template-columns: repeat(6, calc((100% / 6) - (var(--gap) * (6 - 1)))); }
   .gtr6-sm {
     --gap: 2rem;
-    grid-template-rows: repeat(6, calc((100% - var(--gap) * (6 - 1)) / 6)); }
+    grid-template-rows: repeat(6, calc((100% / 6) - (var(--gap) * (6 - 1)))); }
   .gtca-sm {
     grid-template-columns: auto; }
   .gtra-sm {
@@ -71736,10 +71737,10 @@ a {
     grid-row-end: span 13; }
   .gtc7-sm {
     --gap: 2rem;
-    grid-template-columns: repeat(7, calc((100% - var(--gap) * (7 - 1)) / 7)); }
+    grid-template-columns: repeat(7, calc((100% / 7) - (var(--gap) * (7 - 1)))); }
   .gtr7-sm {
     --gap: 2rem;
-    grid-template-rows: repeat(7, calc((100% - var(--gap) * (7 - 1)) / 7)); }
+    grid-template-rows: repeat(7, calc((100% / 7) - (var(--gap) * (7 - 1)))); }
   .gtca-sm {
     grid-template-columns: auto; }
   .gtra-sm {
@@ -71770,10 +71771,10 @@ a {
     grid-row-end: span 13; }
   .gtc8-sm {
     --gap: 2rem;
-    grid-template-columns: repeat(8, calc((100% - var(--gap) * (8 - 1)) / 8)); }
+    grid-template-columns: repeat(8, calc((100% / 8) - (var(--gap) * (8 - 1)))); }
   .gtr8-sm {
     --gap: 2rem;
-    grid-template-rows: repeat(8, calc((100% - var(--gap) * (8 - 1)) / 8)); }
+    grid-template-rows: repeat(8, calc((100% / 8) - (var(--gap) * (8 - 1)))); }
   .gtca-sm {
     grid-template-columns: auto; }
   .gtra-sm {
@@ -71804,10 +71805,10 @@ a {
     grid-row-end: span 13; }
   .gtc9-sm {
     --gap: 2rem;
-    grid-template-columns: repeat(9, calc((100% - var(--gap) * (9 - 1)) / 9)); }
+    grid-template-columns: repeat(9, calc((100% / 9) - (var(--gap) * (9 - 1)))); }
   .gtr9-sm {
     --gap: 2rem;
-    grid-template-rows: repeat(9, calc((100% - var(--gap) * (9 - 1)) / 9)); }
+    grid-template-rows: repeat(9, calc((100% / 9) - (var(--gap) * (9 - 1)))); }
   .gtca-sm {
     grid-template-columns: auto; }
   .gtra-sm {
@@ -71838,10 +71839,10 @@ a {
     grid-row-end: span 13; }
   .gtc10-sm {
     --gap: 2rem;
-    grid-template-columns: repeat(10, calc((100% - var(--gap) * (10 - 1)) / 10)); }
+    grid-template-columns: repeat(10, calc((100% / 10) - (var(--gap) * (10 - 1)))); }
   .gtr10-sm {
     --gap: 2rem;
-    grid-template-rows: repeat(10, calc((100% - var(--gap) * (10 - 1)) / 10)); }
+    grid-template-rows: repeat(10, calc((100% / 10) - (var(--gap) * (10 - 1)))); }
   .gtca-sm {
     grid-template-columns: auto; }
   .gtra-sm {
@@ -71872,10 +71873,10 @@ a {
     grid-row-end: span 13; }
   .gtc11-sm {
     --gap: 2rem;
-    grid-template-columns: repeat(11, calc((100% - var(--gap) * (11 - 1)) / 11)); }
+    grid-template-columns: repeat(11, calc((100% / 11) - (var(--gap) * (11 - 1)))); }
   .gtr11-sm {
     --gap: 2rem;
-    grid-template-rows: repeat(11, calc((100% - var(--gap) * (11 - 1)) / 11)); }
+    grid-template-rows: repeat(11, calc((100% / 11) - (var(--gap) * (11 - 1)))); }
   .gtca-sm {
     grid-template-columns: auto; }
   .gtra-sm {
@@ -71906,10 +71907,10 @@ a {
     grid-row-end: span 13; }
   .gtc12-sm {
     --gap: 2rem;
-    grid-template-columns: repeat(12, calc((100% - var(--gap) * (12 - 1)) / 12)); }
+    grid-template-columns: repeat(12, calc((100% / 12) - (var(--gap) * (12 - 1)))); }
   .gtr12-sm {
     --gap: 2rem;
-    grid-template-rows: repeat(12, calc((100% - var(--gap) * (12 - 1)) / 12)); }
+    grid-template-rows: repeat(12, calc((100% / 12) - (var(--gap) * (12 - 1)))); }
   .gtca-sm {
     grid-template-columns: auto; }
   .gtra-sm {
@@ -71987,10 +71988,10 @@ a {
 @media screen and (min-width: 360px) {
   .gtc1-lm {
     --gap: 2rem;
-    grid-template-columns: repeat(1, calc((100% - var(--gap) * (1 - 1)) / 1)); }
+    grid-template-columns: repeat(1, calc((100% / 1) - (var(--gap) * (1 - 1)))); }
   .gtr1-lm {
     --gap: 2rem;
-    grid-template-rows: repeat(1, calc((100% - var(--gap) * (1 - 1)) / 1)); }
+    grid-template-rows: repeat(1, calc((100% / 1) - (var(--gap) * (1 - 1)))); }
   .gtca-lm {
     grid-template-columns: auto; }
   .gtra-lm {
@@ -72021,10 +72022,10 @@ a {
     grid-row-end: span 13; }
   .gtc2-lm {
     --gap: 2rem;
-    grid-template-columns: repeat(2, calc((100% - var(--gap) * (2 - 1)) / 2)); }
+    grid-template-columns: repeat(2, calc((100% / 2) - (var(--gap) * (2 - 1)))); }
   .gtr2-lm {
     --gap: 2rem;
-    grid-template-rows: repeat(2, calc((100% - var(--gap) * (2 - 1)) / 2)); }
+    grid-template-rows: repeat(2, calc((100% / 2) - (var(--gap) * (2 - 1)))); }
   .gtca-lm {
     grid-template-columns: auto; }
   .gtra-lm {
@@ -72055,10 +72056,10 @@ a {
     grid-row-end: span 13; }
   .gtc3-lm {
     --gap: 2rem;
-    grid-template-columns: repeat(3, calc((100% - var(--gap) * (3 - 1)) / 3)); }
+    grid-template-columns: repeat(3, calc((100% / 3) - (var(--gap) * (3 - 1)))); }
   .gtr3-lm {
     --gap: 2rem;
-    grid-template-rows: repeat(3, calc((100% - var(--gap) * (3 - 1)) / 3)); }
+    grid-template-rows: repeat(3, calc((100% / 3) - (var(--gap) * (3 - 1)))); }
   .gtca-lm {
     grid-template-columns: auto; }
   .gtra-lm {
@@ -72089,10 +72090,10 @@ a {
     grid-row-end: span 13; }
   .gtc4-lm {
     --gap: 2rem;
-    grid-template-columns: repeat(4, calc((100% - var(--gap) * (4 - 1)) / 4)); }
+    grid-template-columns: repeat(4, calc((100% / 4) - (var(--gap) * (4 - 1)))); }
   .gtr4-lm {
     --gap: 2rem;
-    grid-template-rows: repeat(4, calc((100% - var(--gap) * (4 - 1)) / 4)); }
+    grid-template-rows: repeat(4, calc((100% / 4) - (var(--gap) * (4 - 1)))); }
   .gtca-lm {
     grid-template-columns: auto; }
   .gtra-lm {
@@ -72123,10 +72124,10 @@ a {
     grid-row-end: span 13; }
   .gtc5-lm {
     --gap: 2rem;
-    grid-template-columns: repeat(5, calc((100% - var(--gap) * (5 - 1)) / 5)); }
+    grid-template-columns: repeat(5, calc((100% / 5) - (var(--gap) * (5 - 1)))); }
   .gtr5-lm {
     --gap: 2rem;
-    grid-template-rows: repeat(5, calc((100% - var(--gap) * (5 - 1)) / 5)); }
+    grid-template-rows: repeat(5, calc((100% / 5) - (var(--gap) * (5 - 1)))); }
   .gtca-lm {
     grid-template-columns: auto; }
   .gtra-lm {
@@ -72157,10 +72158,10 @@ a {
     grid-row-end: span 13; }
   .gtc6-lm {
     --gap: 2rem;
-    grid-template-columns: repeat(6, calc((100% - var(--gap) * (6 - 1)) / 6)); }
+    grid-template-columns: repeat(6, calc((100% / 6) - (var(--gap) * (6 - 1)))); }
   .gtr6-lm {
     --gap: 2rem;
-    grid-template-rows: repeat(6, calc((100% - var(--gap) * (6 - 1)) / 6)); }
+    grid-template-rows: repeat(6, calc((100% / 6) - (var(--gap) * (6 - 1)))); }
   .gtca-lm {
     grid-template-columns: auto; }
   .gtra-lm {
@@ -72191,10 +72192,10 @@ a {
     grid-row-end: span 13; }
   .gtc7-lm {
     --gap: 2rem;
-    grid-template-columns: repeat(7, calc((100% - var(--gap) * (7 - 1)) / 7)); }
+    grid-template-columns: repeat(7, calc((100% / 7) - (var(--gap) * (7 - 1)))); }
   .gtr7-lm {
     --gap: 2rem;
-    grid-template-rows: repeat(7, calc((100% - var(--gap) * (7 - 1)) / 7)); }
+    grid-template-rows: repeat(7, calc((100% / 7) - (var(--gap) * (7 - 1)))); }
   .gtca-lm {
     grid-template-columns: auto; }
   .gtra-lm {
@@ -72225,10 +72226,10 @@ a {
     grid-row-end: span 13; }
   .gtc8-lm {
     --gap: 2rem;
-    grid-template-columns: repeat(8, calc((100% - var(--gap) * (8 - 1)) / 8)); }
+    grid-template-columns: repeat(8, calc((100% / 8) - (var(--gap) * (8 - 1)))); }
   .gtr8-lm {
     --gap: 2rem;
-    grid-template-rows: repeat(8, calc((100% - var(--gap) * (8 - 1)) / 8)); }
+    grid-template-rows: repeat(8, calc((100% / 8) - (var(--gap) * (8 - 1)))); }
   .gtca-lm {
     grid-template-columns: auto; }
   .gtra-lm {
@@ -72259,10 +72260,10 @@ a {
     grid-row-end: span 13; }
   .gtc9-lm {
     --gap: 2rem;
-    grid-template-columns: repeat(9, calc((100% - var(--gap) * (9 - 1)) / 9)); }
+    grid-template-columns: repeat(9, calc((100% / 9) - (var(--gap) * (9 - 1)))); }
   .gtr9-lm {
     --gap: 2rem;
-    grid-template-rows: repeat(9, calc((100% - var(--gap) * (9 - 1)) / 9)); }
+    grid-template-rows: repeat(9, calc((100% / 9) - (var(--gap) * (9 - 1)))); }
   .gtca-lm {
     grid-template-columns: auto; }
   .gtra-lm {
@@ -72293,10 +72294,10 @@ a {
     grid-row-end: span 13; }
   .gtc10-lm {
     --gap: 2rem;
-    grid-template-columns: repeat(10, calc((100% - var(--gap) * (10 - 1)) / 10)); }
+    grid-template-columns: repeat(10, calc((100% / 10) - (var(--gap) * (10 - 1)))); }
   .gtr10-lm {
     --gap: 2rem;
-    grid-template-rows: repeat(10, calc((100% - var(--gap) * (10 - 1)) / 10)); }
+    grid-template-rows: repeat(10, calc((100% / 10) - (var(--gap) * (10 - 1)))); }
   .gtca-lm {
     grid-template-columns: auto; }
   .gtra-lm {
@@ -72327,10 +72328,10 @@ a {
     grid-row-end: span 13; }
   .gtc11-lm {
     --gap: 2rem;
-    grid-template-columns: repeat(11, calc((100% - var(--gap) * (11 - 1)) / 11)); }
+    grid-template-columns: repeat(11, calc((100% / 11) - (var(--gap) * (11 - 1)))); }
   .gtr11-lm {
     --gap: 2rem;
-    grid-template-rows: repeat(11, calc((100% - var(--gap) * (11 - 1)) / 11)); }
+    grid-template-rows: repeat(11, calc((100% / 11) - (var(--gap) * (11 - 1)))); }
   .gtca-lm {
     grid-template-columns: auto; }
   .gtra-lm {
@@ -72361,10 +72362,10 @@ a {
     grid-row-end: span 13; }
   .gtc12-lm {
     --gap: 2rem;
-    grid-template-columns: repeat(12, calc((100% - var(--gap) * (12 - 1)) / 12)); }
+    grid-template-columns: repeat(12, calc((100% / 12) - (var(--gap) * (12 - 1)))); }
   .gtr12-lm {
     --gap: 2rem;
-    grid-template-rows: repeat(12, calc((100% - var(--gap) * (12 - 1)) / 12)); }
+    grid-template-rows: repeat(12, calc((100% / 12) - (var(--gap) * (12 - 1)))); }
   .gtca-lm {
     grid-template-columns: auto; }
   .gtra-lm {
@@ -72442,10 +72443,10 @@ a {
 @media screen and (min-width: 410px) {
   .gtc1-m {
     --gap: 2rem;
-    grid-template-columns: repeat(1, calc((100% - var(--gap) * (1 - 1)) / 1)); }
+    grid-template-columns: repeat(1, calc((100% / 1) - (var(--gap) * (1 - 1)))); }
   .gtr1-m {
     --gap: 2rem;
-    grid-template-rows: repeat(1, calc((100% - var(--gap) * (1 - 1)) / 1)); }
+    grid-template-rows: repeat(1, calc((100% / 1) - (var(--gap) * (1 - 1)))); }
   .gtca-m {
     grid-template-columns: auto; }
   .gtra-m {
@@ -72476,10 +72477,10 @@ a {
     grid-row-end: span 13; }
   .gtc2-m {
     --gap: 2rem;
-    grid-template-columns: repeat(2, calc((100% - var(--gap) * (2 - 1)) / 2)); }
+    grid-template-columns: repeat(2, calc((100% / 2) - (var(--gap) * (2 - 1)))); }
   .gtr2-m {
     --gap: 2rem;
-    grid-template-rows: repeat(2, calc((100% - var(--gap) * (2 - 1)) / 2)); }
+    grid-template-rows: repeat(2, calc((100% / 2) - (var(--gap) * (2 - 1)))); }
   .gtca-m {
     grid-template-columns: auto; }
   .gtra-m {
@@ -72510,10 +72511,10 @@ a {
     grid-row-end: span 13; }
   .gtc3-m {
     --gap: 2rem;
-    grid-template-columns: repeat(3, calc((100% - var(--gap) * (3 - 1)) / 3)); }
+    grid-template-columns: repeat(3, calc((100% / 3) - (var(--gap) * (3 - 1)))); }
   .gtr3-m {
     --gap: 2rem;
-    grid-template-rows: repeat(3, calc((100% - var(--gap) * (3 - 1)) / 3)); }
+    grid-template-rows: repeat(3, calc((100% / 3) - (var(--gap) * (3 - 1)))); }
   .gtca-m {
     grid-template-columns: auto; }
   .gtra-m {
@@ -72544,10 +72545,10 @@ a {
     grid-row-end: span 13; }
   .gtc4-m {
     --gap: 2rem;
-    grid-template-columns: repeat(4, calc((100% - var(--gap) * (4 - 1)) / 4)); }
+    grid-template-columns: repeat(4, calc((100% / 4) - (var(--gap) * (4 - 1)))); }
   .gtr4-m {
     --gap: 2rem;
-    grid-template-rows: repeat(4, calc((100% - var(--gap) * (4 - 1)) / 4)); }
+    grid-template-rows: repeat(4, calc((100% / 4) - (var(--gap) * (4 - 1)))); }
   .gtca-m {
     grid-template-columns: auto; }
   .gtra-m {
@@ -72578,10 +72579,10 @@ a {
     grid-row-end: span 13; }
   .gtc5-m {
     --gap: 2rem;
-    grid-template-columns: repeat(5, calc((100% - var(--gap) * (5 - 1)) / 5)); }
+    grid-template-columns: repeat(5, calc((100% / 5) - (var(--gap) * (5 - 1)))); }
   .gtr5-m {
     --gap: 2rem;
-    grid-template-rows: repeat(5, calc((100% - var(--gap) * (5 - 1)) / 5)); }
+    grid-template-rows: repeat(5, calc((100% / 5) - (var(--gap) * (5 - 1)))); }
   .gtca-m {
     grid-template-columns: auto; }
   .gtra-m {
@@ -72612,10 +72613,10 @@ a {
     grid-row-end: span 13; }
   .gtc6-m {
     --gap: 2rem;
-    grid-template-columns: repeat(6, calc((100% - var(--gap) * (6 - 1)) / 6)); }
+    grid-template-columns: repeat(6, calc((100% / 6) - (var(--gap) * (6 - 1)))); }
   .gtr6-m {
     --gap: 2rem;
-    grid-template-rows: repeat(6, calc((100% - var(--gap) * (6 - 1)) / 6)); }
+    grid-template-rows: repeat(6, calc((100% / 6) - (var(--gap) * (6 - 1)))); }
   .gtca-m {
     grid-template-columns: auto; }
   .gtra-m {
@@ -72646,10 +72647,10 @@ a {
     grid-row-end: span 13; }
   .gtc7-m {
     --gap: 2rem;
-    grid-template-columns: repeat(7, calc((100% - var(--gap) * (7 - 1)) / 7)); }
+    grid-template-columns: repeat(7, calc((100% / 7) - (var(--gap) * (7 - 1)))); }
   .gtr7-m {
     --gap: 2rem;
-    grid-template-rows: repeat(7, calc((100% - var(--gap) * (7 - 1)) / 7)); }
+    grid-template-rows: repeat(7, calc((100% / 7) - (var(--gap) * (7 - 1)))); }
   .gtca-m {
     grid-template-columns: auto; }
   .gtra-m {
@@ -72680,10 +72681,10 @@ a {
     grid-row-end: span 13; }
   .gtc8-m {
     --gap: 2rem;
-    grid-template-columns: repeat(8, calc((100% - var(--gap) * (8 - 1)) / 8)); }
+    grid-template-columns: repeat(8, calc((100% / 8) - (var(--gap) * (8 - 1)))); }
   .gtr8-m {
     --gap: 2rem;
-    grid-template-rows: repeat(8, calc((100% - var(--gap) * (8 - 1)) / 8)); }
+    grid-template-rows: repeat(8, calc((100% / 8) - (var(--gap) * (8 - 1)))); }
   .gtca-m {
     grid-template-columns: auto; }
   .gtra-m {
@@ -72714,10 +72715,10 @@ a {
     grid-row-end: span 13; }
   .gtc9-m {
     --gap: 2rem;
-    grid-template-columns: repeat(9, calc((100% - var(--gap) * (9 - 1)) / 9)); }
+    grid-template-columns: repeat(9, calc((100% / 9) - (var(--gap) * (9 - 1)))); }
   .gtr9-m {
     --gap: 2rem;
-    grid-template-rows: repeat(9, calc((100% - var(--gap) * (9 - 1)) / 9)); }
+    grid-template-rows: repeat(9, calc((100% / 9) - (var(--gap) * (9 - 1)))); }
   .gtca-m {
     grid-template-columns: auto; }
   .gtra-m {
@@ -72748,10 +72749,10 @@ a {
     grid-row-end: span 13; }
   .gtc10-m {
     --gap: 2rem;
-    grid-template-columns: repeat(10, calc((100% - var(--gap) * (10 - 1)) / 10)); }
+    grid-template-columns: repeat(10, calc((100% / 10) - (var(--gap) * (10 - 1)))); }
   .gtr10-m {
     --gap: 2rem;
-    grid-template-rows: repeat(10, calc((100% - var(--gap) * (10 - 1)) / 10)); }
+    grid-template-rows: repeat(10, calc((100% / 10) - (var(--gap) * (10 - 1)))); }
   .gtca-m {
     grid-template-columns: auto; }
   .gtra-m {
@@ -72782,10 +72783,10 @@ a {
     grid-row-end: span 13; }
   .gtc11-m {
     --gap: 2rem;
-    grid-template-columns: repeat(11, calc((100% - var(--gap) * (11 - 1)) / 11)); }
+    grid-template-columns: repeat(11, calc((100% / 11) - (var(--gap) * (11 - 1)))); }
   .gtr11-m {
     --gap: 2rem;
-    grid-template-rows: repeat(11, calc((100% - var(--gap) * (11 - 1)) / 11)); }
+    grid-template-rows: repeat(11, calc((100% / 11) - (var(--gap) * (11 - 1)))); }
   .gtca-m {
     grid-template-columns: auto; }
   .gtra-m {
@@ -72816,10 +72817,10 @@ a {
     grid-row-end: span 13; }
   .gtc12-m {
     --gap: 2rem;
-    grid-template-columns: repeat(12, calc((100% - var(--gap) * (12 - 1)) / 12)); }
+    grid-template-columns: repeat(12, calc((100% / 12) - (var(--gap) * (12 - 1)))); }
   .gtr12-m {
     --gap: 2rem;
-    grid-template-rows: repeat(12, calc((100% - var(--gap) * (12 - 1)) / 12)); }
+    grid-template-rows: repeat(12, calc((100% / 12) - (var(--gap) * (12 - 1)))); }
   .gtca-m {
     grid-template-columns: auto; }
   .gtra-m {
@@ -72897,10 +72898,10 @@ a {
 @media screen and (min-width: 640px) {
   .gtc1-xm {
     --gap: 2rem;
-    grid-template-columns: repeat(1, calc((100% - var(--gap) * (1 - 1)) / 1)); }
+    grid-template-columns: repeat(1, calc((100% / 1) - (var(--gap) * (1 - 1)))); }
   .gtr1-xm {
     --gap: 2rem;
-    grid-template-rows: repeat(1, calc((100% - var(--gap) * (1 - 1)) / 1)); }
+    grid-template-rows: repeat(1, calc((100% / 1) - (var(--gap) * (1 - 1)))); }
   .gtca-xm {
     grid-template-columns: auto; }
   .gtra-xm {
@@ -72931,10 +72932,10 @@ a {
     grid-row-end: span 13; }
   .gtc2-xm {
     --gap: 2rem;
-    grid-template-columns: repeat(2, calc((100% - var(--gap) * (2 - 1)) / 2)); }
+    grid-template-columns: repeat(2, calc((100% / 2) - (var(--gap) * (2 - 1)))); }
   .gtr2-xm {
     --gap: 2rem;
-    grid-template-rows: repeat(2, calc((100% - var(--gap) * (2 - 1)) / 2)); }
+    grid-template-rows: repeat(2, calc((100% / 2) - (var(--gap) * (2 - 1)))); }
   .gtca-xm {
     grid-template-columns: auto; }
   .gtra-xm {
@@ -72965,10 +72966,10 @@ a {
     grid-row-end: span 13; }
   .gtc3-xm {
     --gap: 2rem;
-    grid-template-columns: repeat(3, calc((100% - var(--gap) * (3 - 1)) / 3)); }
+    grid-template-columns: repeat(3, calc((100% / 3) - (var(--gap) * (3 - 1)))); }
   .gtr3-xm {
     --gap: 2rem;
-    grid-template-rows: repeat(3, calc((100% - var(--gap) * (3 - 1)) / 3)); }
+    grid-template-rows: repeat(3, calc((100% / 3) - (var(--gap) * (3 - 1)))); }
   .gtca-xm {
     grid-template-columns: auto; }
   .gtra-xm {
@@ -72999,10 +73000,10 @@ a {
     grid-row-end: span 13; }
   .gtc4-xm {
     --gap: 2rem;
-    grid-template-columns: repeat(4, calc((100% - var(--gap) * (4 - 1)) / 4)); }
+    grid-template-columns: repeat(4, calc((100% / 4) - (var(--gap) * (4 - 1)))); }
   .gtr4-xm {
     --gap: 2rem;
-    grid-template-rows: repeat(4, calc((100% - var(--gap) * (4 - 1)) / 4)); }
+    grid-template-rows: repeat(4, calc((100% / 4) - (var(--gap) * (4 - 1)))); }
   .gtca-xm {
     grid-template-columns: auto; }
   .gtra-xm {
@@ -73033,10 +73034,10 @@ a {
     grid-row-end: span 13; }
   .gtc5-xm {
     --gap: 2rem;
-    grid-template-columns: repeat(5, calc((100% - var(--gap) * (5 - 1)) / 5)); }
+    grid-template-columns: repeat(5, calc((100% / 5) - (var(--gap) * (5 - 1)))); }
   .gtr5-xm {
     --gap: 2rem;
-    grid-template-rows: repeat(5, calc((100% - var(--gap) * (5 - 1)) / 5)); }
+    grid-template-rows: repeat(5, calc((100% / 5) - (var(--gap) * (5 - 1)))); }
   .gtca-xm {
     grid-template-columns: auto; }
   .gtra-xm {
@@ -73067,10 +73068,10 @@ a {
     grid-row-end: span 13; }
   .gtc6-xm {
     --gap: 2rem;
-    grid-template-columns: repeat(6, calc((100% - var(--gap) * (6 - 1)) / 6)); }
+    grid-template-columns: repeat(6, calc((100% / 6) - (var(--gap) * (6 - 1)))); }
   .gtr6-xm {
     --gap: 2rem;
-    grid-template-rows: repeat(6, calc((100% - var(--gap) * (6 - 1)) / 6)); }
+    grid-template-rows: repeat(6, calc((100% / 6) - (var(--gap) * (6 - 1)))); }
   .gtca-xm {
     grid-template-columns: auto; }
   .gtra-xm {
@@ -73101,10 +73102,10 @@ a {
     grid-row-end: span 13; }
   .gtc7-xm {
     --gap: 2rem;
-    grid-template-columns: repeat(7, calc((100% - var(--gap) * (7 - 1)) / 7)); }
+    grid-template-columns: repeat(7, calc((100% / 7) - (var(--gap) * (7 - 1)))); }
   .gtr7-xm {
     --gap: 2rem;
-    grid-template-rows: repeat(7, calc((100% - var(--gap) * (7 - 1)) / 7)); }
+    grid-template-rows: repeat(7, calc((100% / 7) - (var(--gap) * (7 - 1)))); }
   .gtca-xm {
     grid-template-columns: auto; }
   .gtra-xm {
@@ -73135,10 +73136,10 @@ a {
     grid-row-end: span 13; }
   .gtc8-xm {
     --gap: 2rem;
-    grid-template-columns: repeat(8, calc((100% - var(--gap) * (8 - 1)) / 8)); }
+    grid-template-columns: repeat(8, calc((100% / 8) - (var(--gap) * (8 - 1)))); }
   .gtr8-xm {
     --gap: 2rem;
-    grid-template-rows: repeat(8, calc((100% - var(--gap) * (8 - 1)) / 8)); }
+    grid-template-rows: repeat(8, calc((100% / 8) - (var(--gap) * (8 - 1)))); }
   .gtca-xm {
     grid-template-columns: auto; }
   .gtra-xm {
@@ -73169,10 +73170,10 @@ a {
     grid-row-end: span 13; }
   .gtc9-xm {
     --gap: 2rem;
-    grid-template-columns: repeat(9, calc((100% - var(--gap) * (9 - 1)) / 9)); }
+    grid-template-columns: repeat(9, calc((100% / 9) - (var(--gap) * (9 - 1)))); }
   .gtr9-xm {
     --gap: 2rem;
-    grid-template-rows: repeat(9, calc((100% - var(--gap) * (9 - 1)) / 9)); }
+    grid-template-rows: repeat(9, calc((100% / 9) - (var(--gap) * (9 - 1)))); }
   .gtca-xm {
     grid-template-columns: auto; }
   .gtra-xm {
@@ -73203,10 +73204,10 @@ a {
     grid-row-end: span 13; }
   .gtc10-xm {
     --gap: 2rem;
-    grid-template-columns: repeat(10, calc((100% - var(--gap) * (10 - 1)) / 10)); }
+    grid-template-columns: repeat(10, calc((100% / 10) - (var(--gap) * (10 - 1)))); }
   .gtr10-xm {
     --gap: 2rem;
-    grid-template-rows: repeat(10, calc((100% - var(--gap) * (10 - 1)) / 10)); }
+    grid-template-rows: repeat(10, calc((100% / 10) - (var(--gap) * (10 - 1)))); }
   .gtca-xm {
     grid-template-columns: auto; }
   .gtra-xm {
@@ -73237,10 +73238,10 @@ a {
     grid-row-end: span 13; }
   .gtc11-xm {
     --gap: 2rem;
-    grid-template-columns: repeat(11, calc((100% - var(--gap) * (11 - 1)) / 11)); }
+    grid-template-columns: repeat(11, calc((100% / 11) - (var(--gap) * (11 - 1)))); }
   .gtr11-xm {
     --gap: 2rem;
-    grid-template-rows: repeat(11, calc((100% - var(--gap) * (11 - 1)) / 11)); }
+    grid-template-rows: repeat(11, calc((100% / 11) - (var(--gap) * (11 - 1)))); }
   .gtca-xm {
     grid-template-columns: auto; }
   .gtra-xm {
@@ -73271,10 +73272,10 @@ a {
     grid-row-end: span 13; }
   .gtc12-xm {
     --gap: 2rem;
-    grid-template-columns: repeat(12, calc((100% - var(--gap) * (12 - 1)) / 12)); }
+    grid-template-columns: repeat(12, calc((100% / 12) - (var(--gap) * (12 - 1)))); }
   .gtr12-xm {
     --gap: 2rem;
-    grid-template-rows: repeat(12, calc((100% - var(--gap) * (12 - 1)) / 12)); }
+    grid-template-rows: repeat(12, calc((100% / 12) - (var(--gap) * (12 - 1)))); }
   .gtca-xm {
     grid-template-columns: auto; }
   .gtra-xm {
@@ -73352,10 +73353,10 @@ a {
 @media screen and (min-width: 768px) {
   .gtc1-ipad {
     --gap: 2rem;
-    grid-template-columns: repeat(1, calc((100% - var(--gap) * (1 - 1)) / 1)); }
+    grid-template-columns: repeat(1, calc((100% / 1) - (var(--gap) * (1 - 1)))); }
   .gtr1-ipad {
     --gap: 2rem;
-    grid-template-rows: repeat(1, calc((100% - var(--gap) * (1 - 1)) / 1)); }
+    grid-template-rows: repeat(1, calc((100% / 1) - (var(--gap) * (1 - 1)))); }
   .gtca-ipad {
     grid-template-columns: auto; }
   .gtra-ipad {
@@ -73386,10 +73387,10 @@ a {
     grid-row-end: span 13; }
   .gtc2-ipad {
     --gap: 2rem;
-    grid-template-columns: repeat(2, calc((100% - var(--gap) * (2 - 1)) / 2)); }
+    grid-template-columns: repeat(2, calc((100% / 2) - (var(--gap) * (2 - 1)))); }
   .gtr2-ipad {
     --gap: 2rem;
-    grid-template-rows: repeat(2, calc((100% - var(--gap) * (2 - 1)) / 2)); }
+    grid-template-rows: repeat(2, calc((100% / 2) - (var(--gap) * (2 - 1)))); }
   .gtca-ipad {
     grid-template-columns: auto; }
   .gtra-ipad {
@@ -73420,10 +73421,10 @@ a {
     grid-row-end: span 13; }
   .gtc3-ipad {
     --gap: 2rem;
-    grid-template-columns: repeat(3, calc((100% - var(--gap) * (3 - 1)) / 3)); }
+    grid-template-columns: repeat(3, calc((100% / 3) - (var(--gap) * (3 - 1)))); }
   .gtr3-ipad {
     --gap: 2rem;
-    grid-template-rows: repeat(3, calc((100% - var(--gap) * (3 - 1)) / 3)); }
+    grid-template-rows: repeat(3, calc((100% / 3) - (var(--gap) * (3 - 1)))); }
   .gtca-ipad {
     grid-template-columns: auto; }
   .gtra-ipad {
@@ -73454,10 +73455,10 @@ a {
     grid-row-end: span 13; }
   .gtc4-ipad {
     --gap: 2rem;
-    grid-template-columns: repeat(4, calc((100% - var(--gap) * (4 - 1)) / 4)); }
+    grid-template-columns: repeat(4, calc((100% / 4) - (var(--gap) * (4 - 1)))); }
   .gtr4-ipad {
     --gap: 2rem;
-    grid-template-rows: repeat(4, calc((100% - var(--gap) * (4 - 1)) / 4)); }
+    grid-template-rows: repeat(4, calc((100% / 4) - (var(--gap) * (4 - 1)))); }
   .gtca-ipad {
     grid-template-columns: auto; }
   .gtra-ipad {
@@ -73488,10 +73489,10 @@ a {
     grid-row-end: span 13; }
   .gtc5-ipad {
     --gap: 2rem;
-    grid-template-columns: repeat(5, calc((100% - var(--gap) * (5 - 1)) / 5)); }
+    grid-template-columns: repeat(5, calc((100% / 5) - (var(--gap) * (5 - 1)))); }
   .gtr5-ipad {
     --gap: 2rem;
-    grid-template-rows: repeat(5, calc((100% - var(--gap) * (5 - 1)) / 5)); }
+    grid-template-rows: repeat(5, calc((100% / 5) - (var(--gap) * (5 - 1)))); }
   .gtca-ipad {
     grid-template-columns: auto; }
   .gtra-ipad {
@@ -73522,10 +73523,10 @@ a {
     grid-row-end: span 13; }
   .gtc6-ipad {
     --gap: 2rem;
-    grid-template-columns: repeat(6, calc((100% - var(--gap) * (6 - 1)) / 6)); }
+    grid-template-columns: repeat(6, calc((100% / 6) - (var(--gap) * (6 - 1)))); }
   .gtr6-ipad {
     --gap: 2rem;
-    grid-template-rows: repeat(6, calc((100% - var(--gap) * (6 - 1)) / 6)); }
+    grid-template-rows: repeat(6, calc((100% / 6) - (var(--gap) * (6 - 1)))); }
   .gtca-ipad {
     grid-template-columns: auto; }
   .gtra-ipad {
@@ -73556,10 +73557,10 @@ a {
     grid-row-end: span 13; }
   .gtc7-ipad {
     --gap: 2rem;
-    grid-template-columns: repeat(7, calc((100% - var(--gap) * (7 - 1)) / 7)); }
+    grid-template-columns: repeat(7, calc((100% / 7) - (var(--gap) * (7 - 1)))); }
   .gtr7-ipad {
     --gap: 2rem;
-    grid-template-rows: repeat(7, calc((100% - var(--gap) * (7 - 1)) / 7)); }
+    grid-template-rows: repeat(7, calc((100% / 7) - (var(--gap) * (7 - 1)))); }
   .gtca-ipad {
     grid-template-columns: auto; }
   .gtra-ipad {
@@ -73590,10 +73591,10 @@ a {
     grid-row-end: span 13; }
   .gtc8-ipad {
     --gap: 2rem;
-    grid-template-columns: repeat(8, calc((100% - var(--gap) * (8 - 1)) / 8)); }
+    grid-template-columns: repeat(8, calc((100% / 8) - (var(--gap) * (8 - 1)))); }
   .gtr8-ipad {
     --gap: 2rem;
-    grid-template-rows: repeat(8, calc((100% - var(--gap) * (8 - 1)) / 8)); }
+    grid-template-rows: repeat(8, calc((100% / 8) - (var(--gap) * (8 - 1)))); }
   .gtca-ipad {
     grid-template-columns: auto; }
   .gtra-ipad {
@@ -73624,10 +73625,10 @@ a {
     grid-row-end: span 13; }
   .gtc9-ipad {
     --gap: 2rem;
-    grid-template-columns: repeat(9, calc((100% - var(--gap) * (9 - 1)) / 9)); }
+    grid-template-columns: repeat(9, calc((100% / 9) - (var(--gap) * (9 - 1)))); }
   .gtr9-ipad {
     --gap: 2rem;
-    grid-template-rows: repeat(9, calc((100% - var(--gap) * (9 - 1)) / 9)); }
+    grid-template-rows: repeat(9, calc((100% / 9) - (var(--gap) * (9 - 1)))); }
   .gtca-ipad {
     grid-template-columns: auto; }
   .gtra-ipad {
@@ -73658,10 +73659,10 @@ a {
     grid-row-end: span 13; }
   .gtc10-ipad {
     --gap: 2rem;
-    grid-template-columns: repeat(10, calc((100% - var(--gap) * (10 - 1)) / 10)); }
+    grid-template-columns: repeat(10, calc((100% / 10) - (var(--gap) * (10 - 1)))); }
   .gtr10-ipad {
     --gap: 2rem;
-    grid-template-rows: repeat(10, calc((100% - var(--gap) * (10 - 1)) / 10)); }
+    grid-template-rows: repeat(10, calc((100% / 10) - (var(--gap) * (10 - 1)))); }
   .gtca-ipad {
     grid-template-columns: auto; }
   .gtra-ipad {
@@ -73692,10 +73693,10 @@ a {
     grid-row-end: span 13; }
   .gtc11-ipad {
     --gap: 2rem;
-    grid-template-columns: repeat(11, calc((100% - var(--gap) * (11 - 1)) / 11)); }
+    grid-template-columns: repeat(11, calc((100% / 11) - (var(--gap) * (11 - 1)))); }
   .gtr11-ipad {
     --gap: 2rem;
-    grid-template-rows: repeat(11, calc((100% - var(--gap) * (11 - 1)) / 11)); }
+    grid-template-rows: repeat(11, calc((100% / 11) - (var(--gap) * (11 - 1)))); }
   .gtca-ipad {
     grid-template-columns: auto; }
   .gtra-ipad {
@@ -73726,10 +73727,10 @@ a {
     grid-row-end: span 13; }
   .gtc12-ipad {
     --gap: 2rem;
-    grid-template-columns: repeat(12, calc((100% - var(--gap) * (12 - 1)) / 12)); }
+    grid-template-columns: repeat(12, calc((100% / 12) - (var(--gap) * (12 - 1)))); }
   .gtr12-ipad {
     --gap: 2rem;
-    grid-template-rows: repeat(12, calc((100% - var(--gap) * (12 - 1)) / 12)); }
+    grid-template-rows: repeat(12, calc((100% / 12) - (var(--gap) * (12 - 1)))); }
   .gtca-ipad {
     grid-template-columns: auto; }
   .gtra-ipad {
@@ -73807,10 +73808,10 @@ a {
 @media screen and (min-width: 1024px) {
   .gtc1-lg {
     --gap: 2rem;
-    grid-template-columns: repeat(1, calc((100% - var(--gap) * (1 - 1)) / 1)); }
+    grid-template-columns: repeat(1, calc((100% / 1) - (var(--gap) * (1 - 1)))); }
   .gtr1-lg {
     --gap: 2rem;
-    grid-template-rows: repeat(1, calc((100% - var(--gap) * (1 - 1)) / 1)); }
+    grid-template-rows: repeat(1, calc((100% / 1) - (var(--gap) * (1 - 1)))); }
   .gtca-lg {
     grid-template-columns: auto; }
   .gtra-lg {
@@ -73841,10 +73842,10 @@ a {
     grid-row-end: span 13; }
   .gtc2-lg {
     --gap: 2rem;
-    grid-template-columns: repeat(2, calc((100% - var(--gap) * (2 - 1)) / 2)); }
+    grid-template-columns: repeat(2, calc((100% / 2) - (var(--gap) * (2 - 1)))); }
   .gtr2-lg {
     --gap: 2rem;
-    grid-template-rows: repeat(2, calc((100% - var(--gap) * (2 - 1)) / 2)); }
+    grid-template-rows: repeat(2, calc((100% / 2) - (var(--gap) * (2 - 1)))); }
   .gtca-lg {
     grid-template-columns: auto; }
   .gtra-lg {
@@ -73875,10 +73876,10 @@ a {
     grid-row-end: span 13; }
   .gtc3-lg {
     --gap: 2rem;
-    grid-template-columns: repeat(3, calc((100% - var(--gap) * (3 - 1)) / 3)); }
+    grid-template-columns: repeat(3, calc((100% / 3) - (var(--gap) * (3 - 1)))); }
   .gtr3-lg {
     --gap: 2rem;
-    grid-template-rows: repeat(3, calc((100% - var(--gap) * (3 - 1)) / 3)); }
+    grid-template-rows: repeat(3, calc((100% / 3) - (var(--gap) * (3 - 1)))); }
   .gtca-lg {
     grid-template-columns: auto; }
   .gtra-lg {
@@ -73909,10 +73910,10 @@ a {
     grid-row-end: span 13; }
   .gtc4-lg {
     --gap: 2rem;
-    grid-template-columns: repeat(4, calc((100% - var(--gap) * (4 - 1)) / 4)); }
+    grid-template-columns: repeat(4, calc((100% / 4) - (var(--gap) * (4 - 1)))); }
   .gtr4-lg {
     --gap: 2rem;
-    grid-template-rows: repeat(4, calc((100% - var(--gap) * (4 - 1)) / 4)); }
+    grid-template-rows: repeat(4, calc((100% / 4) - (var(--gap) * (4 - 1)))); }
   .gtca-lg {
     grid-template-columns: auto; }
   .gtra-lg {
@@ -73943,10 +73944,10 @@ a {
     grid-row-end: span 13; }
   .gtc5-lg {
     --gap: 2rem;
-    grid-template-columns: repeat(5, calc((100% - var(--gap) * (5 - 1)) / 5)); }
+    grid-template-columns: repeat(5, calc((100% / 5) - (var(--gap) * (5 - 1)))); }
   .gtr5-lg {
     --gap: 2rem;
-    grid-template-rows: repeat(5, calc((100% - var(--gap) * (5 - 1)) / 5)); }
+    grid-template-rows: repeat(5, calc((100% / 5) - (var(--gap) * (5 - 1)))); }
   .gtca-lg {
     grid-template-columns: auto; }
   .gtra-lg {
@@ -73977,10 +73978,10 @@ a {
     grid-row-end: span 13; }
   .gtc6-lg {
     --gap: 2rem;
-    grid-template-columns: repeat(6, calc((100% - var(--gap) * (6 - 1)) / 6)); }
+    grid-template-columns: repeat(6, calc((100% / 6) - (var(--gap) * (6 - 1)))); }
   .gtr6-lg {
     --gap: 2rem;
-    grid-template-rows: repeat(6, calc((100% - var(--gap) * (6 - 1)) / 6)); }
+    grid-template-rows: repeat(6, calc((100% / 6) - (var(--gap) * (6 - 1)))); }
   .gtca-lg {
     grid-template-columns: auto; }
   .gtra-lg {
@@ -74011,10 +74012,10 @@ a {
     grid-row-end: span 13; }
   .gtc7-lg {
     --gap: 2rem;
-    grid-template-columns: repeat(7, calc((100% - var(--gap) * (7 - 1)) / 7)); }
+    grid-template-columns: repeat(7, calc((100% / 7) - (var(--gap) * (7 - 1)))); }
   .gtr7-lg {
     --gap: 2rem;
-    grid-template-rows: repeat(7, calc((100% - var(--gap) * (7 - 1)) / 7)); }
+    grid-template-rows: repeat(7, calc((100% / 7) - (var(--gap) * (7 - 1)))); }
   .gtca-lg {
     grid-template-columns: auto; }
   .gtra-lg {
@@ -74045,10 +74046,10 @@ a {
     grid-row-end: span 13; }
   .gtc8-lg {
     --gap: 2rem;
-    grid-template-columns: repeat(8, calc((100% - var(--gap) * (8 - 1)) / 8)); }
+    grid-template-columns: repeat(8, calc((100% / 8) - (var(--gap) * (8 - 1)))); }
   .gtr8-lg {
     --gap: 2rem;
-    grid-template-rows: repeat(8, calc((100% - var(--gap) * (8 - 1)) / 8)); }
+    grid-template-rows: repeat(8, calc((100% / 8) - (var(--gap) * (8 - 1)))); }
   .gtca-lg {
     grid-template-columns: auto; }
   .gtra-lg {
@@ -74079,10 +74080,10 @@ a {
     grid-row-end: span 13; }
   .gtc9-lg {
     --gap: 2rem;
-    grid-template-columns: repeat(9, calc((100% - var(--gap) * (9 - 1)) / 9)); }
+    grid-template-columns: repeat(9, calc((100% / 9) - (var(--gap) * (9 - 1)))); }
   .gtr9-lg {
     --gap: 2rem;
-    grid-template-rows: repeat(9, calc((100% - var(--gap) * (9 - 1)) / 9)); }
+    grid-template-rows: repeat(9, calc((100% / 9) - (var(--gap) * (9 - 1)))); }
   .gtca-lg {
     grid-template-columns: auto; }
   .gtra-lg {
@@ -74113,10 +74114,10 @@ a {
     grid-row-end: span 13; }
   .gtc10-lg {
     --gap: 2rem;
-    grid-template-columns: repeat(10, calc((100% - var(--gap) * (10 - 1)) / 10)); }
+    grid-template-columns: repeat(10, calc((100% / 10) - (var(--gap) * (10 - 1)))); }
   .gtr10-lg {
     --gap: 2rem;
-    grid-template-rows: repeat(10, calc((100% - var(--gap) * (10 - 1)) / 10)); }
+    grid-template-rows: repeat(10, calc((100% / 10) - (var(--gap) * (10 - 1)))); }
   .gtca-lg {
     grid-template-columns: auto; }
   .gtra-lg {
@@ -74147,10 +74148,10 @@ a {
     grid-row-end: span 13; }
   .gtc11-lg {
     --gap: 2rem;
-    grid-template-columns: repeat(11, calc((100% - var(--gap) * (11 - 1)) / 11)); }
+    grid-template-columns: repeat(11, calc((100% / 11) - (var(--gap) * (11 - 1)))); }
   .gtr11-lg {
     --gap: 2rem;
-    grid-template-rows: repeat(11, calc((100% - var(--gap) * (11 - 1)) / 11)); }
+    grid-template-rows: repeat(11, calc((100% / 11) - (var(--gap) * (11 - 1)))); }
   .gtca-lg {
     grid-template-columns: auto; }
   .gtra-lg {
@@ -74181,10 +74182,10 @@ a {
     grid-row-end: span 13; }
   .gtc12-lg {
     --gap: 2rem;
-    grid-template-columns: repeat(12, calc((100% - var(--gap) * (12 - 1)) / 12)); }
+    grid-template-columns: repeat(12, calc((100% / 12) - (var(--gap) * (12 - 1)))); }
   .gtr12-lg {
     --gap: 2rem;
-    grid-template-rows: repeat(12, calc((100% - var(--gap) * (12 - 1)) / 12)); }
+    grid-template-rows: repeat(12, calc((100% / 12) - (var(--gap) * (12 - 1)))); }
   .gtca-lg {
     grid-template-columns: auto; }
   .gtra-lg {
@@ -74262,10 +74263,10 @@ a {
 @media screen and (min-width: 1440px) {
   .gtc1-xl {
     --gap: 2rem;
-    grid-template-columns: repeat(1, calc((100% - var(--gap) * (1 - 1)) / 1)); }
+    grid-template-columns: repeat(1, calc((100% / 1) - (var(--gap) * (1 - 1)))); }
   .gtr1-xl {
     --gap: 2rem;
-    grid-template-rows: repeat(1, calc((100% - var(--gap) * (1 - 1)) / 1)); }
+    grid-template-rows: repeat(1, calc((100% / 1) - (var(--gap) * (1 - 1)))); }
   .gtca-xl {
     grid-template-columns: auto; }
   .gtra-xl {
@@ -74296,10 +74297,10 @@ a {
     grid-row-end: span 13; }
   .gtc2-xl {
     --gap: 2rem;
-    grid-template-columns: repeat(2, calc((100% - var(--gap) * (2 - 1)) / 2)); }
+    grid-template-columns: repeat(2, calc((100% / 2) - (var(--gap) * (2 - 1)))); }
   .gtr2-xl {
     --gap: 2rem;
-    grid-template-rows: repeat(2, calc((100% - var(--gap) * (2 - 1)) / 2)); }
+    grid-template-rows: repeat(2, calc((100% / 2) - (var(--gap) * (2 - 1)))); }
   .gtca-xl {
     grid-template-columns: auto; }
   .gtra-xl {
@@ -74330,10 +74331,10 @@ a {
     grid-row-end: span 13; }
   .gtc3-xl {
     --gap: 2rem;
-    grid-template-columns: repeat(3, calc((100% - var(--gap) * (3 - 1)) / 3)); }
+    grid-template-columns: repeat(3, calc((100% / 3) - (var(--gap) * (3 - 1)))); }
   .gtr3-xl {
     --gap: 2rem;
-    grid-template-rows: repeat(3, calc((100% - var(--gap) * (3 - 1)) / 3)); }
+    grid-template-rows: repeat(3, calc((100% / 3) - (var(--gap) * (3 - 1)))); }
   .gtca-xl {
     grid-template-columns: auto; }
   .gtra-xl {
@@ -74364,10 +74365,10 @@ a {
     grid-row-end: span 13; }
   .gtc4-xl {
     --gap: 2rem;
-    grid-template-columns: repeat(4, calc((100% - var(--gap) * (4 - 1)) / 4)); }
+    grid-template-columns: repeat(4, calc((100% / 4) - (var(--gap) * (4 - 1)))); }
   .gtr4-xl {
     --gap: 2rem;
-    grid-template-rows: repeat(4, calc((100% - var(--gap) * (4 - 1)) / 4)); }
+    grid-template-rows: repeat(4, calc((100% / 4) - (var(--gap) * (4 - 1)))); }
   .gtca-xl {
     grid-template-columns: auto; }
   .gtra-xl {
@@ -74398,10 +74399,10 @@ a {
     grid-row-end: span 13; }
   .gtc5-xl {
     --gap: 2rem;
-    grid-template-columns: repeat(5, calc((100% - var(--gap) * (5 - 1)) / 5)); }
+    grid-template-columns: repeat(5, calc((100% / 5) - (var(--gap) * (5 - 1)))); }
   .gtr5-xl {
     --gap: 2rem;
-    grid-template-rows: repeat(5, calc((100% - var(--gap) * (5 - 1)) / 5)); }
+    grid-template-rows: repeat(5, calc((100% / 5) - (var(--gap) * (5 - 1)))); }
   .gtca-xl {
     grid-template-columns: auto; }
   .gtra-xl {
@@ -74432,10 +74433,10 @@ a {
     grid-row-end: span 13; }
   .gtc6-xl {
     --gap: 2rem;
-    grid-template-columns: repeat(6, calc((100% - var(--gap) * (6 - 1)) / 6)); }
+    grid-template-columns: repeat(6, calc((100% / 6) - (var(--gap) * (6 - 1)))); }
   .gtr6-xl {
     --gap: 2rem;
-    grid-template-rows: repeat(6, calc((100% - var(--gap) * (6 - 1)) / 6)); }
+    grid-template-rows: repeat(6, calc((100% / 6) - (var(--gap) * (6 - 1)))); }
   .gtca-xl {
     grid-template-columns: auto; }
   .gtra-xl {
@@ -74466,10 +74467,10 @@ a {
     grid-row-end: span 13; }
   .gtc7-xl {
     --gap: 2rem;
-    grid-template-columns: repeat(7, calc((100% - var(--gap) * (7 - 1)) / 7)); }
+    grid-template-columns: repeat(7, calc((100% / 7) - (var(--gap) * (7 - 1)))); }
   .gtr7-xl {
     --gap: 2rem;
-    grid-template-rows: repeat(7, calc((100% - var(--gap) * (7 - 1)) / 7)); }
+    grid-template-rows: repeat(7, calc((100% / 7) - (var(--gap) * (7 - 1)))); }
   .gtca-xl {
     grid-template-columns: auto; }
   .gtra-xl {
@@ -74500,10 +74501,10 @@ a {
     grid-row-end: span 13; }
   .gtc8-xl {
     --gap: 2rem;
-    grid-template-columns: repeat(8, calc((100% - var(--gap) * (8 - 1)) / 8)); }
+    grid-template-columns: repeat(8, calc((100% / 8) - (var(--gap) * (8 - 1)))); }
   .gtr8-xl {
     --gap: 2rem;
-    grid-template-rows: repeat(8, calc((100% - var(--gap) * (8 - 1)) / 8)); }
+    grid-template-rows: repeat(8, calc((100% / 8) - (var(--gap) * (8 - 1)))); }
   .gtca-xl {
     grid-template-columns: auto; }
   .gtra-xl {
@@ -74534,10 +74535,10 @@ a {
     grid-row-end: span 13; }
   .gtc9-xl {
     --gap: 2rem;
-    grid-template-columns: repeat(9, calc((100% - var(--gap) * (9 - 1)) / 9)); }
+    grid-template-columns: repeat(9, calc((100% / 9) - (var(--gap) * (9 - 1)))); }
   .gtr9-xl {
     --gap: 2rem;
-    grid-template-rows: repeat(9, calc((100% - var(--gap) * (9 - 1)) / 9)); }
+    grid-template-rows: repeat(9, calc((100% / 9) - (var(--gap) * (9 - 1)))); }
   .gtca-xl {
     grid-template-columns: auto; }
   .gtra-xl {
@@ -74568,10 +74569,10 @@ a {
     grid-row-end: span 13; }
   .gtc10-xl {
     --gap: 2rem;
-    grid-template-columns: repeat(10, calc((100% - var(--gap) * (10 - 1)) / 10)); }
+    grid-template-columns: repeat(10, calc((100% / 10) - (var(--gap) * (10 - 1)))); }
   .gtr10-xl {
     --gap: 2rem;
-    grid-template-rows: repeat(10, calc((100% - var(--gap) * (10 - 1)) / 10)); }
+    grid-template-rows: repeat(10, calc((100% / 10) - (var(--gap) * (10 - 1)))); }
   .gtca-xl {
     grid-template-columns: auto; }
   .gtra-xl {
@@ -74602,10 +74603,10 @@ a {
     grid-row-end: span 13; }
   .gtc11-xl {
     --gap: 2rem;
-    grid-template-columns: repeat(11, calc((100% - var(--gap) * (11 - 1)) / 11)); }
+    grid-template-columns: repeat(11, calc((100% / 11) - (var(--gap) * (11 - 1)))); }
   .gtr11-xl {
     --gap: 2rem;
-    grid-template-rows: repeat(11, calc((100% - var(--gap) * (11 - 1)) / 11)); }
+    grid-template-rows: repeat(11, calc((100% / 11) - (var(--gap) * (11 - 1)))); }
   .gtca-xl {
     grid-template-columns: auto; }
   .gtra-xl {
@@ -74636,10 +74637,10 @@ a {
     grid-row-end: span 13; }
   .gtc12-xl {
     --gap: 2rem;
-    grid-template-columns: repeat(12, calc((100% - var(--gap) * (12 - 1)) / 12)); }
+    grid-template-columns: repeat(12, calc((100% / 12) - (var(--gap) * (12 - 1)))); }
   .gtr12-xl {
     --gap: 2rem;
-    grid-template-rows: repeat(12, calc((100% - var(--gap) * (12 - 1)) / 12)); }
+    grid-template-rows: repeat(12, calc((100% / 12) - (var(--gap) * (12 - 1)))); }
   .gtca-xl {
     grid-template-columns: auto; }
   .gtra-xl {
@@ -75229,12 +75230,122 @@ a {
   --color-disable:#7abdec;
   --color-button-text: #ffffff;
   --color-button-disable-text:#f3f3f3;
+  --border-form:#dbdbdb;
+  --fill-form:#fafafa;
+  --color-white:#fff;
   --blue-color:var(--color);
   --blue-color-alt:var(--color-alt);
   --blue-color-disable:var(--color-disable);
   --round-width: 32px;
   --round-height: 32px; }
 
+.input {
+  border: 1px solid var(--border-form);
+  margin: 1rem 0; }
+
+.input-box {
+  height: auto;
+  width: 100%;
+  display: block;
+  border: 1px solid var(--border-form); }
+
+[class*="input-"] {
+  outline: none;
+  margin: 1rem 0;
+  color: #919191;
+  padding: .7rem;
+  font-size: 1rem; }
+
+/* Change the white to any color ;) */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 30px #fafafa inset !important; }
+
+/*Change text in autofill textbox*/
+input:-webkit-autofill {
+  -webkit-text-fill-color: #919191 !important; }
+  input:-webkit-autofill::selection {
+    -webkit-text-fill-color: var(--color-white) !important; }
+
+input[type=color] {
+  min-width: 3rem;
+  margin: 1rem 0;
+  min-height: 1.5rem; }
+
+::-webkit-file-upload-button, input[type="reset" i] {
+  background: var(--color);
+  color: var(--color-button-text);
+  border: 0.0625rem solid var(--color);
+  font-size: var(--normal-font-size);
+  padding: 0.5rem 1rem; }
+
+/*checkbox*/
+.label-checkbox {
+  display: flex; }
+
+input[type="checkbox"] {
+  position: relative;
+  width: .975em;
+  height: .975em;
+  color: #363839;
+  border: 1px solid var(--border-form);
+  appearance: none;
+  outline: 0;
+  cursor: pointer;
+  transition: background 175ms cubic-bezier(0.1, 0.1, 0.25, 1); }
+  input[type="checkbox"]::before {
+    position: absolute;
+    content: '';
+    display: block;
+    top: 1.2px;
+    left: 3.6px;
+    width: 4px;
+    height: 7px;
+    border-style: solid;
+    border-color: var(--color-white);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0; }
+  input[type="checkbox"]:checked {
+    color: var(--color-white);
+    border-color: var(--color);
+    background: var(--color); }
+    input[type="checkbox"]:checked::before {
+      opacity: 1; }
+    input[type="checkbox"]:checked ~ label::before {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%); }
+
+/*fin checkbox*/
+/*radio*/
+.label-radio span {
+  padding-left: 1rem; }
+
+input[type='radio'] {
+  -webkit-appearance: none;
+  width: 12.5px;
+  height: 12.5px;
+  border-radius: 50%;
+  outline: none;
+  border: 1px solid var(--border-form);
+  margin: 0; }
+
+input[type='radio']:before {
+  content: '';
+  display: block;
+  width: 60%;
+  height: 60%;
+  margin: 20% auto;
+  border-radius: 50%; }
+
+input[type="radio"]:checked:before {
+  background: var(--color); }
+
+input[type="radio"]:checked {
+  border-color: var(--color); }
+
+/*fin radio*/
 .blue-color {
   --color: #1192ee;
   --color-alt: #0e80d1;
