@@ -4,6 +4,8 @@
 	"description": "Conjunto de clases css para crear layouts responsive web y mobile first ",
 	"main": "clickertigrid.scss",
 	"scripts": {
+		"public": "npm publish ",
+		"login":"npm login",
 		"sass": "node-sass -w --importer node_modules/node-sass-package-importer/dist/cli.js -o ./css ./ ",
 		"sass-compressed": "node-sass -w --importer node_modules/node-sass-package-importer/dist/cli.js -o ./css ./ --output-style compressed",
 		"rename": "node -e \"require('fs').rename('css/clickertigrid.css', 'css/clickertigrid.min.css', function(err) { if (err) console.log(err); console.log('CSS file renamed with .min suffix!') })\""
