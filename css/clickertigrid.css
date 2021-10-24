@@ -70403,7 +70403,7 @@ a {
 .g-container {
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 100%;
+  grid-template-rows: auto;
   gap: var(--gap);
   width: calc(100% - 2rem);
   margin-left: 1rem;
@@ -70421,7 +70421,7 @@ a {
 
 .gtr1-s {
   --gap: 2rem;
-  grid-template-rows: repeat(1, calc((100% / 1) - (var(--gap) * (1 - 1)))); }
+  grid-template-rows: repeat(1, calc((100% - (var(--gap) * (1 - 1))) / 1)); }
 
 .gtca-s {
   grid-template-columns: auto; }
@@ -70471,7 +70471,7 @@ a {
 
 .gtr2-s {
   --gap: 2rem;
-  grid-template-rows: repeat(2, calc((100% / 2) - (var(--gap) * (2 - 1)))); }
+  grid-template-rows: repeat(2, calc((100% - (var(--gap) * (2 - 1))) / 2)); }
 
 .gtca-s {
   grid-template-columns: auto; }
@@ -70521,7 +70521,7 @@ a {
 
 .gtr3-s {
   --gap: 2rem;
-  grid-template-rows: repeat(3, calc((100% / 3) - (var(--gap) * (3 - 1)))); }
+  grid-template-rows: repeat(3, calc((100% - (var(--gap) * (3 - 1))) / 3)); }
 
 .gtca-s {
   grid-template-columns: auto; }
@@ -70571,7 +70571,7 @@ a {
 
 .gtr4-s {
   --gap: 2rem;
-  grid-template-rows: repeat(4, calc((100% / 4) - (var(--gap) * (4 - 1)))); }
+  grid-template-rows: repeat(4, calc((100% - (var(--gap) * (4 - 1))) / 4)); }
 
 .gtca-s {
   grid-template-columns: auto; }
@@ -70621,7 +70621,7 @@ a {
 
 .gtr5-s {
   --gap: 2rem;
-  grid-template-rows: repeat(5, calc((100% / 5) - (var(--gap) * (5 - 1)))); }
+  grid-template-rows: repeat(5, calc((100% - (var(--gap) * (5 - 1))) / 5)); }
 
 .gtca-s {
   grid-template-columns: auto; }
@@ -70671,7 +70671,7 @@ a {
 
 .gtr6-s {
   --gap: 2rem;
-  grid-template-rows: repeat(6, calc((100% / 6) - (var(--gap) * (6 - 1)))); }
+  grid-template-rows: repeat(6, calc((100% - (var(--gap) * (6 - 1))) / 6)); }
 
 .gtca-s {
   grid-template-columns: auto; }
@@ -70721,7 +70721,7 @@ a {
 
 .gtr7-s {
   --gap: 2rem;
-  grid-template-rows: repeat(7, calc((100% / 7) - (var(--gap) * (7 - 1)))); }
+  grid-template-rows: repeat(7, calc((100% - (var(--gap) * (7 - 1))) / 7)); }
 
 .gtca-s {
   grid-template-columns: auto; }
@@ -70771,7 +70771,7 @@ a {
 
 .gtr8-s {
   --gap: 2rem;
-  grid-template-rows: repeat(8, calc((100% / 8) - (var(--gap) * (8 - 1)))); }
+  grid-template-rows: repeat(8, calc((100% - (var(--gap) * (8 - 1))) / 8)); }
 
 .gtca-s {
   grid-template-columns: auto; }
@@ -70821,7 +70821,7 @@ a {
 
 .gtr9-s {
   --gap: 2rem;
-  grid-template-rows: repeat(9, calc((100% / 9) - (var(--gap) * (9 - 1)))); }
+  grid-template-rows: repeat(9, calc((100% - (var(--gap) * (9 - 1))) / 9)); }
 
 .gtca-s {
   grid-template-columns: auto; }
@@ -70871,7 +70871,7 @@ a {
 
 .gtr10-s {
   --gap: 2rem;
-  grid-template-rows: repeat(10, calc((100% / 10) - (var(--gap) * (10 - 1)))); }
+  grid-template-rows: repeat(10, calc((100% - (var(--gap) * (10 - 1))) / 10)); }
 
 .gtca-s {
   grid-template-columns: auto; }
@@ -70921,7 +70921,7 @@ a {
 
 .gtr11-s {
   --gap: 2rem;
-  grid-template-rows: repeat(11, calc((100% / 11) - (var(--gap) * (11 - 1)))); }
+  grid-template-rows: repeat(11, calc((100% - (var(--gap) * (11 - 1))) / 11)); }
 
 .gtca-s {
   grid-template-columns: auto; }
@@ -70971,7 +70971,7 @@ a {
 
 .gtr12-s {
   --gap: 2rem;
-  grid-template-rows: repeat(12, calc((100% / 12) - (var(--gap) * (12 - 1)))); }
+  grid-template-rows: repeat(12, calc((100% - (var(--gap) * (12 - 1))) / 12)); }
 
 .gtca-s {
   grid-template-columns: auto; }
@@ -71081,7 +71081,7 @@ a {
     grid-template-columns: repeat(1, calc((100% - (var(--gap) * (1 - 1))) / 1)); }
   .gtr1-fold {
     --gap: 2rem;
-    grid-template-rows: repeat(1, calc((100% / 1) - (var(--gap) * (1 - 1)))); }
+    grid-template-rows: repeat(1, calc((100% - (var(--gap) * (1 - 1))) / 1)); }
   .gtca-fold {
     grid-template-columns: auto; }
   .gtra-fold {
@@ -71115,7 +71115,7 @@ a {
     grid-template-columns: repeat(2, calc((100% - (var(--gap) * (2 - 1))) / 2)); }
   .gtr2-fold {
     --gap: 2rem;
-    grid-template-rows: repeat(2, calc((100% / 2) - (var(--gap) * (2 - 1)))); }
+    grid-template-rows: repeat(2, calc((100% - (var(--gap) * (2 - 1))) / 2)); }
   .gtca-fold {
     grid-template-columns: auto; }
   .gtra-fold {
@@ -71149,7 +71149,7 @@ a {
     grid-template-columns: repeat(3, calc((100% - (var(--gap) * (3 - 1))) / 3)); }
   .gtr3-fold {
     --gap: 2rem;
-    grid-template-rows: repeat(3, calc((100% / 3) - (var(--gap) * (3 - 1)))); }
+    grid-template-rows: repeat(3, calc((100% - (var(--gap) * (3 - 1))) / 3)); }
   .gtca-fold {
     grid-template-columns: auto; }
   .gtra-fold {
@@ -71183,7 +71183,7 @@ a {
     grid-template-columns: repeat(4, calc((100% - (var(--gap) * (4 - 1))) / 4)); }
   .gtr4-fold {
     --gap: 2rem;
-    grid-template-rows: repeat(4, calc((100% / 4) - (var(--gap) * (4 - 1)))); }
+    grid-template-rows: repeat(4, calc((100% - (var(--gap) * (4 - 1))) / 4)); }
   .gtca-fold {
     grid-template-columns: auto; }
   .gtra-fold {
@@ -71217,7 +71217,7 @@ a {
     grid-template-columns: repeat(5, calc((100% - (var(--gap) * (5 - 1))) / 5)); }
   .gtr5-fold {
     --gap: 2rem;
-    grid-template-rows: repeat(5, calc((100% / 5) - (var(--gap) * (5 - 1)))); }
+    grid-template-rows: repeat(5, calc((100% - (var(--gap) * (5 - 1))) / 5)); }
   .gtca-fold {
     grid-template-columns: auto; }
   .gtra-fold {
@@ -71251,7 +71251,7 @@ a {
     grid-template-columns: repeat(6, calc((100% - (var(--gap) * (6 - 1))) / 6)); }
   .gtr6-fold {
     --gap: 2rem;
-    grid-template-rows: repeat(6, calc((100% / 6) - (var(--gap) * (6 - 1)))); }
+    grid-template-rows: repeat(6, calc((100% - (var(--gap) * (6 - 1))) / 6)); }
   .gtca-fold {
     grid-template-columns: auto; }
   .gtra-fold {
@@ -71285,7 +71285,7 @@ a {
     grid-template-columns: repeat(7, calc((100% - (var(--gap) * (7 - 1))) / 7)); }
   .gtr7-fold {
     --gap: 2rem;
-    grid-template-rows: repeat(7, calc((100% / 7) - (var(--gap) * (7 - 1)))); }
+    grid-template-rows: repeat(7, calc((100% - (var(--gap) * (7 - 1))) / 7)); }
   .gtca-fold {
     grid-template-columns: auto; }
   .gtra-fold {
@@ -71319,7 +71319,7 @@ a {
     grid-template-columns: repeat(8, calc((100% - (var(--gap) * (8 - 1))) / 8)); }
   .gtr8-fold {
     --gap: 2rem;
-    grid-template-rows: repeat(8, calc((100% / 8) - (var(--gap) * (8 - 1)))); }
+    grid-template-rows: repeat(8, calc((100% - (var(--gap) * (8 - 1))) / 8)); }
   .gtca-fold {
     grid-template-columns: auto; }
   .gtra-fold {
@@ -71353,7 +71353,7 @@ a {
     grid-template-columns: repeat(9, calc((100% - (var(--gap) * (9 - 1))) / 9)); }
   .gtr9-fold {
     --gap: 2rem;
-    grid-template-rows: repeat(9, calc((100% / 9) - (var(--gap) * (9 - 1)))); }
+    grid-template-rows: repeat(9, calc((100% - (var(--gap) * (9 - 1))) / 9)); }
   .gtca-fold {
     grid-template-columns: auto; }
   .gtra-fold {
@@ -71387,7 +71387,7 @@ a {
     grid-template-columns: repeat(10, calc((100% - (var(--gap) * (10 - 1))) / 10)); }
   .gtr10-fold {
     --gap: 2rem;
-    grid-template-rows: repeat(10, calc((100% / 10) - (var(--gap) * (10 - 1)))); }
+    grid-template-rows: repeat(10, calc((100% - (var(--gap) * (10 - 1))) / 10)); }
   .gtca-fold {
     grid-template-columns: auto; }
   .gtra-fold {
@@ -71421,7 +71421,7 @@ a {
     grid-template-columns: repeat(11, calc((100% - (var(--gap) * (11 - 1))) / 11)); }
   .gtr11-fold {
     --gap: 2rem;
-    grid-template-rows: repeat(11, calc((100% / 11) - (var(--gap) * (11 - 1)))); }
+    grid-template-rows: repeat(11, calc((100% - (var(--gap) * (11 - 1))) / 11)); }
   .gtca-fold {
     grid-template-columns: auto; }
   .gtra-fold {
@@ -71455,7 +71455,7 @@ a {
     grid-template-columns: repeat(12, calc((100% - (var(--gap) * (12 - 1))) / 12)); }
   .gtr12-fold {
     --gap: 2rem;
-    grid-template-rows: repeat(12, calc((100% / 12) - (var(--gap) * (12 - 1)))); }
+    grid-template-rows: repeat(12, calc((100% - (var(--gap) * (12 - 1))) / 12)); }
   .gtca-fold {
     grid-template-columns: auto; }
   .gtra-fold {
@@ -71536,7 +71536,7 @@ a {
     grid-template-columns: repeat(1, calc((100% - (var(--gap) * (1 - 1))) / 1)); }
   .gtr1-sm {
     --gap: 2rem;
-    grid-template-rows: repeat(1, calc((100% / 1) - (var(--gap) * (1 - 1)))); }
+    grid-template-rows: repeat(1, calc((100% - (var(--gap) * (1 - 1))) / 1)); }
   .gtca-sm {
     grid-template-columns: auto; }
   .gtra-sm {
@@ -71570,7 +71570,7 @@ a {
     grid-template-columns: repeat(2, calc((100% - (var(--gap) * (2 - 1))) / 2)); }
   .gtr2-sm {
     --gap: 2rem;
-    grid-template-rows: repeat(2, calc((100% / 2) - (var(--gap) * (2 - 1)))); }
+    grid-template-rows: repeat(2, calc((100% - (var(--gap) * (2 - 1))) / 2)); }
   .gtca-sm {
     grid-template-columns: auto; }
   .gtra-sm {
@@ -71604,7 +71604,7 @@ a {
     grid-template-columns: repeat(3, calc((100% - (var(--gap) * (3 - 1))) / 3)); }
   .gtr3-sm {
     --gap: 2rem;
-    grid-template-rows: repeat(3, calc((100% / 3) - (var(--gap) * (3 - 1)))); }
+    grid-template-rows: repeat(3, calc((100% - (var(--gap) * (3 - 1))) / 3)); }
   .gtca-sm {
     grid-template-columns: auto; }
   .gtra-sm {
@@ -71638,7 +71638,7 @@ a {
     grid-template-columns: repeat(4, calc((100% - (var(--gap) * (4 - 1))) / 4)); }
   .gtr4-sm {
     --gap: 2rem;
-    grid-template-rows: repeat(4, calc((100% / 4) - (var(--gap) * (4 - 1)))); }
+    grid-template-rows: repeat(4, calc((100% - (var(--gap) * (4 - 1))) / 4)); }
   .gtca-sm {
     grid-template-columns: auto; }
   .gtra-sm {
@@ -71672,7 +71672,7 @@ a {
     grid-template-columns: repeat(5, calc((100% - (var(--gap) * (5 - 1))) / 5)); }
   .gtr5-sm {
     --gap: 2rem;
-    grid-template-rows: repeat(5, calc((100% / 5) - (var(--gap) * (5 - 1)))); }
+    grid-template-rows: repeat(5, calc((100% - (var(--gap) * (5 - 1))) / 5)); }
   .gtca-sm {
     grid-template-columns: auto; }
   .gtra-sm {
@@ -71706,7 +71706,7 @@ a {
     grid-template-columns: repeat(6, calc((100% - (var(--gap) * (6 - 1))) / 6)); }
   .gtr6-sm {
     --gap: 2rem;
-    grid-template-rows: repeat(6, calc((100% / 6) - (var(--gap) * (6 - 1)))); }
+    grid-template-rows: repeat(6, calc((100% - (var(--gap) * (6 - 1))) / 6)); }
   .gtca-sm {
     grid-template-columns: auto; }
   .gtra-sm {
@@ -71740,7 +71740,7 @@ a {
     grid-template-columns: repeat(7, calc((100% - (var(--gap) * (7 - 1))) / 7)); }
   .gtr7-sm {
     --gap: 2rem;
-    grid-template-rows: repeat(7, calc((100% / 7) - (var(--gap) * (7 - 1)))); }
+    grid-template-rows: repeat(7, calc((100% - (var(--gap) * (7 - 1))) / 7)); }
   .gtca-sm {
     grid-template-columns: auto; }
   .gtra-sm {
@@ -71774,7 +71774,7 @@ a {
     grid-template-columns: repeat(8, calc((100% - (var(--gap) * (8 - 1))) / 8)); }
   .gtr8-sm {
     --gap: 2rem;
-    grid-template-rows: repeat(8, calc((100% / 8) - (var(--gap) * (8 - 1)))); }
+    grid-template-rows: repeat(8, calc((100% - (var(--gap) * (8 - 1))) / 8)); }
   .gtca-sm {
     grid-template-columns: auto; }
   .gtra-sm {
@@ -71808,7 +71808,7 @@ a {
     grid-template-columns: repeat(9, calc((100% - (var(--gap) * (9 - 1))) / 9)); }
   .gtr9-sm {
     --gap: 2rem;
-    grid-template-rows: repeat(9, calc((100% / 9) - (var(--gap) * (9 - 1)))); }
+    grid-template-rows: repeat(9, calc((100% - (var(--gap) * (9 - 1))) / 9)); }
   .gtca-sm {
     grid-template-columns: auto; }
   .gtra-sm {
@@ -71842,7 +71842,7 @@ a {
     grid-template-columns: repeat(10, calc((100% - (var(--gap) * (10 - 1))) / 10)); }
   .gtr10-sm {
     --gap: 2rem;
-    grid-template-rows: repeat(10, calc((100% / 10) - (var(--gap) * (10 - 1)))); }
+    grid-template-rows: repeat(10, calc((100% - (var(--gap) * (10 - 1))) / 10)); }
   .gtca-sm {
     grid-template-columns: auto; }
   .gtra-sm {
@@ -71876,7 +71876,7 @@ a {
     grid-template-columns: repeat(11, calc((100% - (var(--gap) * (11 - 1))) / 11)); }
   .gtr11-sm {
     --gap: 2rem;
-    grid-template-rows: repeat(11, calc((100% / 11) - (var(--gap) * (11 - 1)))); }
+    grid-template-rows: repeat(11, calc((100% - (var(--gap) * (11 - 1))) / 11)); }
   .gtca-sm {
     grid-template-columns: auto; }
   .gtra-sm {
@@ -71910,7 +71910,7 @@ a {
     grid-template-columns: repeat(12, calc((100% - (var(--gap) * (12 - 1))) / 12)); }
   .gtr12-sm {
     --gap: 2rem;
-    grid-template-rows: repeat(12, calc((100% / 12) - (var(--gap) * (12 - 1)))); }
+    grid-template-rows: repeat(12, calc((100% - (var(--gap) * (12 - 1))) / 12)); }
   .gtca-sm {
     grid-template-columns: auto; }
   .gtra-sm {
@@ -71991,7 +71991,7 @@ a {
     grid-template-columns: repeat(1, calc((100% - (var(--gap) * (1 - 1))) / 1)); }
   .gtr1-lm {
     --gap: 2rem;
-    grid-template-rows: repeat(1, calc((100% / 1) - (var(--gap) * (1 - 1)))); }
+    grid-template-rows: repeat(1, calc((100% - (var(--gap) * (1 - 1))) / 1)); }
   .gtca-lm {
     grid-template-columns: auto; }
   .gtra-lm {
@@ -72025,7 +72025,7 @@ a {
     grid-template-columns: repeat(2, calc((100% - (var(--gap) * (2 - 1))) / 2)); }
   .gtr2-lm {
     --gap: 2rem;
-    grid-template-rows: repeat(2, calc((100% / 2) - (var(--gap) * (2 - 1)))); }
+    grid-template-rows: repeat(2, calc((100% - (var(--gap) * (2 - 1))) / 2)); }
   .gtca-lm {
     grid-template-columns: auto; }
   .gtra-lm {
@@ -72059,7 +72059,7 @@ a {
     grid-template-columns: repeat(3, calc((100% - (var(--gap) * (3 - 1))) / 3)); }
   .gtr3-lm {
     --gap: 2rem;
-    grid-template-rows: repeat(3, calc((100% / 3) - (var(--gap) * (3 - 1)))); }
+    grid-template-rows: repeat(3, calc((100% - (var(--gap) * (3 - 1))) / 3)); }
   .gtca-lm {
     grid-template-columns: auto; }
   .gtra-lm {
@@ -72093,7 +72093,7 @@ a {
     grid-template-columns: repeat(4, calc((100% - (var(--gap) * (4 - 1))) / 4)); }
   .gtr4-lm {
     --gap: 2rem;
-    grid-template-rows: repeat(4, calc((100% / 4) - (var(--gap) * (4 - 1)))); }
+    grid-template-rows: repeat(4, calc((100% - (var(--gap) * (4 - 1))) / 4)); }
   .gtca-lm {
     grid-template-columns: auto; }
   .gtra-lm {
@@ -72127,7 +72127,7 @@ a {
     grid-template-columns: repeat(5, calc((100% - (var(--gap) * (5 - 1))) / 5)); }
   .gtr5-lm {
     --gap: 2rem;
-    grid-template-rows: repeat(5, calc((100% / 5) - (var(--gap) * (5 - 1)))); }
+    grid-template-rows: repeat(5, calc((100% - (var(--gap) * (5 - 1))) / 5)); }
   .gtca-lm {
     grid-template-columns: auto; }
   .gtra-lm {
@@ -72161,7 +72161,7 @@ a {
     grid-template-columns: repeat(6, calc((100% - (var(--gap) * (6 - 1))) / 6)); }
   .gtr6-lm {
     --gap: 2rem;
-    grid-template-rows: repeat(6, calc((100% / 6) - (var(--gap) * (6 - 1)))); }
+    grid-template-rows: repeat(6, calc((100% - (var(--gap) * (6 - 1))) / 6)); }
   .gtca-lm {
     grid-template-columns: auto; }
   .gtra-lm {
@@ -72195,7 +72195,7 @@ a {
     grid-template-columns: repeat(7, calc((100% - (var(--gap) * (7 - 1))) / 7)); }
   .gtr7-lm {
     --gap: 2rem;
-    grid-template-rows: repeat(7, calc((100% / 7) - (var(--gap) * (7 - 1)))); }
+    grid-template-rows: repeat(7, calc((100% - (var(--gap) * (7 - 1))) / 7)); }
   .gtca-lm {
     grid-template-columns: auto; }
   .gtra-lm {
@@ -72229,7 +72229,7 @@ a {
     grid-template-columns: repeat(8, calc((100% - (var(--gap) * (8 - 1))) / 8)); }
   .gtr8-lm {
     --gap: 2rem;
-    grid-template-rows: repeat(8, calc((100% / 8) - (var(--gap) * (8 - 1)))); }
+    grid-template-rows: repeat(8, calc((100% - (var(--gap) * (8 - 1))) / 8)); }
   .gtca-lm {
     grid-template-columns: auto; }
   .gtra-lm {
@@ -72263,7 +72263,7 @@ a {
     grid-template-columns: repeat(9, calc((100% - (var(--gap) * (9 - 1))) / 9)); }
   .gtr9-lm {
     --gap: 2rem;
-    grid-template-rows: repeat(9, calc((100% / 9) - (var(--gap) * (9 - 1)))); }
+    grid-template-rows: repeat(9, calc((100% - (var(--gap) * (9 - 1))) / 9)); }
   .gtca-lm {
     grid-template-columns: auto; }
   .gtra-lm {
@@ -72297,7 +72297,7 @@ a {
     grid-template-columns: repeat(10, calc((100% - (var(--gap) * (10 - 1))) / 10)); }
   .gtr10-lm {
     --gap: 2rem;
-    grid-template-rows: repeat(10, calc((100% / 10) - (var(--gap) * (10 - 1)))); }
+    grid-template-rows: repeat(10, calc((100% - (var(--gap) * (10 - 1))) / 10)); }
   .gtca-lm {
     grid-template-columns: auto; }
   .gtra-lm {
@@ -72331,7 +72331,7 @@ a {
     grid-template-columns: repeat(11, calc((100% - (var(--gap) * (11 - 1))) / 11)); }
   .gtr11-lm {
     --gap: 2rem;
-    grid-template-rows: repeat(11, calc((100% / 11) - (var(--gap) * (11 - 1)))); }
+    grid-template-rows: repeat(11, calc((100% - (var(--gap) * (11 - 1))) / 11)); }
   .gtca-lm {
     grid-template-columns: auto; }
   .gtra-lm {
@@ -72365,7 +72365,7 @@ a {
     grid-template-columns: repeat(12, calc((100% - (var(--gap) * (12 - 1))) / 12)); }
   .gtr12-lm {
     --gap: 2rem;
-    grid-template-rows: repeat(12, calc((100% / 12) - (var(--gap) * (12 - 1)))); }
+    grid-template-rows: repeat(12, calc((100% - (var(--gap) * (12 - 1))) / 12)); }
   .gtca-lm {
     grid-template-columns: auto; }
   .gtra-lm {
@@ -72446,7 +72446,7 @@ a {
     grid-template-columns: repeat(1, calc((100% - (var(--gap) * (1 - 1))) / 1)); }
   .gtr1-m {
     --gap: 2rem;
-    grid-template-rows: repeat(1, calc((100% / 1) - (var(--gap) * (1 - 1)))); }
+    grid-template-rows: repeat(1, calc((100% - (var(--gap) * (1 - 1))) / 1)); }
   .gtca-m {
     grid-template-columns: auto; }
   .gtra-m {
@@ -72480,7 +72480,7 @@ a {
     grid-template-columns: repeat(2, calc((100% - (var(--gap) * (2 - 1))) / 2)); }
   .gtr2-m {
     --gap: 2rem;
-    grid-template-rows: repeat(2, calc((100% / 2) - (var(--gap) * (2 - 1)))); }
+    grid-template-rows: repeat(2, calc((100% - (var(--gap) * (2 - 1))) / 2)); }
   .gtca-m {
     grid-template-columns: auto; }
   .gtra-m {
@@ -72514,7 +72514,7 @@ a {
     grid-template-columns: repeat(3, calc((100% - (var(--gap) * (3 - 1))) / 3)); }
   .gtr3-m {
     --gap: 2rem;
-    grid-template-rows: repeat(3, calc((100% / 3) - (var(--gap) * (3 - 1)))); }
+    grid-template-rows: repeat(3, calc((100% - (var(--gap) * (3 - 1))) / 3)); }
   .gtca-m {
     grid-template-columns: auto; }
   .gtra-m {
@@ -72548,7 +72548,7 @@ a {
     grid-template-columns: repeat(4, calc((100% - (var(--gap) * (4 - 1))) / 4)); }
   .gtr4-m {
     --gap: 2rem;
-    grid-template-rows: repeat(4, calc((100% / 4) - (var(--gap) * (4 - 1)))); }
+    grid-template-rows: repeat(4, calc((100% - (var(--gap) * (4 - 1))) / 4)); }
   .gtca-m {
     grid-template-columns: auto; }
   .gtra-m {
@@ -72582,7 +72582,7 @@ a {
     grid-template-columns: repeat(5, calc((100% - (var(--gap) * (5 - 1))) / 5)); }
   .gtr5-m {
     --gap: 2rem;
-    grid-template-rows: repeat(5, calc((100% / 5) - (var(--gap) * (5 - 1)))); }
+    grid-template-rows: repeat(5, calc((100% - (var(--gap) * (5 - 1))) / 5)); }
   .gtca-m {
     grid-template-columns: auto; }
   .gtra-m {
@@ -72616,7 +72616,7 @@ a {
     grid-template-columns: repeat(6, calc((100% - (var(--gap) * (6 - 1))) / 6)); }
   .gtr6-m {
     --gap: 2rem;
-    grid-template-rows: repeat(6, calc((100% / 6) - (var(--gap) * (6 - 1)))); }
+    grid-template-rows: repeat(6, calc((100% - (var(--gap) * (6 - 1))) / 6)); }
   .gtca-m {
     grid-template-columns: auto; }
   .gtra-m {
@@ -72650,7 +72650,7 @@ a {
     grid-template-columns: repeat(7, calc((100% - (var(--gap) * (7 - 1))) / 7)); }
   .gtr7-m {
     --gap: 2rem;
-    grid-template-rows: repeat(7, calc((100% / 7) - (var(--gap) * (7 - 1)))); }
+    grid-template-rows: repeat(7, calc((100% - (var(--gap) * (7 - 1))) / 7)); }
   .gtca-m {
     grid-template-columns: auto; }
   .gtra-m {
@@ -72684,7 +72684,7 @@ a {
     grid-template-columns: repeat(8, calc((100% - (var(--gap) * (8 - 1))) / 8)); }
   .gtr8-m {
     --gap: 2rem;
-    grid-template-rows: repeat(8, calc((100% / 8) - (var(--gap) * (8 - 1)))); }
+    grid-template-rows: repeat(8, calc((100% - (var(--gap) * (8 - 1))) / 8)); }
   .gtca-m {
     grid-template-columns: auto; }
   .gtra-m {
@@ -72718,7 +72718,7 @@ a {
     grid-template-columns: repeat(9, calc((100% - (var(--gap) * (9 - 1))) / 9)); }
   .gtr9-m {
     --gap: 2rem;
-    grid-template-rows: repeat(9, calc((100% / 9) - (var(--gap) * (9 - 1)))); }
+    grid-template-rows: repeat(9, calc((100% - (var(--gap) * (9 - 1))) / 9)); }
   .gtca-m {
     grid-template-columns: auto; }
   .gtra-m {
@@ -72752,7 +72752,7 @@ a {
     grid-template-columns: repeat(10, calc((100% - (var(--gap) * (10 - 1))) / 10)); }
   .gtr10-m {
     --gap: 2rem;
-    grid-template-rows: repeat(10, calc((100% / 10) - (var(--gap) * (10 - 1)))); }
+    grid-template-rows: repeat(10, calc((100% - (var(--gap) * (10 - 1))) / 10)); }
   .gtca-m {
     grid-template-columns: auto; }
   .gtra-m {
@@ -72786,7 +72786,7 @@ a {
     grid-template-columns: repeat(11, calc((100% - (var(--gap) * (11 - 1))) / 11)); }
   .gtr11-m {
     --gap: 2rem;
-    grid-template-rows: repeat(11, calc((100% / 11) - (var(--gap) * (11 - 1)))); }
+    grid-template-rows: repeat(11, calc((100% - (var(--gap) * (11 - 1))) / 11)); }
   .gtca-m {
     grid-template-columns: auto; }
   .gtra-m {
@@ -72820,7 +72820,7 @@ a {
     grid-template-columns: repeat(12, calc((100% - (var(--gap) * (12 - 1))) / 12)); }
   .gtr12-m {
     --gap: 2rem;
-    grid-template-rows: repeat(12, calc((100% / 12) - (var(--gap) * (12 - 1)))); }
+    grid-template-rows: repeat(12, calc((100% - (var(--gap) * (12 - 1))) / 12)); }
   .gtca-m {
     grid-template-columns: auto; }
   .gtra-m {
@@ -72901,7 +72901,7 @@ a {
     grid-template-columns: repeat(1, calc((100% - (var(--gap) * (1 - 1))) / 1)); }
   .gtr1-xm {
     --gap: 2rem;
-    grid-template-rows: repeat(1, calc((100% / 1) - (var(--gap) * (1 - 1)))); }
+    grid-template-rows: repeat(1, calc((100% - (var(--gap) * (1 - 1))) / 1)); }
   .gtca-xm {
     grid-template-columns: auto; }
   .gtra-xm {
@@ -72935,7 +72935,7 @@ a {
     grid-template-columns: repeat(2, calc((100% - (var(--gap) * (2 - 1))) / 2)); }
   .gtr2-xm {
     --gap: 2rem;
-    grid-template-rows: repeat(2, calc((100% / 2) - (var(--gap) * (2 - 1)))); }
+    grid-template-rows: repeat(2, calc((100% - (var(--gap) * (2 - 1))) / 2)); }
   .gtca-xm {
     grid-template-columns: auto; }
   .gtra-xm {
@@ -72969,7 +72969,7 @@ a {
     grid-template-columns: repeat(3, calc((100% - (var(--gap) * (3 - 1))) / 3)); }
   .gtr3-xm {
     --gap: 2rem;
-    grid-template-rows: repeat(3, calc((100% / 3) - (var(--gap) * (3 - 1)))); }
+    grid-template-rows: repeat(3, calc((100% - (var(--gap) * (3 - 1))) / 3)); }
   .gtca-xm {
     grid-template-columns: auto; }
   .gtra-xm {
@@ -73003,7 +73003,7 @@ a {
     grid-template-columns: repeat(4, calc((100% - (var(--gap) * (4 - 1))) / 4)); }
   .gtr4-xm {
     --gap: 2rem;
-    grid-template-rows: repeat(4, calc((100% / 4) - (var(--gap) * (4 - 1)))); }
+    grid-template-rows: repeat(4, calc((100% - (var(--gap) * (4 - 1))) / 4)); }
   .gtca-xm {
     grid-template-columns: auto; }
   .gtra-xm {
@@ -73037,7 +73037,7 @@ a {
     grid-template-columns: repeat(5, calc((100% - (var(--gap) * (5 - 1))) / 5)); }
   .gtr5-xm {
     --gap: 2rem;
-    grid-template-rows: repeat(5, calc((100% / 5) - (var(--gap) * (5 - 1)))); }
+    grid-template-rows: repeat(5, calc((100% - (var(--gap) * (5 - 1))) / 5)); }
   .gtca-xm {
     grid-template-columns: auto; }
   .gtra-xm {
@@ -73071,7 +73071,7 @@ a {
     grid-template-columns: repeat(6, calc((100% - (var(--gap) * (6 - 1))) / 6)); }
   .gtr6-xm {
     --gap: 2rem;
-    grid-template-rows: repeat(6, calc((100% / 6) - (var(--gap) * (6 - 1)))); }
+    grid-template-rows: repeat(6, calc((100% - (var(--gap) * (6 - 1))) / 6)); }
   .gtca-xm {
     grid-template-columns: auto; }
   .gtra-xm {
@@ -73105,7 +73105,7 @@ a {
     grid-template-columns: repeat(7, calc((100% - (var(--gap) * (7 - 1))) / 7)); }
   .gtr7-xm {
     --gap: 2rem;
-    grid-template-rows: repeat(7, calc((100% / 7) - (var(--gap) * (7 - 1)))); }
+    grid-template-rows: repeat(7, calc((100% - (var(--gap) * (7 - 1))) / 7)); }
   .gtca-xm {
     grid-template-columns: auto; }
   .gtra-xm {
@@ -73139,7 +73139,7 @@ a {
     grid-template-columns: repeat(8, calc((100% - (var(--gap) * (8 - 1))) / 8)); }
   .gtr8-xm {
     --gap: 2rem;
-    grid-template-rows: repeat(8, calc((100% / 8) - (var(--gap) * (8 - 1)))); }
+    grid-template-rows: repeat(8, calc((100% - (var(--gap) * (8 - 1))) / 8)); }
   .gtca-xm {
     grid-template-columns: auto; }
   .gtra-xm {
@@ -73173,7 +73173,7 @@ a {
     grid-template-columns: repeat(9, calc((100% - (var(--gap) * (9 - 1))) / 9)); }
   .gtr9-xm {
     --gap: 2rem;
-    grid-template-rows: repeat(9, calc((100% / 9) - (var(--gap) * (9 - 1)))); }
+    grid-template-rows: repeat(9, calc((100% - (var(--gap) * (9 - 1))) / 9)); }
   .gtca-xm {
     grid-template-columns: auto; }
   .gtra-xm {
@@ -73207,7 +73207,7 @@ a {
     grid-template-columns: repeat(10, calc((100% - (var(--gap) * (10 - 1))) / 10)); }
   .gtr10-xm {
     --gap: 2rem;
-    grid-template-rows: repeat(10, calc((100% / 10) - (var(--gap) * (10 - 1)))); }
+    grid-template-rows: repeat(10, calc((100% - (var(--gap) * (10 - 1))) / 10)); }
   .gtca-xm {
     grid-template-columns: auto; }
   .gtra-xm {
@@ -73241,7 +73241,7 @@ a {
     grid-template-columns: repeat(11, calc((100% - (var(--gap) * (11 - 1))) / 11)); }
   .gtr11-xm {
     --gap: 2rem;
-    grid-template-rows: repeat(11, calc((100% / 11) - (var(--gap) * (11 - 1)))); }
+    grid-template-rows: repeat(11, calc((100% - (var(--gap) * (11 - 1))) / 11)); }
   .gtca-xm {
     grid-template-columns: auto; }
   .gtra-xm {
@@ -73275,7 +73275,7 @@ a {
     grid-template-columns: repeat(12, calc((100% - (var(--gap) * (12 - 1))) / 12)); }
   .gtr12-xm {
     --gap: 2rem;
-    grid-template-rows: repeat(12, calc((100% / 12) - (var(--gap) * (12 - 1)))); }
+    grid-template-rows: repeat(12, calc((100% - (var(--gap) * (12 - 1))) / 12)); }
   .gtca-xm {
     grid-template-columns: auto; }
   .gtra-xm {
@@ -73356,7 +73356,7 @@ a {
     grid-template-columns: repeat(1, calc((100% - (var(--gap) * (1 - 1))) / 1)); }
   .gtr1-ipad {
     --gap: 2rem;
-    grid-template-rows: repeat(1, calc((100% / 1) - (var(--gap) * (1 - 1)))); }
+    grid-template-rows: repeat(1, calc((100% - (var(--gap) * (1 - 1))) / 1)); }
   .gtca-ipad {
     grid-template-columns: auto; }
   .gtra-ipad {
@@ -73390,7 +73390,7 @@ a {
     grid-template-columns: repeat(2, calc((100% - (var(--gap) * (2 - 1))) / 2)); }
   .gtr2-ipad {
     --gap: 2rem;
-    grid-template-rows: repeat(2, calc((100% / 2) - (var(--gap) * (2 - 1)))); }
+    grid-template-rows: repeat(2, calc((100% - (var(--gap) * (2 - 1))) / 2)); }
   .gtca-ipad {
     grid-template-columns: auto; }
   .gtra-ipad {
@@ -73424,7 +73424,7 @@ a {
     grid-template-columns: repeat(3, calc((100% - (var(--gap) * (3 - 1))) / 3)); }
   .gtr3-ipad {
     --gap: 2rem;
-    grid-template-rows: repeat(3, calc((100% / 3) - (var(--gap) * (3 - 1)))); }
+    grid-template-rows: repeat(3, calc((100% - (var(--gap) * (3 - 1))) / 3)); }
   .gtca-ipad {
     grid-template-columns: auto; }
   .gtra-ipad {
@@ -73458,7 +73458,7 @@ a {
     grid-template-columns: repeat(4, calc((100% - (var(--gap) * (4 - 1))) / 4)); }
   .gtr4-ipad {
     --gap: 2rem;
-    grid-template-rows: repeat(4, calc((100% / 4) - (var(--gap) * (4 - 1)))); }
+    grid-template-rows: repeat(4, calc((100% - (var(--gap) * (4 - 1))) / 4)); }
   .gtca-ipad {
     grid-template-columns: auto; }
   .gtra-ipad {
@@ -73492,7 +73492,7 @@ a {
     grid-template-columns: repeat(5, calc((100% - (var(--gap) * (5 - 1))) / 5)); }
   .gtr5-ipad {
     --gap: 2rem;
-    grid-template-rows: repeat(5, calc((100% / 5) - (var(--gap) * (5 - 1)))); }
+    grid-template-rows: repeat(5, calc((100% - (var(--gap) * (5 - 1))) / 5)); }
   .gtca-ipad {
     grid-template-columns: auto; }
   .gtra-ipad {
@@ -73526,7 +73526,7 @@ a {
     grid-template-columns: repeat(6, calc((100% - (var(--gap) * (6 - 1))) / 6)); }
   .gtr6-ipad {
     --gap: 2rem;
-    grid-template-rows: repeat(6, calc((100% / 6) - (var(--gap) * (6 - 1)))); }
+    grid-template-rows: repeat(6, calc((100% - (var(--gap) * (6 - 1))) / 6)); }
   .gtca-ipad {
     grid-template-columns: auto; }
   .gtra-ipad {
@@ -73560,7 +73560,7 @@ a {
     grid-template-columns: repeat(7, calc((100% - (var(--gap) * (7 - 1))) / 7)); }
   .gtr7-ipad {
     --gap: 2rem;
-    grid-template-rows: repeat(7, calc((100% / 7) - (var(--gap) * (7 - 1)))); }
+    grid-template-rows: repeat(7, calc((100% - (var(--gap) * (7 - 1))) / 7)); }
   .gtca-ipad {
     grid-template-columns: auto; }
   .gtra-ipad {
@@ -73594,7 +73594,7 @@ a {
     grid-template-columns: repeat(8, calc((100% - (var(--gap) * (8 - 1))) / 8)); }
   .gtr8-ipad {
     --gap: 2rem;
-    grid-template-rows: repeat(8, calc((100% / 8) - (var(--gap) * (8 - 1)))); }
+    grid-template-rows: repeat(8, calc((100% - (var(--gap) * (8 - 1))) / 8)); }
   .gtca-ipad {
     grid-template-columns: auto; }
   .gtra-ipad {
@@ -73628,7 +73628,7 @@ a {
     grid-template-columns: repeat(9, calc((100% - (var(--gap) * (9 - 1))) / 9)); }
   .gtr9-ipad {
     --gap: 2rem;
-    grid-template-rows: repeat(9, calc((100% / 9) - (var(--gap) * (9 - 1)))); }
+    grid-template-rows: repeat(9, calc((100% - (var(--gap) * (9 - 1))) / 9)); }
   .gtca-ipad {
     grid-template-columns: auto; }
   .gtra-ipad {
@@ -73662,7 +73662,7 @@ a {
     grid-template-columns: repeat(10, calc((100% - (var(--gap) * (10 - 1))) / 10)); }
   .gtr10-ipad {
     --gap: 2rem;
-    grid-template-rows: repeat(10, calc((100% / 10) - (var(--gap) * (10 - 1)))); }
+    grid-template-rows: repeat(10, calc((100% - (var(--gap) * (10 - 1))) / 10)); }
   .gtca-ipad {
     grid-template-columns: auto; }
   .gtra-ipad {
@@ -73696,7 +73696,7 @@ a {
     grid-template-columns: repeat(11, calc((100% - (var(--gap) * (11 - 1))) / 11)); }
   .gtr11-ipad {
     --gap: 2rem;
-    grid-template-rows: repeat(11, calc((100% / 11) - (var(--gap) * (11 - 1)))); }
+    grid-template-rows: repeat(11, calc((100% - (var(--gap) * (11 - 1))) / 11)); }
   .gtca-ipad {
     grid-template-columns: auto; }
   .gtra-ipad {
@@ -73730,7 +73730,7 @@ a {
     grid-template-columns: repeat(12, calc((100% - (var(--gap) * (12 - 1))) / 12)); }
   .gtr12-ipad {
     --gap: 2rem;
-    grid-template-rows: repeat(12, calc((100% / 12) - (var(--gap) * (12 - 1)))); }
+    grid-template-rows: repeat(12, calc((100% - (var(--gap) * (12 - 1))) / 12)); }
   .gtca-ipad {
     grid-template-columns: auto; }
   .gtra-ipad {
@@ -73811,7 +73811,7 @@ a {
     grid-template-columns: repeat(1, calc((100% - (var(--gap) * (1 - 1))) / 1)); }
   .gtr1-lg {
     --gap: 2rem;
-    grid-template-rows: repeat(1, calc((100% / 1) - (var(--gap) * (1 - 1)))); }
+    grid-template-rows: repeat(1, calc((100% - (var(--gap) * (1 - 1))) / 1)); }
   .gtca-lg {
     grid-template-columns: auto; }
   .gtra-lg {
@@ -73845,7 +73845,7 @@ a {
     grid-template-columns: repeat(2, calc((100% - (var(--gap) * (2 - 1))) / 2)); }
   .gtr2-lg {
     --gap: 2rem;
-    grid-template-rows: repeat(2, calc((100% / 2) - (var(--gap) * (2 - 1)))); }
+    grid-template-rows: repeat(2, calc((100% - (var(--gap) * (2 - 1))) / 2)); }
   .gtca-lg {
     grid-template-columns: auto; }
   .gtra-lg {
@@ -73879,7 +73879,7 @@ a {
     grid-template-columns: repeat(3, calc((100% - (var(--gap) * (3 - 1))) / 3)); }
   .gtr3-lg {
     --gap: 2rem;
-    grid-template-rows: repeat(3, calc((100% / 3) - (var(--gap) * (3 - 1)))); }
+    grid-template-rows: repeat(3, calc((100% - (var(--gap) * (3 - 1))) / 3)); }
   .gtca-lg {
     grid-template-columns: auto; }
   .gtra-lg {
@@ -73913,7 +73913,7 @@ a {
     grid-template-columns: repeat(4, calc((100% - (var(--gap) * (4 - 1))) / 4)); }
   .gtr4-lg {
     --gap: 2rem;
-    grid-template-rows: repeat(4, calc((100% / 4) - (var(--gap) * (4 - 1)))); }
+    grid-template-rows: repeat(4, calc((100% - (var(--gap) * (4 - 1))) / 4)); }
   .gtca-lg {
     grid-template-columns: auto; }
   .gtra-lg {
@@ -73947,7 +73947,7 @@ a {
     grid-template-columns: repeat(5, calc((100% - (var(--gap) * (5 - 1))) / 5)); }
   .gtr5-lg {
     --gap: 2rem;
-    grid-template-rows: repeat(5, calc((100% / 5) - (var(--gap) * (5 - 1)))); }
+    grid-template-rows: repeat(5, calc((100% - (var(--gap) * (5 - 1))) / 5)); }
   .gtca-lg {
     grid-template-columns: auto; }
   .gtra-lg {
@@ -73981,7 +73981,7 @@ a {
     grid-template-columns: repeat(6, calc((100% - (var(--gap) * (6 - 1))) / 6)); }
   .gtr6-lg {
     --gap: 2rem;
-    grid-template-rows: repeat(6, calc((100% / 6) - (var(--gap) * (6 - 1)))); }
+    grid-template-rows: repeat(6, calc((100% - (var(--gap) * (6 - 1))) / 6)); }
   .gtca-lg {
     grid-template-columns: auto; }
   .gtra-lg {
@@ -74015,7 +74015,7 @@ a {
     grid-template-columns: repeat(7, calc((100% - (var(--gap) * (7 - 1))) / 7)); }
   .gtr7-lg {
     --gap: 2rem;
-    grid-template-rows: repeat(7, calc((100% / 7) - (var(--gap) * (7 - 1)))); }
+    grid-template-rows: repeat(7, calc((100% - (var(--gap) * (7 - 1))) / 7)); }
   .gtca-lg {
     grid-template-columns: auto; }
   .gtra-lg {
@@ -74049,7 +74049,7 @@ a {
     grid-template-columns: repeat(8, calc((100% - (var(--gap) * (8 - 1))) / 8)); }
   .gtr8-lg {
     --gap: 2rem;
-    grid-template-rows: repeat(8, calc((100% / 8) - (var(--gap) * (8 - 1)))); }
+    grid-template-rows: repeat(8, calc((100% - (var(--gap) * (8 - 1))) / 8)); }
   .gtca-lg {
     grid-template-columns: auto; }
   .gtra-lg {
@@ -74083,7 +74083,7 @@ a {
     grid-template-columns: repeat(9, calc((100% - (var(--gap) * (9 - 1))) / 9)); }
   .gtr9-lg {
     --gap: 2rem;
-    grid-template-rows: repeat(9, calc((100% / 9) - (var(--gap) * (9 - 1)))); }
+    grid-template-rows: repeat(9, calc((100% - (var(--gap) * (9 - 1))) / 9)); }
   .gtca-lg {
     grid-template-columns: auto; }
   .gtra-lg {
@@ -74117,7 +74117,7 @@ a {
     grid-template-columns: repeat(10, calc((100% - (var(--gap) * (10 - 1))) / 10)); }
   .gtr10-lg {
     --gap: 2rem;
-    grid-template-rows: repeat(10, calc((100% / 10) - (var(--gap) * (10 - 1)))); }
+    grid-template-rows: repeat(10, calc((100% - (var(--gap) * (10 - 1))) / 10)); }
   .gtca-lg {
     grid-template-columns: auto; }
   .gtra-lg {
@@ -74151,7 +74151,7 @@ a {
     grid-template-columns: repeat(11, calc((100% - (var(--gap) * (11 - 1))) / 11)); }
   .gtr11-lg {
     --gap: 2rem;
-    grid-template-rows: repeat(11, calc((100% / 11) - (var(--gap) * (11 - 1)))); }
+    grid-template-rows: repeat(11, calc((100% - (var(--gap) * (11 - 1))) / 11)); }
   .gtca-lg {
     grid-template-columns: auto; }
   .gtra-lg {
@@ -74185,7 +74185,7 @@ a {
     grid-template-columns: repeat(12, calc((100% - (var(--gap) * (12 - 1))) / 12)); }
   .gtr12-lg {
     --gap: 2rem;
-    grid-template-rows: repeat(12, calc((100% / 12) - (var(--gap) * (12 - 1)))); }
+    grid-template-rows: repeat(12, calc((100% - (var(--gap) * (12 - 1))) / 12)); }
   .gtca-lg {
     grid-template-columns: auto; }
   .gtra-lg {
@@ -74266,7 +74266,7 @@ a {
     grid-template-columns: repeat(1, calc((100% - (var(--gap) * (1 - 1))) / 1)); }
   .gtr1-xl {
     --gap: 2rem;
-    grid-template-rows: repeat(1, calc((100% / 1) - (var(--gap) * (1 - 1)))); }
+    grid-template-rows: repeat(1, calc((100% - (var(--gap) * (1 - 1))) / 1)); }
   .gtca-xl {
     grid-template-columns: auto; }
   .gtra-xl {
@@ -74300,7 +74300,7 @@ a {
     grid-template-columns: repeat(2, calc((100% - (var(--gap) * (2 - 1))) / 2)); }
   .gtr2-xl {
     --gap: 2rem;
-    grid-template-rows: repeat(2, calc((100% / 2) - (var(--gap) * (2 - 1)))); }
+    grid-template-rows: repeat(2, calc((100% - (var(--gap) * (2 - 1))) / 2)); }
   .gtca-xl {
     grid-template-columns: auto; }
   .gtra-xl {
@@ -74334,7 +74334,7 @@ a {
     grid-template-columns: repeat(3, calc((100% - (var(--gap) * (3 - 1))) / 3)); }
   .gtr3-xl {
     --gap: 2rem;
-    grid-template-rows: repeat(3, calc((100% / 3) - (var(--gap) * (3 - 1)))); }
+    grid-template-rows: repeat(3, calc((100% - (var(--gap) * (3 - 1))) / 3)); }
   .gtca-xl {
     grid-template-columns: auto; }
   .gtra-xl {
@@ -74368,7 +74368,7 @@ a {
     grid-template-columns: repeat(4, calc((100% - (var(--gap) * (4 - 1))) / 4)); }
   .gtr4-xl {
     --gap: 2rem;
-    grid-template-rows: repeat(4, calc((100% / 4) - (var(--gap) * (4 - 1)))); }
+    grid-template-rows: repeat(4, calc((100% - (var(--gap) * (4 - 1))) / 4)); }
   .gtca-xl {
     grid-template-columns: auto; }
   .gtra-xl {
@@ -74402,7 +74402,7 @@ a {
     grid-template-columns: repeat(5, calc((100% - (var(--gap) * (5 - 1))) / 5)); }
   .gtr5-xl {
     --gap: 2rem;
-    grid-template-rows: repeat(5, calc((100% / 5) - (var(--gap) * (5 - 1)))); }
+    grid-template-rows: repeat(5, calc((100% - (var(--gap) * (5 - 1))) / 5)); }
   .gtca-xl {
     grid-template-columns: auto; }
   .gtra-xl {
@@ -74436,7 +74436,7 @@ a {
     grid-template-columns: repeat(6, calc((100% - (var(--gap) * (6 - 1))) / 6)); }
   .gtr6-xl {
     --gap: 2rem;
-    grid-template-rows: repeat(6, calc((100% / 6) - (var(--gap) * (6 - 1)))); }
+    grid-template-rows: repeat(6, calc((100% - (var(--gap) * (6 - 1))) / 6)); }
   .gtca-xl {
     grid-template-columns: auto; }
   .gtra-xl {
@@ -74470,7 +74470,7 @@ a {
     grid-template-columns: repeat(7, calc((100% - (var(--gap) * (7 - 1))) / 7)); }
   .gtr7-xl {
     --gap: 2rem;
-    grid-template-rows: repeat(7, calc((100% / 7) - (var(--gap) * (7 - 1)))); }
+    grid-template-rows: repeat(7, calc((100% - (var(--gap) * (7 - 1))) / 7)); }
   .gtca-xl {
     grid-template-columns: auto; }
   .gtra-xl {
@@ -74504,7 +74504,7 @@ a {
     grid-template-columns: repeat(8, calc((100% - (var(--gap) * (8 - 1))) / 8)); }
   .gtr8-xl {
     --gap: 2rem;
-    grid-template-rows: repeat(8, calc((100% / 8) - (var(--gap) * (8 - 1)))); }
+    grid-template-rows: repeat(8, calc((100% - (var(--gap) * (8 - 1))) / 8)); }
   .gtca-xl {
     grid-template-columns: auto; }
   .gtra-xl {
@@ -74538,7 +74538,7 @@ a {
     grid-template-columns: repeat(9, calc((100% - (var(--gap) * (9 - 1))) / 9)); }
   .gtr9-xl {
     --gap: 2rem;
-    grid-template-rows: repeat(9, calc((100% / 9) - (var(--gap) * (9 - 1)))); }
+    grid-template-rows: repeat(9, calc((100% - (var(--gap) * (9 - 1))) / 9)); }
   .gtca-xl {
     grid-template-columns: auto; }
   .gtra-xl {
@@ -74572,7 +74572,7 @@ a {
     grid-template-columns: repeat(10, calc((100% - (var(--gap) * (10 - 1))) / 10)); }
   .gtr10-xl {
     --gap: 2rem;
-    grid-template-rows: repeat(10, calc((100% / 10) - (var(--gap) * (10 - 1)))); }
+    grid-template-rows: repeat(10, calc((100% - (var(--gap) * (10 - 1))) / 10)); }
   .gtca-xl {
     grid-template-columns: auto; }
   .gtra-xl {
@@ -74606,7 +74606,7 @@ a {
     grid-template-columns: repeat(11, calc((100% - (var(--gap) * (11 - 1))) / 11)); }
   .gtr11-xl {
     --gap: 2rem;
-    grid-template-rows: repeat(11, calc((100% / 11) - (var(--gap) * (11 - 1)))); }
+    grid-template-rows: repeat(11, calc((100% - (var(--gap) * (11 - 1))) / 11)); }
   .gtca-xl {
     grid-template-columns: auto; }
   .gtra-xl {
@@ -74640,7 +74640,7 @@ a {
     grid-template-columns: repeat(12, calc((100% - (var(--gap) * (12 - 1))) / 12)); }
   .gtr12-xl {
     --gap: 2rem;
-    grid-template-rows: repeat(12, calc((100% / 12) - (var(--gap) * (12 - 1)))); }
+    grid-template-rows: repeat(12, calc((100% - (var(--gap) * (12 - 1))) / 12)); }
   .gtca-xl {
     grid-template-columns: auto; }
   .gtra-xl {
