@@ -22,7 +22,7 @@
 				--gap: 2rem;
 				grid-template-columns: repeat(
 					#{$i},
-					calc((100% / #{$i}) - (var(--gap) * (#{$i} - 1)))
+					calc((100% - (var(--gap) * (#{$i} - 1))) / #{$i})
 				);
 			}
 			.gtr#{$i}-#{$size} {
