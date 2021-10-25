@@ -59,9 +59,9 @@ input[type=color]{
 }
 
 ::-webkit-file-upload-button, input[type="reset" i]  {
-    background: var(--color);
+    background: var(--color-button);
     color: var(--color-button-text);
-    border: 0.0625rem solid var(--color);
+    border: 0.0625rem solid var(--color-button);
     font-size: var(--normal-font-size);
     padding: 0.5rem 1rem;
     }
@@ -106,8 +106,8 @@ input[type="checkbox"] {
   }
   &:checked{
     color: var(--color-white);
-    border-color: var(--color);
-    background: var(--color);
+    border-color: var(--color-button);
+    background: var(--color-button);
     &::before {
       opacity: 1;
     }
@@ -139,12 +139,12 @@ input[type='radio'] {
     }
 
  input[type="radio"]:checked:before {
-        background: var(--color);
+        background: var(--color-button);
         
     }
     
     input[type="radio"]:checked {
-      border-color:var(--color);
+      border-color:var(--color-button);
     }
 
     /*fin radio*/

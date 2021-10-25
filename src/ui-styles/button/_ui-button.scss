@@ -12,14 +12,14 @@
 	transition: -webkit-transform 0.05s;
 	transition: transform 0.05s;
 	transition: transform 0.05s, -webkit-transform 0.05s;
-	border: toRem(1px) solid var(--color);
+	border: toRem(1px) solid var(--color-button);
 	text-align: center;
 	user-select: none;
-	background: var(--color);
+	background: var(--color-button);
 	&:hover {
 		text-decoration: none;
 		@include from(lg) {
-			background: var(--color-alt);
+			background: var(--color-button-alt);
 			color: var(--color-button-text);
 		}
 	}
@@ -30,8 +30,8 @@
 
 	&:disabled,
 	&[disabled] {
-		background: var(--color-disable);
-		border: solid var(--color-disable) toRem(1px);
+		background: var(--color-button-disable);
+		border: solid var(--color-button-disable) toRem(1px);
 		color: var(--color-button-disable-text);
 		cursor: default;
 		pointer-events: none;
@@ -39,27 +39,27 @@
 }
 
 .disabled {
-	background: var(--color-disable);
+	background: var(--color-button-disable);
 }
 
 //Clases base boton ghost
 .ghost {
-	border: solid var(--color) toRem(1px);
-	color: var(--color);
+	border: solid var(--color-button) toRem(1px);
+	color: var(--color-button);
 	background: none;
 
 	&:disabled,
 	[class*="ghost"]:disabled,
 	&[disabled] {
 		background: none;
-		border: solid var(--color-disable) toRem(1px);
-		color: var(--color-disable);
+		border: solid var(--color-button-disable) toRem(1px);
+		color: var(--color-button-disable);
 	}
 }
 
 .disabled {
-	background: var(--color-disable);
-	border: solid var(--color-disable) toRem(1px);
+	background: var(--color-button-disable);
+	border: solid var(--color-button-disable) toRem(1px);
 	color: var(--color-button-disable-text);
 	cursor: default;
 	pointer-events: none;
@@ -67,7 +67,7 @@
 
 [class*="ghost"][class*="disabled"] {
 	background: none;
-	color: var(--color-disable);
+	color: var(--color-button-disable);
 }
 
 .b-full {

@@ -1,13 +1,13 @@
 :root {
-    --color: rgb(17, 146, 238);
-    --color-alt:#0e80d1;
-    --color-disable:#7abdec;
+    --color-button: rgb(17, 146, 238);
+    --color-button-alt:#0e80d1;
+    --color-button-disable:#7abdec;
     --color-button-text: #ffffff;
     --color-button-disable-text:#f3f3f3;
     --color-white:#fff;
-    --blue-color:var(--color);
-    --blue-color-alt:var(--color-alt);
-    --blue-color-disable:var(--color-disable);
+    --blue-button-color:var(--color-button);
+    --blue-button-color-alt:var(--color-button-alt);
+    --blue-button-color-disable:var(--color-button-disable);
     --round-width: 32px;
     --round-height: 32px;
 }
