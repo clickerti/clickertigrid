@@ -43,35 +43,43 @@
 	--color-button: #eff3f5;
 	--color-button-alt: #f7f7f7;
 	--color-button-disable: #f8f9fa;
-	--color-button-button-text: #6d6c6c;
+	--color-button-text: #6d6c6c;
 }
-
 
 // Clases para el color del border
 .blue-form-color {
 	--border-form: #1192ee;
+	border-color: var(--border-form);
 }
 .green-form-color {
 	--border-form: #28a745;
+	border-color: var(--border-form);
 }
 .red-form-color {
 	--border-form: #dc3545;
+	border-color: var(--border-form);
 }
 .celeste-form-color {
 	--border-form: #4fc2f3;
+	border-color: var(--border-form);
 }
 .orange-form-color {
 	--border-form: #ffc107;
+	border-color: var(--border-form);
 }
 .dark-form-color {
 	--border-form: #343a40;
+	border-color: var(--border-form);
 }
 .sea-form-color {
 	--border-form: #30c6ab;
+	border-color: var(--border-form);
 }
 .text-form-color {
 	--border-form: #6c757d;
+	border-color: var(--border-form);
 }
 .light-form-color {
 	--border-form: #eff3f5;
+	border-color: var(--border-form);
 }
