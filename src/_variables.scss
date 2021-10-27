@@ -3,12 +3,51 @@ $max-width: 1200px !default;
 $l-unit: 0.5rem !default;
 $gap: $l-unit * 4 !default; // 2rem
 
+//Variables para bordes
 :root {
 	--border-size: 1px;
 	--solid-style: solid;
 	--dotted-style: dotted;
 	--dashed-style: dashed;
 	--double-style: double;
-    --border-style: var(--solid-style);
+	--border-style: var(--solid-style);
+	--border-color: #000000;
+
+	--blue-border-color: #1192ee;
+	--green-border-color: #28a745;
+	--red-border-color: #dc3545;
+	--celeste-border-color: #4fc2f3;
+	--orange-border-color: #ffc107;
+	--dark-border-color: #343a40;
+	--sea-border-color: #30c6ab;
+	--text-border-color: #6c757d;
+	--light-border-color: #eff3f5;
+	--gray-border-color: #dddddd;
+}
+
+:root {
 	--gap: 1rem;
+}
+
+:root {
+	--color-button: rgb(17, 146, 238);
+	--color-button-alt: #0e80d1;
+	--color-button-disable: #7abdec;
+	--color-button-text: #ffffff;
+	--color-button-disable-text: #f3f3f3;
+	--color-white: #fff;
+	--blue-button-color: var(--color-button);
+	--blue-button-color-alt: var(--color-button-alt);
+	--blue-button-color-disable: var(--color-button-disable);
+	--round-width: 32px;
+	--round-height: 32px;
+}
+
+:root {
+	--border-form: #dbdbdb;
+	--text-form: #919191;
+	--label-text-form: #363839;
+	--fill-form: #fafafa;
+	--background-inside-form: #fafafa;
+	--placeholder-form: #bebebe;
 }

@@ -1,13 +1,5 @@
 // CSS variables for typography
 :root {
-	--color-font: #343a40;
-	--selection-color: #ee4f27;
-
-	// Font families
-	// --heading-font: "Sulphur Point", sans-serif;
-	--heading-font: "Poppins", sans-serif;
-	--body-font: "Open Sans", sans-serif;
-
 	// Font sizes
 	--bigger-font-size: #{toRem(28px)};
 	--h1-font-size: #{toRem(24px)};
