@@ -55,6 +55,10 @@
 		}
 	}
 
+	input[type="button"] {
+		@extend .button;
+	}
+
 	input[type="color"] {
 		min-width: 3rem;
 		margin: 1rem 0;
@@ -150,5 +154,5 @@
 		border-color: var(--color-button);
 	}
 
-	/*fin radio*/
+	/*fin iradio*/
 }

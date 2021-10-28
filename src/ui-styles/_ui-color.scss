@@ -34,7 +34,7 @@
 	--color-button-alt: #2bac94;
 	--color-button-disable: #a9d6ce;
 }
-.text-button-color {
+.gray-button-color {
 	--color-button: #6c757d;
 	--color-button-alt: #5d646b;
 	--color-button-disable: #5b6369;
@@ -43,6 +43,12 @@
 	--color-button: #eff3f5;
 	--color-button-alt: #f7f7f7;
 	--color-button-disable: #f8f9fa;
+	--color-button-text: #6d6c6c;
+}
+.softgray-button-color {
+	--color-button: #ddd;
+	--color-button-alt: #b6b3b3;
+	--color-button-disable: #fafafa;
 	--color-button-text: #6d6c6c;
 }
 
@@ -75,11 +81,15 @@
 	--border-form: #30c6ab;
 	border-color: var(--border-form);
 }
-.text-form-color {
+.gray-form-color {
 	--border-form: #6c757d;
 	border-color: var(--border-form);
 }
 .light-form-color {
-	--border-form: #eff3f5;
+	--border-form: #eaeff1;
+	border-color: var(--border-form);
+}
+.softgray-form-color {
+	--border-form: #ddd;
 	border-color: var(--border-form);
 }
