@@ -197,14 +197,14 @@ h6,
 // Default text styles
 body {
 	@include normal;
-	color: var(--color-font);
+	color: var(--text-color-default);
 	font-family: var(--body-font);
 }
 
 // classes for font-family
 .body-font {
 	font-family: var(--body-font);
-	color: var(--color-font);
+	color: var(--text-color-default);
 }
 
 .heading-font {
@@ -239,7 +239,7 @@ blockquote {
 // Links
 // Menu links doesn't have underline
 a {
-	color: var(--color-font);
+	color: var(--text-color-default);
 
 	main & {
 		text-decoration: none;
@@ -256,54 +256,54 @@ a {
 }
 
 .blue-font-color {
-	--color-font: #1192ee;
-	color: var(--color-font);
+	--text-color-default: #1192ee;
+	color: var(--text-color-default);
 }
 .green-font-color {
-	--color-font: #28a745;
-	color: var(--color-font);
+	--text-color-default: #28a745;
+	color: var(--text-color-default);
 }
 .red-font-color {
-	--color-font: #dc3545;
-	color: var(--color-font);
+	--text-color-default: #dc3545;
+	color: var(--text-color-default);
 }
 .celeste-font-color {
-	--color-font: #4fc2f3;
-	color: var(--color-font);
+	--text-color-default: #4fc2f3;
+	color: var(--text-color-default);
 }
 .orange-font-color {
-	--color-font: #ffc107;
-	color: var(--color-font);
+	--text-color-default: #ffc107;
+	color: var(--text-color-default);
 }
 .dark-font-color {
-	--color-font: #343a40;
-	color: var(--color-font);
+	--text-color-default: #343a40;
+	color: var(--text-color-default);
 }
 .sea-font-color {
-	--color-font: #30c6ab;
-	color: var(--color-font);
+	--text-color-default: #30c6ab;
+	color: var(--text-color-default);
 }
 .gray-font-color {
-	--color-font: #6c757d;
-	color: var(--color-font);
+	--text-color-default: #6c757d;
+	color: var(--text-color-default);
 }
 .light-font-color {
-	--color-font: #eff3f5;
-	color: var(--color-font);
+	--text-color-default: #eff3f5;
+	color: var(--text-color-default);
 }
 
-@for $i from 1 through 9 {
-	.weight#{$i * 100} {
-		font-weight: $i * 100;
-	}
-}
+// @for $i from 1 through 9 {
+// 	.weight#{$i * 100} {
+// 		font-weight: $i * 100;
+// 	}
+// }
 
-@each $size in $sizes {
-	@for $i from 1 through 9 {
-		@include from($size) {
-			.weight#{$i * 100}-#{$size} {
-				font-weight: $i * 100;
-			}
-		}
-	}
-}
+// @each $size in $sizes {
+// 	@for $i from 1 through 9 {
+// 		@include from($size) {
+// 			.weight#{$i * 100}-#{$size} {
+// 				font-weight: $i * 100;
+// 			}
+// 		}
+// 	}
+// }

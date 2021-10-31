@@ -3,51 +3,65 @@ $max-width: 1200px !default;
 $l-unit: 0.5rem !default;
 $gap: $l-unit * 4 !default; // 2rem
 
-//Variables para bordes
+// color default del tema
 :root {
-	--border-size: 1px;
-	--solid-style: solid;
-	--dotted-style: dotted;
-	--dashed-style: dashed;
-	--double-style: double;
-	--border-style: var(--solid-style);
-	--border-color: #000000;
+		//Paleta de colores
+	$first-color: #279bee;
+	--first-color: $first-color;
+	--second-color: #ee4f27;
+	--third-color: #28a745;
+	--four-color: #eeeeee;
 
-	--blue-border-color: #1192ee;
-	--green-border-color: #28a745;
-	--red-border-color: #dc3545;
-	--celeste-border-color: #4fc2f3;
-	--orange-border-color: #ffc107;
-	--dark-border-color: #343a40;
-	--sea-border-color: #30c6ab;
-	--text-border-color: #6c757d;
-	--light-border-color: #eff3f5;
-	--gray-border-color: #dddddd;
-}
+	//Color de texto default
+	--text-color-default: #575e66;
 
-:root {
-	--gap: 1rem;
-}
+	--color-white: #ffffff;
 
-:root {
-	--color-button: rgb(17, 146, 238);
-	--color-button-alt: #0e80d1;
-	--color-button-disable: #7abdec;
-	--color-button-text: #ffffff;
-	--color-button-disable-text: #f3f3f3;
-	--color-white: #fff;
-	--blue-button-color: var(--color-button);
-	--blue-button-color-alt: var(--color-button-alt);
-	--blue-button-color-disable: var(--color-button-disable);
+	//Custom Colores Botones default
+	$color-button-default: $first-color;
+	--color-button-default: #{$color-button-default};
+	--color-button-alt-default: #{darken($color-button-default, 5%)};
+	--color-button-text-default: #ffffff;
+	--color-button-disable-default: #{lighten($color-button-default, 20%)};
+	--color-button-disable-text-default: #ffffff;
+	--color-button: var(--color-button-default);
+	--color-button-alt: var(--color-button-alt-default);
+	--color-button-disable: var(--color-button-disable-default);
+	--color-button-text: var(--color-button-text-default);
+	--color-button-disable-text: var(--color-button-disable-text-default);
 	--round-width: 32px;
 	--round-height: 32px;
 }
 
+//Variables para bordes
 :root {
-	--border-form: #dbdbdb;
-	--text-form: #919191;
-	--label-text-form: #363839;
-	--fill-form: #fafafa;
-	--background-inside-form: #fafafa;
-	--placeholder-form: #bebebe;
+	--border-color-default: #ddd;
+	--border-color: var(--border-color-default);
+	--solid-style: solid;
+	--dotted-style: dotted;
+	--dashed-style: dashed;
+	--double-style: double;
+	--border-style-default: var(--solid-style);
+	--border-style: var(--border-style-default);
+	--border-size-default: 1px;
+	--border-size: var(--border-size-default);
+}
+
+//Espacio entre cajas en display grid
+:root {
+	--gap-default: 1rem;
+	--gap: var(--gap-default);
+}
+
+:root {
+	--border-form-color-default: #dbdbdb;
+	--border-form-color: var(--border-form-color-default);
+	--text-form-color-default: #919191;
+	--text-form-color: var(--text-form-color-default);
+	--label-text-form-color-default: #363839;
+	--label-text-form-color: var(--label-text-form-color-default);
+	--background-inside-form-color-default: #fafafa;
+	--background-inside-form-color: var(--background-inside-form-color-default);
+	--placeholder-form-color-default: #bebebe;
+	--placeholder-form-color: var(--placeholder-form-color-default);
 }
