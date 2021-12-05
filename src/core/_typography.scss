@@ -22,7 +22,9 @@
 		--small-font-size: #{toRem(14px)};
 		--smaller-font-size: #{toRem(13px)};
 		--supersmall-font-size: #{toRem(12px)};
+
 	}
+	--selection-color: var(--second-color);
 }
 
 // Font sizes

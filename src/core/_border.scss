@@ -78,6 +78,9 @@
 .border-bottom {
 	border-bottom: var(--border-size) var(--border-style) var(--border-color);
 }
+.border-null{
+	border: none;
+}
 
 @each $size in $sizes {
 	@include from($size) {
