@@ -5,6 +5,12 @@
 			.w#{$i}px-#{$size} {
 				width: #{$i}px;
 			}
+			.maxw#{$i}px-#{$size} {
+				max-width: #{$i}px;
+			}
+			.minw#{$i}px-#{$size} {
+				min-width: #{$i}px;
+			}
 		}
 	}
 	// @include to($size) {
@@ -23,6 +29,12 @@
 			// Recorre el mapa de selectores
 			.h#{$i}px-#{$size} {
 				height: #{$i}px;
+			}
+			.maxh#{$i}px-#{$size} {
+				max-height: #{$i}px;
+			}
+			.minh#{$i}px-#{$size} {
+				min-height: #{$i}px;
 			}
 		}
 	}
@@ -44,6 +56,12 @@
 			.w#{$i}-#{$size} {
 				width: #{$i * 1%};
 			}
+			.maxw#{$i}-#{$size} {
+				max-width: #{$i * 1%};
+			}
+			.minw#{$i}-#{$size} {
+				min-width: #{$i * 1%};
+			}
 		}
 	}
 	// @include to($size) {
@@ -64,6 +82,12 @@
 			.h#{$i}-#{$size} {
 				height: #{$i * 1%};
 			}
+			.maxh#{$i}-#{$size} {
+				max-height: #{$i * 1%};
+			}
+			.minh#{$i}-#{$size} {
+				min-height: #{$i * 1%};
+			}
 		}
 	}
 	// @include to($size) {
@@ -80,6 +104,12 @@
 		@for $i from 1 through 100 {
 			.w#{$i}vw-#{$size} {
 				width: #{$i}vw;
+			}
+			.maxw#{$i}vw-#{$size} {
+				max-width: #{$i}vw;
+			}
+			.minw#{$i}vw-#{$size} {
+				min-width: #{$i}vw;
 			}
 		}
 	}
@@ -100,6 +130,12 @@
 			.h#{$i}vh-#{$size} {
 				height: #{$i}vh;
 			}
+			.maxh#{$i}vh-#{$size} {
+				max-height: #{$i}vh;
+			}
+			.minh#{$i}vh-#{$size} {
+				min-height: #{$i}vh;
+			}
 		}
 	}
 	// @include to($size) {
@@ -118,11 +154,23 @@
 	.h#{$i} {
 		height: #{$i * 1%};
 	}
+	.maxh#{$i} {
+		max-height: #{$i * 1%};
+	}
+	.minh#{$i} {
+		min-height: #{$i * 1%};
+	}
 }
 @for $i from 1 through 500 {
 	// Recorre el mapa de selectores
 	.h#{$i}px {
 		height: #{$i}px;
+	}
+	.maxh#{$i}px {
+		max-height: #{$i}px;
+	}
+	.minh#{$i}px {
+		min-height: #{$i}px;
 	}
 }
 @for $i from 1 through 100 {
@@ -130,10 +178,22 @@
 	.w#{$i} {
 		width: #{$i * 1%};
 	}
+	.maxw#{$i} {
+		max-width: #{$i * 1%};
+	}
+	.minw#{$i} {
+		min-width: #{$i * 1%};
+	}
 }
 @for $i from 1 through 500 {
 	.w#{$i}px {
 		width: #{$i}px;
+	}
+	.maxw#{$i}px {
+		max-width: #{$i}px;
+	}
+	.minw#{$i}px {
+		min-width: #{$i}px;
 	}
 }
 @for $i from 1 through 100 {
@@ -141,9 +201,21 @@
 	.h#{$i}vh {
 		height: #{$i}vh;
 	}
+	.maxh#{$i}vh {
+		max-height: #{$i}vh;
+	}
+	.minh#{$i}vh {
+		min-height: #{$i}vh;
+	}
 }
 @for $i from 1 through 100 {
 	.w#{$i}vw {
 		width: #{$i}vw;
+	}
+	.maxw#{$i}vw {
+		max-width: #{$i}vw;
+	}
+	.minw#{$i}vw {
+		min-width: #{$i}vw;
 	}
 }
