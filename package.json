@@ -1,6 +1,6 @@
 {
 	"name": "clickertigrid",
-	"version": "2.2.7",
+	"version": "2.2.8",
 	"description": "Conjunto de clases css para crear layouts responsive web y mobile first ",
 	"main": "clickertigrid.scss",
 	"scripts": {
