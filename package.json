@@ -1,14 +1,14 @@
 {
 	"name": "clickertigrid",
-	"version": "2.2.8",
+	"version": "2.2.14",
 	"description": "Conjunto de clases css para crear layouts responsive web y mobile first ",
 	"main": "clickertigrid.scss",
 	"scripts": {
 		"public": "npm publish ",
 		"login": "npm login",
-		"sass": "node-sass -w --importer node_modules/node-sass-package-importer/dist/cli.js -o ./css/css/clickertigrid.css ./ ",
-		"sass-compressed": "node-sass -w --importer node_modules/node-sass-package-importer/dist/cli.js -o ./css/min/clickertigrid.min.css ./ --output-style compressed",
-		"rename": "node -e \"require('fs').rename('css/clickertigrid.css', 'css/clickertigrid.min.css', function(err) { if (err) console.log(err); console.log('CSS file renamed with .min suffix!') })\""
+		"sass": "node-sass -w --importer node_modules/node-sass-package-importer/dist/cli.js -o ./css/ ./ ",
+		"sass-compressed": "node-sass -w --importer node_modules/node-sass-package-importer/dist/cli.js -o ./css/min/ ./ --output-style compressed",
+		"rename": "node -e \"require('fs').rename('css/min/clickertigrid.css', 'css/min/clickertigrid.min.css', function(err) { if (err) console.log(err); console.log('CSS file renamed with .min suffix!') })\""
 	},
 	"author": "Clickerti Tech Consulting",
 	"keywords": [
@@ -32,7 +32,7 @@
 		"url": "git+https://github.com/clickerti/clickertigrid"
 	},
 	"dependencies": {
-		"node-sass": "^6.0.1",
-		"node-sass-package-importer": "^5.2.0"
+		"node-sass": "^9.0.0",
+		"node-sass-package-importer": "^5.3.3"
 	}
 }

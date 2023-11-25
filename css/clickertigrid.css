@@ -1,3 +1,45 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 *,
 *:before,
 *:after {
@@ -13,7 +55,10 @@ img {
 a {
   text-decoration: none; }
   a:hover {
-    text-decoration: underline; }
+    text-decoration: none; }
+
+:root {
+  --max-width: $max-width; }
 
 :root {
   --first-color: $first-color;
@@ -63,6 +108,9 @@ a {
   --placeholder-form-color-default: #bebebe;
   --placeholder-form-color: var(--placeholder-form-color-default); }
 
+.full {
+  max-width: 100% !important; }
+
 .f-container {
   display: flex;
   flex-wrap: wrap;
@@ -73,11 +121,8 @@ a {
 
 .f-item {
   margin: 0;
-  padding-left: 1rem;
-  padding-right: 1rem; }
-
-.full {
-  max-width: 100%; }
+  padding-left: calc($gap / 2);
+  padding-right: calc($gap / 2); }
 
 .fww-s {
   flex-wrap: wrap; }
@@ -160,7 +205,7 @@ a {
   width: calc(100% - 2rem);
   margin-left: 1rem;
   margin-right: 1rem;
-  max-width: 1200px; }
+  max-width: var(--max-width); }
   @media screen and (min-width: 1200px) {
     .g-container {
       width: 100%;
@@ -205,18 +250,6 @@ a {
 .grss1-s {
   grid-row-start: span 1; }
 
-.gce13-s {
-  grid-column-end: 13; }
-
-.gces13-s {
-  grid-column-end: span 13; }
-
-.gre13-s {
-  grid-row-end: 13; }
-
-.gres13-s {
-  grid-row-end: span 13; }
-
 .gtc2-s {
   --gap: 2rem;
   grid-template-columns: repeat(2, calc((100% - (var(--gap) * (2 - 1))) / 2)); }
@@ -254,18 +287,6 @@ a {
 
 .grss2-s {
   grid-row-start: span 2; }
-
-.gce13-s {
-  grid-column-end: 13; }
-
-.gces13-s {
-  grid-column-end: span 13; }
-
-.gre13-s {
-  grid-row-end: 13; }
-
-.gres13-s {
-  grid-row-end: span 13; }
 
 .gtc3-s {
   --gap: 2rem;
@@ -305,18 +326,6 @@ a {
 .grss3-s {
   grid-row-start: span 3; }
 
-.gce13-s {
-  grid-column-end: 13; }
-
-.gces13-s {
-  grid-column-end: span 13; }
-
-.gre13-s {
-  grid-row-end: 13; }
-
-.gres13-s {
-  grid-row-end: span 13; }
-
 .gtc4-s {
   --gap: 2rem;
   grid-template-columns: repeat(4, calc((100% - (var(--gap) * (4 - 1))) / 4)); }
@@ -354,18 +363,6 @@ a {
 
 .grss4-s {
   grid-row-start: span 4; }
-
-.gce13-s {
-  grid-column-end: 13; }
-
-.gces13-s {
-  grid-column-end: span 13; }
-
-.gre13-s {
-  grid-row-end: 13; }
-
-.gres13-s {
-  grid-row-end: span 13; }
 
 .gtc5-s {
   --gap: 2rem;
@@ -405,18 +402,6 @@ a {
 .grss5-s {
   grid-row-start: span 5; }
 
-.gce13-s {
-  grid-column-end: 13; }
-
-.gces13-s {
-  grid-column-end: span 13; }
-
-.gre13-s {
-  grid-row-end: 13; }
-
-.gres13-s {
-  grid-row-end: span 13; }
-
 .gtc6-s {
   --gap: 2rem;
   grid-template-columns: repeat(6, calc((100% - (var(--gap) * (6 - 1))) / 6)); }
@@ -454,18 +439,6 @@ a {
 
 .grss6-s {
   grid-row-start: span 6; }
-
-.gce13-s {
-  grid-column-end: 13; }
-
-.gces13-s {
-  grid-column-end: span 13; }
-
-.gre13-s {
-  grid-row-end: 13; }
-
-.gres13-s {
-  grid-row-end: span 13; }
 
 .gtc7-s {
   --gap: 2rem;
@@ -505,18 +478,6 @@ a {
 .grss7-s {
   grid-row-start: span 7; }
 
-.gce13-s {
-  grid-column-end: 13; }
-
-.gces13-s {
-  grid-column-end: span 13; }
-
-.gre13-s {
-  grid-row-end: 13; }
-
-.gres13-s {
-  grid-row-end: span 13; }
-
 .gtc8-s {
   --gap: 2rem;
   grid-template-columns: repeat(8, calc((100% - (var(--gap) * (8 - 1))) / 8)); }
@@ -554,18 +515,6 @@ a {
 
 .grss8-s {
   grid-row-start: span 8; }
-
-.gce13-s {
-  grid-column-end: 13; }
-
-.gces13-s {
-  grid-column-end: span 13; }
-
-.gre13-s {
-  grid-row-end: 13; }
-
-.gres13-s {
-  grid-row-end: span 13; }
 
 .gtc9-s {
   --gap: 2rem;
@@ -605,18 +554,6 @@ a {
 .grss9-s {
   grid-row-start: span 9; }
 
-.gce13-s {
-  grid-column-end: 13; }
-
-.gces13-s {
-  grid-column-end: span 13; }
-
-.gre13-s {
-  grid-row-end: 13; }
-
-.gres13-s {
-  grid-row-end: span 13; }
-
 .gtc10-s {
   --gap: 2rem;
   grid-template-columns: repeat(10, calc((100% - (var(--gap) * (10 - 1))) / 10)); }
@@ -655,18 +592,6 @@ a {
 .grss10-s {
   grid-row-start: span 10; }
 
-.gce13-s {
-  grid-column-end: 13; }
-
-.gces13-s {
-  grid-column-end: span 13; }
-
-.gre13-s {
-  grid-row-end: 13; }
-
-.gres13-s {
-  grid-row-end: span 13; }
-
 .gtc11-s {
   --gap: 2rem;
   grid-template-columns: repeat(11, calc((100% - (var(--gap) * (11 - 1))) / 11)); }
@@ -704,18 +629,6 @@ a {
 
 .grss11-s {
   grid-row-start: span 11; }
-
-.gce13-s {
-  grid-column-end: 13; }
-
-.gces13-s {
-  grid-column-end: span 13; }
-
-.gre13-s {
-  grid-row-end: 13; }
-
-.gres13-s {
-  grid-row-end: span 13; }
 
 .gtc12-s {
   --gap: 2rem;
@@ -854,14 +767,6 @@ a {
     grid-row-end: span 1; }
   .grss1-fold {
     grid-row-start: span 1; }
-  .gce13-fold {
-    grid-column-end: 13; }
-  .gces13-fold {
-    grid-column-end: span 13; }
-  .gre13-fold {
-    grid-row-end: 13; }
-  .gres13-fold {
-    grid-row-end: span 13; }
   .gtc2-fold {
     --gap: 2rem;
     grid-template-columns: repeat(2, calc((100% - (var(--gap) * (2 - 1))) / 2)); }
@@ -888,14 +793,6 @@ a {
     grid-row-end: span 2; }
   .grss2-fold {
     grid-row-start: span 2; }
-  .gce13-fold {
-    grid-column-end: 13; }
-  .gces13-fold {
-    grid-column-end: span 13; }
-  .gre13-fold {
-    grid-row-end: 13; }
-  .gres13-fold {
-    grid-row-end: span 13; }
   .gtc3-fold {
     --gap: 2rem;
     grid-template-columns: repeat(3, calc((100% - (var(--gap) * (3 - 1))) / 3)); }
@@ -922,14 +819,6 @@ a {
     grid-row-end: span 3; }
   .grss3-fold {
     grid-row-start: span 3; }
-  .gce13-fold {
-    grid-column-end: 13; }
-  .gces13-fold {
-    grid-column-end: span 13; }
-  .gre13-fold {
-    grid-row-end: 13; }
-  .gres13-fold {
-    grid-row-end: span 13; }
   .gtc4-fold {
     --gap: 2rem;
     grid-template-columns: repeat(4, calc((100% - (var(--gap) * (4 - 1))) / 4)); }
@@ -956,14 +845,6 @@ a {
     grid-row-end: span 4; }
   .grss4-fold {
     grid-row-start: span 4; }
-  .gce13-fold {
-    grid-column-end: 13; }
-  .gces13-fold {
-    grid-column-end: span 13; }
-  .gre13-fold {
-    grid-row-end: 13; }
-  .gres13-fold {
-    grid-row-end: span 13; }
   .gtc5-fold {
     --gap: 2rem;
     grid-template-columns: repeat(5, calc((100% - (var(--gap) * (5 - 1))) / 5)); }
@@ -990,14 +871,6 @@ a {
     grid-row-end: span 5; }
   .grss5-fold {
     grid-row-start: span 5; }
-  .gce13-fold {
-    grid-column-end: 13; }
-  .gces13-fold {
-    grid-column-end: span 13; }
-  .gre13-fold {
-    grid-row-end: 13; }
-  .gres13-fold {
-    grid-row-end: span 13; }
   .gtc6-fold {
     --gap: 2rem;
     grid-template-columns: repeat(6, calc((100% - (var(--gap) * (6 - 1))) / 6)); }
@@ -1024,14 +897,6 @@ a {
     grid-row-end: span 6; }
   .grss6-fold {
     grid-row-start: span 6; }
-  .gce13-fold {
-    grid-column-end: 13; }
-  .gces13-fold {
-    grid-column-end: span 13; }
-  .gre13-fold {
-    grid-row-end: 13; }
-  .gres13-fold {
-    grid-row-end: span 13; }
   .gtc7-fold {
     --gap: 2rem;
     grid-template-columns: repeat(7, calc((100% - (var(--gap) * (7 - 1))) / 7)); }
@@ -1058,14 +923,6 @@ a {
     grid-row-end: span 7; }
   .grss7-fold {
     grid-row-start: span 7; }
-  .gce13-fold {
-    grid-column-end: 13; }
-  .gces13-fold {
-    grid-column-end: span 13; }
-  .gre13-fold {
-    grid-row-end: 13; }
-  .gres13-fold {
-    grid-row-end: span 13; }
   .gtc8-fold {
     --gap: 2rem;
     grid-template-columns: repeat(8, calc((100% - (var(--gap) * (8 - 1))) / 8)); }
@@ -1092,14 +949,6 @@ a {
     grid-row-end: span 8; }
   .grss8-fold {
     grid-row-start: span 8; }
-  .gce13-fold {
-    grid-column-end: 13; }
-  .gces13-fold {
-    grid-column-end: span 13; }
-  .gre13-fold {
-    grid-row-end: 13; }
-  .gres13-fold {
-    grid-row-end: span 13; }
   .gtc9-fold {
     --gap: 2rem;
     grid-template-columns: repeat(9, calc((100% - (var(--gap) * (9 - 1))) / 9)); }
@@ -1126,14 +975,6 @@ a {
     grid-row-end: span 9; }
   .grss9-fold {
     grid-row-start: span 9; }
-  .gce13-fold {
-    grid-column-end: 13; }
-  .gces13-fold {
-    grid-column-end: span 13; }
-  .gre13-fold {
-    grid-row-end: 13; }
-  .gres13-fold {
-    grid-row-end: span 13; }
   .gtc10-fold {
     --gap: 2rem;
     grid-template-columns: repeat(10, calc((100% - (var(--gap) * (10 - 1))) / 10)); }
@@ -1160,14 +1001,6 @@ a {
     grid-row-end: span 10; }
   .grss10-fold {
     grid-row-start: span 10; }
-  .gce13-fold {
-    grid-column-end: 13; }
-  .gces13-fold {
-    grid-column-end: span 13; }
-  .gre13-fold {
-    grid-row-end: 13; }
-  .gres13-fold {
-    grid-row-end: span 13; }
   .gtc11-fold {
     --gap: 2rem;
     grid-template-columns: repeat(11, calc((100% - (var(--gap) * (11 - 1))) / 11)); }
@@ -1194,14 +1027,6 @@ a {
     grid-row-end: span 11; }
   .grss11-fold {
     grid-row-start: span 11; }
-  .gce13-fold {
-    grid-column-end: 13; }
-  .gces13-fold {
-    grid-column-end: span 13; }
-  .gre13-fold {
-    grid-row-end: 13; }
-  .gres13-fold {
-    grid-row-end: span 13; }
   .gtc12-fold {
     --gap: 2rem;
     grid-template-columns: repeat(12, calc((100% - (var(--gap) * (12 - 1))) / 12)); }
@@ -1309,14 +1134,6 @@ a {
     grid-row-end: span 1; }
   .grss1-sm {
     grid-row-start: span 1; }
-  .gce13-sm {
-    grid-column-end: 13; }
-  .gces13-sm {
-    grid-column-end: span 13; }
-  .gre13-sm {
-    grid-row-end: 13; }
-  .gres13-sm {
-    grid-row-end: span 13; }
   .gtc2-sm {
     --gap: 2rem;
     grid-template-columns: repeat(2, calc((100% - (var(--gap) * (2 - 1))) / 2)); }
@@ -1343,14 +1160,6 @@ a {
     grid-row-end: span 2; }
   .grss2-sm {
     grid-row-start: span 2; }
-  .gce13-sm {
-    grid-column-end: 13; }
-  .gces13-sm {
-    grid-column-end: span 13; }
-  .gre13-sm {
-    grid-row-end: 13; }
-  .gres13-sm {
-    grid-row-end: span 13; }
   .gtc3-sm {
     --gap: 2rem;
     grid-template-columns: repeat(3, calc((100% - (var(--gap) * (3 - 1))) / 3)); }
@@ -1377,14 +1186,6 @@ a {
     grid-row-end: span 3; }
   .grss3-sm {
     grid-row-start: span 3; }
-  .gce13-sm {
-    grid-column-end: 13; }
-  .gces13-sm {
-    grid-column-end: span 13; }
-  .gre13-sm {
-    grid-row-end: 13; }
-  .gres13-sm {
-    grid-row-end: span 13; }
   .gtc4-sm {
     --gap: 2rem;
     grid-template-columns: repeat(4, calc((100% - (var(--gap) * (4 - 1))) / 4)); }
@@ -1411,14 +1212,6 @@ a {
     grid-row-end: span 4; }
   .grss4-sm {
     grid-row-start: span 4; }
-  .gce13-sm {
-    grid-column-end: 13; }
-  .gces13-sm {
-    grid-column-end: span 13; }
-  .gre13-sm {
-    grid-row-end: 13; }
-  .gres13-sm {
-    grid-row-end: span 13; }
   .gtc5-sm {
     --gap: 2rem;
     grid-template-columns: repeat(5, calc((100% - (var(--gap) * (5 - 1))) / 5)); }
@@ -1445,14 +1238,6 @@ a {
     grid-row-end: span 5; }
   .grss5-sm {
     grid-row-start: span 5; }
-  .gce13-sm {
-    grid-column-end: 13; }
-  .gces13-sm {
-    grid-column-end: span 13; }
-  .gre13-sm {
-    grid-row-end: 13; }
-  .gres13-sm {
-    grid-row-end: span 13; }
   .gtc6-sm {
     --gap: 2rem;
     grid-template-columns: repeat(6, calc((100% - (var(--gap) * (6 - 1))) / 6)); }
@@ -1479,14 +1264,6 @@ a {
     grid-row-end: span 6; }
   .grss6-sm {
     grid-row-start: span 6; }
-  .gce13-sm {
-    grid-column-end: 13; }
-  .gces13-sm {
-    grid-column-end: span 13; }
-  .gre13-sm {
-    grid-row-end: 13; }
-  .gres13-sm {
-    grid-row-end: span 13; }
   .gtc7-sm {
     --gap: 2rem;
     grid-template-columns: repeat(7, calc((100% - (var(--gap) * (7 - 1))) / 7)); }
@@ -1513,14 +1290,6 @@ a {
     grid-row-end: span 7; }
   .grss7-sm {
     grid-row-start: span 7; }
-  .gce13-sm {
-    grid-column-end: 13; }
-  .gces13-sm {
-    grid-column-end: span 13; }
-  .gre13-sm {
-    grid-row-end: 13; }
-  .gres13-sm {
-    grid-row-end: span 13; }
   .gtc8-sm {
     --gap: 2rem;
     grid-template-columns: repeat(8, calc((100% - (var(--gap) * (8 - 1))) / 8)); }
@@ -1547,14 +1316,6 @@ a {
     grid-row-end: span 8; }
   .grss8-sm {
     grid-row-start: span 8; }
-  .gce13-sm {
-    grid-column-end: 13; }
-  .gces13-sm {
-    grid-column-end: span 13; }
-  .gre13-sm {
-    grid-row-end: 13; }
-  .gres13-sm {
-    grid-row-end: span 13; }
   .gtc9-sm {
     --gap: 2rem;
     grid-template-columns: repeat(9, calc((100% - (var(--gap) * (9 - 1))) / 9)); }
@@ -1581,14 +1342,6 @@ a {
     grid-row-end: span 9; }
   .grss9-sm {
     grid-row-start: span 9; }
-  .gce13-sm {
-    grid-column-end: 13; }
-  .gces13-sm {
-    grid-column-end: span 13; }
-  .gre13-sm {
-    grid-row-end: 13; }
-  .gres13-sm {
-    grid-row-end: span 13; }
   .gtc10-sm {
     --gap: 2rem;
     grid-template-columns: repeat(10, calc((100% - (var(--gap) * (10 - 1))) / 10)); }
@@ -1615,14 +1368,6 @@ a {
     grid-row-end: span 10; }
   .grss10-sm {
     grid-row-start: span 10; }
-  .gce13-sm {
-    grid-column-end: 13; }
-  .gces13-sm {
-    grid-column-end: span 13; }
-  .gre13-sm {
-    grid-row-end: 13; }
-  .gres13-sm {
-    grid-row-end: span 13; }
   .gtc11-sm {
     --gap: 2rem;
     grid-template-columns: repeat(11, calc((100% - (var(--gap) * (11 - 1))) / 11)); }
@@ -1649,14 +1394,6 @@ a {
     grid-row-end: span 11; }
   .grss11-sm {
     grid-row-start: span 11; }
-  .gce13-sm {
-    grid-column-end: 13; }
-  .gces13-sm {
-    grid-column-end: span 13; }
-  .gre13-sm {
-    grid-row-end: 13; }
-  .gres13-sm {
-    grid-row-end: span 13; }
   .gtc12-sm {
     --gap: 2rem;
     grid-template-columns: repeat(12, calc((100% - (var(--gap) * (12 - 1))) / 12)); }
@@ -1764,14 +1501,6 @@ a {
     grid-row-end: span 1; }
   .grss1-lm {
     grid-row-start: span 1; }
-  .gce13-lm {
-    grid-column-end: 13; }
-  .gces13-lm {
-    grid-column-end: span 13; }
-  .gre13-lm {
-    grid-row-end: 13; }
-  .gres13-lm {
-    grid-row-end: span 13; }
   .gtc2-lm {
     --gap: 2rem;
     grid-template-columns: repeat(2, calc((100% - (var(--gap) * (2 - 1))) / 2)); }
@@ -1798,14 +1527,6 @@ a {
     grid-row-end: span 2; }
   .grss2-lm {
     grid-row-start: span 2; }
-  .gce13-lm {
-    grid-column-end: 13; }
-  .gces13-lm {
-    grid-column-end: span 13; }
-  .gre13-lm {
-    grid-row-end: 13; }
-  .gres13-lm {
-    grid-row-end: span 13; }
   .gtc3-lm {
     --gap: 2rem;
     grid-template-columns: repeat(3, calc((100% - (var(--gap) * (3 - 1))) / 3)); }
@@ -1832,14 +1553,6 @@ a {
     grid-row-end: span 3; }
   .grss3-lm {
     grid-row-start: span 3; }
-  .gce13-lm {
-    grid-column-end: 13; }
-  .gces13-lm {
-    grid-column-end: span 13; }
-  .gre13-lm {
-    grid-row-end: 13; }
-  .gres13-lm {
-    grid-row-end: span 13; }
   .gtc4-lm {
     --gap: 2rem;
     grid-template-columns: repeat(4, calc((100% - (var(--gap) * (4 - 1))) / 4)); }
@@ -1866,14 +1579,6 @@ a {
     grid-row-end: span 4; }
   .grss4-lm {
     grid-row-start: span 4; }
-  .gce13-lm {
-    grid-column-end: 13; }
-  .gces13-lm {
-    grid-column-end: span 13; }
-  .gre13-lm {
-    grid-row-end: 13; }
-  .gres13-lm {
-    grid-row-end: span 13; }
   .gtc5-lm {
     --gap: 2rem;
     grid-template-columns: repeat(5, calc((100% - (var(--gap) * (5 - 1))) / 5)); }
@@ -1900,14 +1605,6 @@ a {
     grid-row-end: span 5; }
   .grss5-lm {
     grid-row-start: span 5; }
-  .gce13-lm {
-    grid-column-end: 13; }
-  .gces13-lm {
-    grid-column-end: span 13; }
-  .gre13-lm {
-    grid-row-end: 13; }
-  .gres13-lm {
-    grid-row-end: span 13; }
   .gtc6-lm {
     --gap: 2rem;
     grid-template-columns: repeat(6, calc((100% - (var(--gap) * (6 - 1))) / 6)); }
@@ -1934,14 +1631,6 @@ a {
     grid-row-end: span 6; }
   .grss6-lm {
     grid-row-start: span 6; }
-  .gce13-lm {
-    grid-column-end: 13; }
-  .gces13-lm {
-    grid-column-end: span 13; }
-  .gre13-lm {
-    grid-row-end: 13; }
-  .gres13-lm {
-    grid-row-end: span 13; }
   .gtc7-lm {
     --gap: 2rem;
     grid-template-columns: repeat(7, calc((100% - (var(--gap) * (7 - 1))) / 7)); }
@@ -1968,14 +1657,6 @@ a {
     grid-row-end: span 7; }
   .grss7-lm {
     grid-row-start: span 7; }
-  .gce13-lm {
-    grid-column-end: 13; }
-  .gces13-lm {
-    grid-column-end: span 13; }
-  .gre13-lm {
-    grid-row-end: 13; }
-  .gres13-lm {
-    grid-row-end: span 13; }
   .gtc8-lm {
     --gap: 2rem;
     grid-template-columns: repeat(8, calc((100% - (var(--gap) * (8 - 1))) / 8)); }
@@ -2002,14 +1683,6 @@ a {
     grid-row-end: span 8; }
   .grss8-lm {
     grid-row-start: span 8; }
-  .gce13-lm {
-    grid-column-end: 13; }
-  .gces13-lm {
-    grid-column-end: span 13; }
-  .gre13-lm {
-    grid-row-end: 13; }
-  .gres13-lm {
-    grid-row-end: span 13; }
   .gtc9-lm {
     --gap: 2rem;
     grid-template-columns: repeat(9, calc((100% - (var(--gap) * (9 - 1))) / 9)); }
@@ -2036,14 +1709,6 @@ a {
     grid-row-end: span 9; }
   .grss9-lm {
     grid-row-start: span 9; }
-  .gce13-lm {
-    grid-column-end: 13; }
-  .gces13-lm {
-    grid-column-end: span 13; }
-  .gre13-lm {
-    grid-row-end: 13; }
-  .gres13-lm {
-    grid-row-end: span 13; }
   .gtc10-lm {
     --gap: 2rem;
     grid-template-columns: repeat(10, calc((100% - (var(--gap) * (10 - 1))) / 10)); }
@@ -2070,14 +1735,6 @@ a {
     grid-row-end: span 10; }
   .grss10-lm {
     grid-row-start: span 10; }
-  .gce13-lm {
-    grid-column-end: 13; }
-  .gces13-lm {
-    grid-column-end: span 13; }
-  .gre13-lm {
-    grid-row-end: 13; }
-  .gres13-lm {
-    grid-row-end: span 13; }
   .gtc11-lm {
     --gap: 2rem;
     grid-template-columns: repeat(11, calc((100% - (var(--gap) * (11 - 1))) / 11)); }
@@ -2104,14 +1761,6 @@ a {
     grid-row-end: span 11; }
   .grss11-lm {
     grid-row-start: span 11; }
-  .gce13-lm {
-    grid-column-end: 13; }
-  .gces13-lm {
-    grid-column-end: span 13; }
-  .gre13-lm {
-    grid-row-end: 13; }
-  .gres13-lm {
-    grid-row-end: span 13; }
   .gtc12-lm {
     --gap: 2rem;
     grid-template-columns: repeat(12, calc((100% - (var(--gap) * (12 - 1))) / 12)); }
@@ -2219,14 +1868,6 @@ a {
     grid-row-end: span 1; }
   .grss1-m {
     grid-row-start: span 1; }
-  .gce13-m {
-    grid-column-end: 13; }
-  .gces13-m {
-    grid-column-end: span 13; }
-  .gre13-m {
-    grid-row-end: 13; }
-  .gres13-m {
-    grid-row-end: span 13; }
   .gtc2-m {
     --gap: 2rem;
     grid-template-columns: repeat(2, calc((100% - (var(--gap) * (2 - 1))) / 2)); }
@@ -2253,14 +1894,6 @@ a {
     grid-row-end: span 2; }
   .grss2-m {
     grid-row-start: span 2; }
-  .gce13-m {
-    grid-column-end: 13; }
-  .gces13-m {
-    grid-column-end: span 13; }
-  .gre13-m {
-    grid-row-end: 13; }
-  .gres13-m {
-    grid-row-end: span 13; }
   .gtc3-m {
     --gap: 2rem;
     grid-template-columns: repeat(3, calc((100% - (var(--gap) * (3 - 1))) / 3)); }
@@ -2287,14 +1920,6 @@ a {
     grid-row-end: span 3; }
   .grss3-m {
     grid-row-start: span 3; }
-  .gce13-m {
-    grid-column-end: 13; }
-  .gces13-m {
-    grid-column-end: span 13; }
-  .gre13-m {
-    grid-row-end: 13; }
-  .gres13-m {
-    grid-row-end: span 13; }
   .gtc4-m {
     --gap: 2rem;
     grid-template-columns: repeat(4, calc((100% - (var(--gap) * (4 - 1))) / 4)); }
@@ -2321,14 +1946,6 @@ a {
     grid-row-end: span 4; }
   .grss4-m {
     grid-row-start: span 4; }
-  .gce13-m {
-    grid-column-end: 13; }
-  .gces13-m {
-    grid-column-end: span 13; }
-  .gre13-m {
-    grid-row-end: 13; }
-  .gres13-m {
-    grid-row-end: span 13; }
   .gtc5-m {
     --gap: 2rem;
     grid-template-columns: repeat(5, calc((100% - (var(--gap) * (5 - 1))) / 5)); }
@@ -2355,14 +1972,6 @@ a {
     grid-row-end: span 5; }
   .grss5-m {
     grid-row-start: span 5; }
-  .gce13-m {
-    grid-column-end: 13; }
-  .gces13-m {
-    grid-column-end: span 13; }
-  .gre13-m {
-    grid-row-end: 13; }
-  .gres13-m {
-    grid-row-end: span 13; }
   .gtc6-m {
     --gap: 2rem;
     grid-template-columns: repeat(6, calc((100% - (var(--gap) * (6 - 1))) / 6)); }
@@ -2389,14 +1998,6 @@ a {
     grid-row-end: span 6; }
   .grss6-m {
     grid-row-start: span 6; }
-  .gce13-m {
-    grid-column-end: 13; }
-  .gces13-m {
-    grid-column-end: span 13; }
-  .gre13-m {
-    grid-row-end: 13; }
-  .gres13-m {
-    grid-row-end: span 13; }
   .gtc7-m {
     --gap: 2rem;
     grid-template-columns: repeat(7, calc((100% - (var(--gap) * (7 - 1))) / 7)); }
@@ -2423,14 +2024,6 @@ a {
     grid-row-end: span 7; }
   .grss7-m {
     grid-row-start: span 7; }
-  .gce13-m {
-    grid-column-end: 13; }
-  .gces13-m {
-    grid-column-end: span 13; }
-  .gre13-m {
-    grid-row-end: 13; }
-  .gres13-m {
-    grid-row-end: span 13; }
   .gtc8-m {
     --gap: 2rem;
     grid-template-columns: repeat(8, calc((100% - (var(--gap) * (8 - 1))) / 8)); }
@@ -2457,14 +2050,6 @@ a {
     grid-row-end: span 8; }
   .grss8-m {
     grid-row-start: span 8; }
-  .gce13-m {
-    grid-column-end: 13; }
-  .gces13-m {
-    grid-column-end: span 13; }
-  .gre13-m {
-    grid-row-end: 13; }
-  .gres13-m {
-    grid-row-end: span 13; }
   .gtc9-m {
     --gap: 2rem;
     grid-template-columns: repeat(9, calc((100% - (var(--gap) * (9 - 1))) / 9)); }
@@ -2491,14 +2076,6 @@ a {
     grid-row-end: span 9; }
   .grss9-m {
     grid-row-start: span 9; }
-  .gce13-m {
-    grid-column-end: 13; }
-  .gces13-m {
-    grid-column-end: span 13; }
-  .gre13-m {
-    grid-row-end: 13; }
-  .gres13-m {
-    grid-row-end: span 13; }
   .gtc10-m {
     --gap: 2rem;
     grid-template-columns: repeat(10, calc((100% - (var(--gap) * (10 - 1))) / 10)); }
@@ -2525,14 +2102,6 @@ a {
     grid-row-end: span 10; }
   .grss10-m {
     grid-row-start: span 10; }
-  .gce13-m {
-    grid-column-end: 13; }
-  .gces13-m {
-    grid-column-end: span 13; }
-  .gre13-m {
-    grid-row-end: 13; }
-  .gres13-m {
-    grid-row-end: span 13; }
   .gtc11-m {
     --gap: 2rem;
     grid-template-columns: repeat(11, calc((100% - (var(--gap) * (11 - 1))) / 11)); }
@@ -2559,14 +2128,6 @@ a {
     grid-row-end: span 11; }
   .grss11-m {
     grid-row-start: span 11; }
-  .gce13-m {
-    grid-column-end: 13; }
-  .gces13-m {
-    grid-column-end: span 13; }
-  .gre13-m {
-    grid-row-end: 13; }
-  .gres13-m {
-    grid-row-end: span 13; }
   .gtc12-m {
     --gap: 2rem;
     grid-template-columns: repeat(12, calc((100% - (var(--gap) * (12 - 1))) / 12)); }
@@ -2674,14 +2235,6 @@ a {
     grid-row-end: span 1; }
   .grss1-xm {
     grid-row-start: span 1; }
-  .gce13-xm {
-    grid-column-end: 13; }
-  .gces13-xm {
-    grid-column-end: span 13; }
-  .gre13-xm {
-    grid-row-end: 13; }
-  .gres13-xm {
-    grid-row-end: span 13; }
   .gtc2-xm {
     --gap: 2rem;
     grid-template-columns: repeat(2, calc((100% - (var(--gap) * (2 - 1))) / 2)); }
@@ -2708,14 +2261,6 @@ a {
     grid-row-end: span 2; }
   .grss2-xm {
     grid-row-start: span 2; }
-  .gce13-xm {
-    grid-column-end: 13; }
-  .gces13-xm {
-    grid-column-end: span 13; }
-  .gre13-xm {
-    grid-row-end: 13; }
-  .gres13-xm {
-    grid-row-end: span 13; }
   .gtc3-xm {
     --gap: 2rem;
     grid-template-columns: repeat(3, calc((100% - (var(--gap) * (3 - 1))) / 3)); }
@@ -2742,14 +2287,6 @@ a {
     grid-row-end: span 3; }
   .grss3-xm {
     grid-row-start: span 3; }
-  .gce13-xm {
-    grid-column-end: 13; }
-  .gces13-xm {
-    grid-column-end: span 13; }
-  .gre13-xm {
-    grid-row-end: 13; }
-  .gres13-xm {
-    grid-row-end: span 13; }
   .gtc4-xm {
     --gap: 2rem;
     grid-template-columns: repeat(4, calc((100% - (var(--gap) * (4 - 1))) / 4)); }
@@ -2776,14 +2313,6 @@ a {
     grid-row-end: span 4; }
   .grss4-xm {
     grid-row-start: span 4; }
-  .gce13-xm {
-    grid-column-end: 13; }
-  .gces13-xm {
-    grid-column-end: span 13; }
-  .gre13-xm {
-    grid-row-end: 13; }
-  .gres13-xm {
-    grid-row-end: span 13; }
   .gtc5-xm {
     --gap: 2rem;
     grid-template-columns: repeat(5, calc((100% - (var(--gap) * (5 - 1))) / 5)); }
@@ -2810,14 +2339,6 @@ a {
     grid-row-end: span 5; }
   .grss5-xm {
     grid-row-start: span 5; }
-  .gce13-xm {
-    grid-column-end: 13; }
-  .gces13-xm {
-    grid-column-end: span 13; }
-  .gre13-xm {
-    grid-row-end: 13; }
-  .gres13-xm {
-    grid-row-end: span 13; }
   .gtc6-xm {
     --gap: 2rem;
     grid-template-columns: repeat(6, calc((100% - (var(--gap) * (6 - 1))) / 6)); }
@@ -2844,14 +2365,6 @@ a {
     grid-row-end: span 6; }
   .grss6-xm {
     grid-row-start: span 6; }
-  .gce13-xm {
-    grid-column-end: 13; }
-  .gces13-xm {
-    grid-column-end: span 13; }
-  .gre13-xm {
-    grid-row-end: 13; }
-  .gres13-xm {
-    grid-row-end: span 13; }
   .gtc7-xm {
     --gap: 2rem;
     grid-template-columns: repeat(7, calc((100% - (var(--gap) * (7 - 1))) / 7)); }
@@ -2878,14 +2391,6 @@ a {
     grid-row-end: span 7; }
   .grss7-xm {
     grid-row-start: span 7; }
-  .gce13-xm {
-    grid-column-end: 13; }
-  .gces13-xm {
-    grid-column-end: span 13; }
-  .gre13-xm {
-    grid-row-end: 13; }
-  .gres13-xm {
-    grid-row-end: span 13; }
   .gtc8-xm {
     --gap: 2rem;
     grid-template-columns: repeat(8, calc((100% - (var(--gap) * (8 - 1))) / 8)); }
@@ -2912,14 +2417,6 @@ a {
     grid-row-end: span 8; }
   .grss8-xm {
     grid-row-start: span 8; }
-  .gce13-xm {
-    grid-column-end: 13; }
-  .gces13-xm {
-    grid-column-end: span 13; }
-  .gre13-xm {
-    grid-row-end: 13; }
-  .gres13-xm {
-    grid-row-end: span 13; }
   .gtc9-xm {
     --gap: 2rem;
     grid-template-columns: repeat(9, calc((100% - (var(--gap) * (9 - 1))) / 9)); }
@@ -2946,14 +2443,6 @@ a {
     grid-row-end: span 9; }
   .grss9-xm {
     grid-row-start: span 9; }
-  .gce13-xm {
-    grid-column-end: 13; }
-  .gces13-xm {
-    grid-column-end: span 13; }
-  .gre13-xm {
-    grid-row-end: 13; }
-  .gres13-xm {
-    grid-row-end: span 13; }
   .gtc10-xm {
     --gap: 2rem;
     grid-template-columns: repeat(10, calc((100% - (var(--gap) * (10 - 1))) / 10)); }
@@ -2980,14 +2469,6 @@ a {
     grid-row-end: span 10; }
   .grss10-xm {
     grid-row-start: span 10; }
-  .gce13-xm {
-    grid-column-end: 13; }
-  .gces13-xm {
-    grid-column-end: span 13; }
-  .gre13-xm {
-    grid-row-end: 13; }
-  .gres13-xm {
-    grid-row-end: span 13; }
   .gtc11-xm {
     --gap: 2rem;
     grid-template-columns: repeat(11, calc((100% - (var(--gap) * (11 - 1))) / 11)); }
@@ -3014,14 +2495,6 @@ a {
     grid-row-end: span 11; }
   .grss11-xm {
     grid-row-start: span 11; }
-  .gce13-xm {
-    grid-column-end: 13; }
-  .gces13-xm {
-    grid-column-end: span 13; }
-  .gre13-xm {
-    grid-row-end: 13; }
-  .gres13-xm {
-    grid-row-end: span 13; }
   .gtc12-xm {
     --gap: 2rem;
     grid-template-columns: repeat(12, calc((100% - (var(--gap) * (12 - 1))) / 12)); }
@@ -3129,14 +2602,6 @@ a {
     grid-row-end: span 1; }
   .grss1-ipad {
     grid-row-start: span 1; }
-  .gce13-ipad {
-    grid-column-end: 13; }
-  .gces13-ipad {
-    grid-column-end: span 13; }
-  .gre13-ipad {
-    grid-row-end: 13; }
-  .gres13-ipad {
-    grid-row-end: span 13; }
   .gtc2-ipad {
     --gap: 2rem;
     grid-template-columns: repeat(2, calc((100% - (var(--gap) * (2 - 1))) / 2)); }
@@ -3163,14 +2628,6 @@ a {
     grid-row-end: span 2; }
   .grss2-ipad {
     grid-row-start: span 2; }
-  .gce13-ipad {
-    grid-column-end: 13; }
-  .gces13-ipad {
-    grid-column-end: span 13; }
-  .gre13-ipad {
-    grid-row-end: 13; }
-  .gres13-ipad {
-    grid-row-end: span 13; }
   .gtc3-ipad {
     --gap: 2rem;
     grid-template-columns: repeat(3, calc((100% - (var(--gap) * (3 - 1))) / 3)); }
@@ -3197,14 +2654,6 @@ a {
     grid-row-end: span 3; }
   .grss3-ipad {
     grid-row-start: span 3; }
-  .gce13-ipad {
-    grid-column-end: 13; }
-  .gces13-ipad {
-    grid-column-end: span 13; }
-  .gre13-ipad {
-    grid-row-end: 13; }
-  .gres13-ipad {
-    grid-row-end: span 13; }
   .gtc4-ipad {
     --gap: 2rem;
     grid-template-columns: repeat(4, calc((100% - (var(--gap) * (4 - 1))) / 4)); }
@@ -3231,14 +2680,6 @@ a {
     grid-row-end: span 4; }
   .grss4-ipad {
     grid-row-start: span 4; }
-  .gce13-ipad {
-    grid-column-end: 13; }
-  .gces13-ipad {
-    grid-column-end: span 13; }
-  .gre13-ipad {
-    grid-row-end: 13; }
-  .gres13-ipad {
-    grid-row-end: span 13; }
   .gtc5-ipad {
     --gap: 2rem;
     grid-template-columns: repeat(5, calc((100% - (var(--gap) * (5 - 1))) / 5)); }
@@ -3265,14 +2706,6 @@ a {
     grid-row-end: span 5; }
   .grss5-ipad {
     grid-row-start: span 5; }
-  .gce13-ipad {
-    grid-column-end: 13; }
-  .gces13-ipad {
-    grid-column-end: span 13; }
-  .gre13-ipad {
-    grid-row-end: 13; }
-  .gres13-ipad {
-    grid-row-end: span 13; }
   .gtc6-ipad {
     --gap: 2rem;
     grid-template-columns: repeat(6, calc((100% - (var(--gap) * (6 - 1))) / 6)); }
@@ -3299,14 +2732,6 @@ a {
     grid-row-end: span 6; }
   .grss6-ipad {
     grid-row-start: span 6; }
-  .gce13-ipad {
-    grid-column-end: 13; }
-  .gces13-ipad {
-    grid-column-end: span 13; }
-  .gre13-ipad {
-    grid-row-end: 13; }
-  .gres13-ipad {
-    grid-row-end: span 13; }
   .gtc7-ipad {
     --gap: 2rem;
     grid-template-columns: repeat(7, calc((100% - (var(--gap) * (7 - 1))) / 7)); }
@@ -3333,14 +2758,6 @@ a {
     grid-row-end: span 7; }
   .grss7-ipad {
     grid-row-start: span 7; }
-  .gce13-ipad {
-    grid-column-end: 13; }
-  .gces13-ipad {
-    grid-column-end: span 13; }
-  .gre13-ipad {
-    grid-row-end: 13; }
-  .gres13-ipad {
-    grid-row-end: span 13; }
   .gtc8-ipad {
     --gap: 2rem;
     grid-template-columns: repeat(8, calc((100% - (var(--gap) * (8 - 1))) / 8)); }
@@ -3367,14 +2784,6 @@ a {
     grid-row-end: span 8; }
   .grss8-ipad {
     grid-row-start: span 8; }
-  .gce13-ipad {
-    grid-column-end: 13; }
-  .gces13-ipad {
-    grid-column-end: span 13; }
-  .gre13-ipad {
-    grid-row-end: 13; }
-  .gres13-ipad {
-    grid-row-end: span 13; }
   .gtc9-ipad {
     --gap: 2rem;
     grid-template-columns: repeat(9, calc((100% - (var(--gap) * (9 - 1))) / 9)); }
@@ -3401,14 +2810,6 @@ a {
     grid-row-end: span 9; }
   .grss9-ipad {
     grid-row-start: span 9; }
-  .gce13-ipad {
-    grid-column-end: 13; }
-  .gces13-ipad {
-    grid-column-end: span 13; }
-  .gre13-ipad {
-    grid-row-end: 13; }
-  .gres13-ipad {
-    grid-row-end: span 13; }
   .gtc10-ipad {
     --gap: 2rem;
     grid-template-columns: repeat(10, calc((100% - (var(--gap) * (10 - 1))) / 10)); }
@@ -3435,14 +2836,6 @@ a {
     grid-row-end: span 10; }
   .grss10-ipad {
     grid-row-start: span 10; }
-  .gce13-ipad {
-    grid-column-end: 13; }
-  .gces13-ipad {
-    grid-column-end: span 13; }
-  .gre13-ipad {
-    grid-row-end: 13; }
-  .gres13-ipad {
-    grid-row-end: span 13; }
   .gtc11-ipad {
     --gap: 2rem;
     grid-template-columns: repeat(11, calc((100% - (var(--gap) * (11 - 1))) / 11)); }
@@ -3469,14 +2862,6 @@ a {
     grid-row-end: span 11; }
   .grss11-ipad {
     grid-row-start: span 11; }
-  .gce13-ipad {
-    grid-column-end: 13; }
-  .gces13-ipad {
-    grid-column-end: span 13; }
-  .gre13-ipad {
-    grid-row-end: 13; }
-  .gres13-ipad {
-    grid-row-end: span 13; }
   .gtc12-ipad {
     --gap: 2rem;
     grid-template-columns: repeat(12, calc((100% - (var(--gap) * (12 - 1))) / 12)); }
@@ -3584,14 +2969,6 @@ a {
     grid-row-end: span 1; }
   .grss1-lg {
     grid-row-start: span 1; }
-  .gce13-lg {
-    grid-column-end: 13; }
-  .gces13-lg {
-    grid-column-end: span 13; }
-  .gre13-lg {
-    grid-row-end: 13; }
-  .gres13-lg {
-    grid-row-end: span 13; }
   .gtc2-lg {
     --gap: 2rem;
     grid-template-columns: repeat(2, calc((100% - (var(--gap) * (2 - 1))) / 2)); }
@@ -3618,14 +2995,6 @@ a {
     grid-row-end: span 2; }
   .grss2-lg {
     grid-row-start: span 2; }
-  .gce13-lg {
-    grid-column-end: 13; }
-  .gces13-lg {
-    grid-column-end: span 13; }
-  .gre13-lg {
-    grid-row-end: 13; }
-  .gres13-lg {
-    grid-row-end: span 13; }
   .gtc3-lg {
     --gap: 2rem;
     grid-template-columns: repeat(3, calc((100% - (var(--gap) * (3 - 1))) / 3)); }
@@ -3652,14 +3021,6 @@ a {
     grid-row-end: span 3; }
   .grss3-lg {
     grid-row-start: span 3; }
-  .gce13-lg {
-    grid-column-end: 13; }
-  .gces13-lg {
-    grid-column-end: span 13; }
-  .gre13-lg {
-    grid-row-end: 13; }
-  .gres13-lg {
-    grid-row-end: span 13; }
   .gtc4-lg {
     --gap: 2rem;
     grid-template-columns: repeat(4, calc((100% - (var(--gap) * (4 - 1))) / 4)); }
@@ -3686,14 +3047,6 @@ a {
     grid-row-end: span 4; }
   .grss4-lg {
     grid-row-start: span 4; }
-  .gce13-lg {
-    grid-column-end: 13; }
-  .gces13-lg {
-    grid-column-end: span 13; }
-  .gre13-lg {
-    grid-row-end: 13; }
-  .gres13-lg {
-    grid-row-end: span 13; }
   .gtc5-lg {
     --gap: 2rem;
     grid-template-columns: repeat(5, calc((100% - (var(--gap) * (5 - 1))) / 5)); }
@@ -3720,14 +3073,6 @@ a {
     grid-row-end: span 5; }
   .grss5-lg {
     grid-row-start: span 5; }
-  .gce13-lg {
-    grid-column-end: 13; }
-  .gces13-lg {
-    grid-column-end: span 13; }
-  .gre13-lg {
-    grid-row-end: 13; }
-  .gres13-lg {
-    grid-row-end: span 13; }
   .gtc6-lg {
     --gap: 2rem;
     grid-template-columns: repeat(6, calc((100% - (var(--gap) * (6 - 1))) / 6)); }
@@ -3754,14 +3099,6 @@ a {
     grid-row-end: span 6; }
   .grss6-lg {
     grid-row-start: span 6; }
-  .gce13-lg {
-    grid-column-end: 13; }
-  .gces13-lg {
-    grid-column-end: span 13; }
-  .gre13-lg {
-    grid-row-end: 13; }
-  .gres13-lg {
-    grid-row-end: span 13; }
   .gtc7-lg {
     --gap: 2rem;
     grid-template-columns: repeat(7, calc((100% - (var(--gap) * (7 - 1))) / 7)); }
@@ -3788,14 +3125,6 @@ a {
     grid-row-end: span 7; }
   .grss7-lg {
     grid-row-start: span 7; }
-  .gce13-lg {
-    grid-column-end: 13; }
-  .gces13-lg {
-    grid-column-end: span 13; }
-  .gre13-lg {
-    grid-row-end: 13; }
-  .gres13-lg {
-    grid-row-end: span 13; }
   .gtc8-lg {
     --gap: 2rem;
     grid-template-columns: repeat(8, calc((100% - (var(--gap) * (8 - 1))) / 8)); }
@@ -3822,14 +3151,6 @@ a {
     grid-row-end: span 8; }
   .grss8-lg {
     grid-row-start: span 8; }
-  .gce13-lg {
-    grid-column-end: 13; }
-  .gces13-lg {
-    grid-column-end: span 13; }
-  .gre13-lg {
-    grid-row-end: 13; }
-  .gres13-lg {
-    grid-row-end: span 13; }
   .gtc9-lg {
     --gap: 2rem;
     grid-template-columns: repeat(9, calc((100% - (var(--gap) * (9 - 1))) / 9)); }
@@ -3856,14 +3177,6 @@ a {
     grid-row-end: span 9; }
   .grss9-lg {
     grid-row-start: span 9; }
-  .gce13-lg {
-    grid-column-end: 13; }
-  .gces13-lg {
-    grid-column-end: span 13; }
-  .gre13-lg {
-    grid-row-end: 13; }
-  .gres13-lg {
-    grid-row-end: span 13; }
   .gtc10-lg {
     --gap: 2rem;
     grid-template-columns: repeat(10, calc((100% - (var(--gap) * (10 - 1))) / 10)); }
@@ -3890,14 +3203,6 @@ a {
     grid-row-end: span 10; }
   .grss10-lg {
     grid-row-start: span 10; }
-  .gce13-lg {
-    grid-column-end: 13; }
-  .gces13-lg {
-    grid-column-end: span 13; }
-  .gre13-lg {
-    grid-row-end: 13; }
-  .gres13-lg {
-    grid-row-end: span 13; }
   .gtc11-lg {
     --gap: 2rem;
     grid-template-columns: repeat(11, calc((100% - (var(--gap) * (11 - 1))) / 11)); }
@@ -3924,14 +3229,6 @@ a {
     grid-row-end: span 11; }
   .grss11-lg {
     grid-row-start: span 11; }
-  .gce13-lg {
-    grid-column-end: 13; }
-  .gces13-lg {
-    grid-column-end: span 13; }
-  .gre13-lg {
-    grid-row-end: 13; }
-  .gres13-lg {
-    grid-row-end: span 13; }
   .gtc12-lg {
     --gap: 2rem;
     grid-template-columns: repeat(12, calc((100% - (var(--gap) * (12 - 1))) / 12)); }
@@ -4039,14 +3336,6 @@ a {
     grid-row-end: span 1; }
   .grss1-xl {
     grid-row-start: span 1; }
-  .gce13-xl {
-    grid-column-end: 13; }
-  .gces13-xl {
-    grid-column-end: span 13; }
-  .gre13-xl {
-    grid-row-end: 13; }
-  .gres13-xl {
-    grid-row-end: span 13; }
   .gtc2-xl {
     --gap: 2rem;
     grid-template-columns: repeat(2, calc((100% - (var(--gap) * (2 - 1))) / 2)); }
@@ -4073,14 +3362,6 @@ a {
     grid-row-end: span 2; }
   .grss2-xl {
     grid-row-start: span 2; }
-  .gce13-xl {
-    grid-column-end: 13; }
-  .gces13-xl {
-    grid-column-end: span 13; }
-  .gre13-xl {
-    grid-row-end: 13; }
-  .gres13-xl {
-    grid-row-end: span 13; }
   .gtc3-xl {
     --gap: 2rem;
     grid-template-columns: repeat(3, calc((100% - (var(--gap) * (3 - 1))) / 3)); }
@@ -4107,14 +3388,6 @@ a {
     grid-row-end: span 3; }
   .grss3-xl {
     grid-row-start: span 3; }
-  .gce13-xl {
-    grid-column-end: 13; }
-  .gces13-xl {
-    grid-column-end: span 13; }
-  .gre13-xl {
-    grid-row-end: 13; }
-  .gres13-xl {
-    grid-row-end: span 13; }
   .gtc4-xl {
     --gap: 2rem;
     grid-template-columns: repeat(4, calc((100% - (var(--gap) * (4 - 1))) / 4)); }
@@ -4141,14 +3414,6 @@ a {
     grid-row-end: span 4; }
   .grss4-xl {
     grid-row-start: span 4; }
-  .gce13-xl {
-    grid-column-end: 13; }
-  .gces13-xl {
-    grid-column-end: span 13; }
-  .gre13-xl {
-    grid-row-end: 13; }
-  .gres13-xl {
-    grid-row-end: span 13; }
   .gtc5-xl {
     --gap: 2rem;
     grid-template-columns: repeat(5, calc((100% - (var(--gap) * (5 - 1))) / 5)); }
@@ -4175,14 +3440,6 @@ a {
     grid-row-end: span 5; }
   .grss5-xl {
     grid-row-start: span 5; }
-  .gce13-xl {
-    grid-column-end: 13; }
-  .gces13-xl {
-    grid-column-end: span 13; }
-  .gre13-xl {
-    grid-row-end: 13; }
-  .gres13-xl {
-    grid-row-end: span 13; }
   .gtc6-xl {
     --gap: 2rem;
     grid-template-columns: repeat(6, calc((100% - (var(--gap) * (6 - 1))) / 6)); }
@@ -4209,14 +3466,6 @@ a {
     grid-row-end: span 6; }
   .grss6-xl {
     grid-row-start: span 6; }
-  .gce13-xl {
-    grid-column-end: 13; }
-  .gces13-xl {
-    grid-column-end: span 13; }
-  .gre13-xl {
-    grid-row-end: 13; }
-  .gres13-xl {
-    grid-row-end: span 13; }
   .gtc7-xl {
     --gap: 2rem;
     grid-template-columns: repeat(7, calc((100% - (var(--gap) * (7 - 1))) / 7)); }
@@ -4243,14 +3492,6 @@ a {
     grid-row-end: span 7; }
   .grss7-xl {
     grid-row-start: span 7; }
-  .gce13-xl {
-    grid-column-end: 13; }
-  .gces13-xl {
-    grid-column-end: span 13; }
-  .gre13-xl {
-    grid-row-end: 13; }
-  .gres13-xl {
-    grid-row-end: span 13; }
   .gtc8-xl {
     --gap: 2rem;
     grid-template-columns: repeat(8, calc((100% - (var(--gap) * (8 - 1))) / 8)); }
@@ -4277,14 +3518,6 @@ a {
     grid-row-end: span 8; }
   .grss8-xl {
     grid-row-start: span 8; }
-  .gce13-xl {
-    grid-column-end: 13; }
-  .gces13-xl {
-    grid-column-end: span 13; }
-  .gre13-xl {
-    grid-row-end: 13; }
-  .gres13-xl {
-    grid-row-end: span 13; }
   .gtc9-xl {
     --gap: 2rem;
     grid-template-columns: repeat(9, calc((100% - (var(--gap) * (9 - 1))) / 9)); }
@@ -4311,14 +3544,6 @@ a {
     grid-row-end: span 9; }
   .grss9-xl {
     grid-row-start: span 9; }
-  .gce13-xl {
-    grid-column-end: 13; }
-  .gces13-xl {
-    grid-column-end: span 13; }
-  .gre13-xl {
-    grid-row-end: 13; }
-  .gres13-xl {
-    grid-row-end: span 13; }
   .gtc10-xl {
     --gap: 2rem;
     grid-template-columns: repeat(10, calc((100% - (var(--gap) * (10 - 1))) / 10)); }
@@ -4345,14 +3570,6 @@ a {
     grid-row-end: span 10; }
   .grss10-xl {
     grid-row-start: span 10; }
-  .gce13-xl {
-    grid-column-end: 13; }
-  .gces13-xl {
-    grid-column-end: span 13; }
-  .gre13-xl {
-    grid-row-end: 13; }
-  .gres13-xl {
-    grid-row-end: span 13; }
   .gtc11-xl {
     --gap: 2rem;
     grid-template-columns: repeat(11, calc((100% - (var(--gap) * (11 - 1))) / 11)); }
@@ -4379,14 +3596,6 @@ a {
     grid-row-end: span 11; }
   .grss11-xl {
     grid-row-start: span 11; }
-  .gce13-xl {
-    grid-column-end: 13; }
-  .gces13-xl {
-    grid-column-end: span 13; }
-  .gre13-xl {
-    grid-row-end: 13; }
-  .gres13-xl {
-    grid-row-end: span 13; }
   .gtc12-xl {
     --gap: 2rem;
     grid-template-columns: repeat(12, calc((100% - (var(--gap) * (12 - 1))) / 12)); }

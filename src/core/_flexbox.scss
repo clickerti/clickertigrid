@@ -11,14 +11,10 @@
 // placeholder para ckt-item
 .f-item {
 	margin: 0;
-	padding-left: $gap / 2;
-	padding-right: $gap / 2;
+	padding-left: calc($gap / 2);
+	padding-right: calc($gap / 2);
 }
 
-// Hace que un elemento siempre mida el 100% del ancho disponible
-.full {
-	max-width: 100%;
-}
 
 // @mixin full {
 // 	@extend .full;

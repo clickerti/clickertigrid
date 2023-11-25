@@ -7,7 +7,7 @@
 	width: calc(100% - 2rem);
 	margin-left: 1rem;
 	margin-right: 1rem;
-	max-width: 1200px;
+	max-width: var(--max-width);
 	@include from(1200px) {
 		width: 100%;
 		margin-left: auto;
@@ -64,7 +64,7 @@
 				grid-row-start: span #{$i};
 			}
 
-			@if $i = $last {
+			@if $i == $last {
 				$higher: $last + 1;
 				.gce#{$higher}-#{$size} {
 					grid-column-end: #{$higher};

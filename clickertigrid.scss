@@ -1,6 +1,6 @@
 // //import de configuraciones y funciones
 // //Reset styles
-// @import "core/reset-css";
+@import "src/core/reset-css";
 @import "src/core/base";
 
 // //Import funtions
@@ -11,6 +11,7 @@
 
 // //import core components
 @import "src/core/media-queries";
+@import "src/core/general";
 @import "src/core/flexbox";
 @import "src/core/grid";
 @import "src/core/typography";

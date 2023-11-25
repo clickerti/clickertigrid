@@ -6,9 +6,9 @@
 @function toPx($value) {
 	@if type-of($value) == number {
 		@if unit($value) == "em" {
-			@return ($value / 1em) * 16px;
+			@return calc(($value / 1em) * 16px);
 		} @else if unit($value) == "rem" {
-			@return ($value / 1rem) * 16px;
+			@return calc(($value / 1rem) * 16px);
 		} @else if unit($value) == "px" {
 			@return $value;
 		} @else {
@@ -44,7 +44,7 @@
 @function toEm($value, $context: 16px) {
 	@if type-of($value) == number {
 		@if unit($value) == "px" {
-			@return ($value / $context) * 1em;
+			@return calc(($value / $context) * 1em);
 		}
 		// @else if unit($value) == "rem" {
 		// 	@return ($value / $context) * 1em;
@@ -72,7 +72,6 @@
 	@return $string;
 }
 
-
 @function lightness($color, $lightnessMultiplier) {
 	$color: str-replace($color, "var(");
 	$color: str-replace($color, ")");
@@ -87,5 +86,5 @@
 }
 
 @function hexToRGB($hex) {
-  @return red($hex), green($hex), blue($hex);
+	@return red($hex), green($hex), blue($hex);
 }

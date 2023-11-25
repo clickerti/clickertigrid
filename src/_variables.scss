@@ -3,9 +3,13 @@ $max-width: 1200px !default;
 $l-unit: 0.5rem !default;
 $gap: $l-unit * 4 !default; // 2rem
 
+:root {
+	--max-width: $max-width;
+}
+
 // color default del tema
 :root {
-		//Paleta de colores
+	//Paleta de colores
 	$first-color: #279bee;
 	--first-color: $first-color;
 	--second-color: #ee4f27;
