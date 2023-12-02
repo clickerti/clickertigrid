@@ -1,35 +1,11 @@
-// //import de configuraciones y funciones
-// //Reset styles
-@import "src/core/reset-css";
-@import "src/core/base";
-
 // //Import funtions
 @import "src/core/functions";
 
 // // @import 'components/utilidades/border';
 @import "src/variables";
 
-// //import core components
-@import "src/core/media-queries";
-@import "src/core/general";
-@import "src/core/flexbox";
-@import "src/core/grid";
-@import "src/core/typography";
-@import "src/core/alignment";
-@import "src/core/border";
-@import "src/core/margin";
-@import "src/core/padding";
-@import "src/core/position";
-@import "src/core/size";
-@import "src/core/text";
-@import "src/core/display";
-@import "src/core/order-items";
-
-// // // Css creado de estados BEM
-@import "src/states/state";
-
-// //Import special class
 @import "src/utilities/extend";
 
-// //UI components
-@import "src/ui-styles/ui-styles";
+@import "src/core/css-core/import-core.css";
+
+

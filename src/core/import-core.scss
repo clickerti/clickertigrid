@@ -1,0 +1,21 @@
+@import "src/core/reset-css";
+
+@import "src/core/media-queries";
+@import "src/core/alignment";
+@import "src/core/base";
+@import "src/core/border";
+@import "src/core/display";
+@import "src/core/flexbox";
+@import "src/core/general";
+@import "src/core/margin";
+@import "src/core/order-items";
+@import "src/core/padding";
+@import "src/core/position";
+// //import core components
+@import "src/core/grid";
+@import "src/core/typography";
+@import "src/core/size";
+@import "src/core/text";
+@import "src/states/state";
+
+@import "src/ui-styles/ui-styles";

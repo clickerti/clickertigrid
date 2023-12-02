@@ -1,13 +1,14 @@
 {
 	"name": "clickertigrid",
-	"version": "2.2.14",
+	"version": "2.3.0",
 	"description": "Conjunto de clases css para crear layouts responsive web y mobile first ",
 	"main": "clickertigrid.scss",
 	"scripts": {
 		"public": "npm publish ",
 		"login": "npm login",
-		"sass": "node-sass -w --importer node_modules/node-sass-package-importer/dist/cli.js -o ./css/ ./ ",
-		"sass-compressed": "node-sass -w --importer node_modules/node-sass-package-importer/dist/cli.js -o ./css/min/ ./ --output-style compressed",
+		"sass-core": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js -o ./src/core/css-core/ ./src/core/import-core.scss",
+		"sass": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js -o ./css/ ./clickertigrid.scss ",
+		"sass-compressed": "node-sass -o ./css/min/ ./css/min/clickertigrid.css --output-style compressed",
 		"rename": "node -e \"require('fs').rename('css/min/clickertigrid.css', 'css/min/clickertigrid.min.css', function(err) { if (err) console.log(err); console.log('CSS file renamed with .min suffix!') })\""
 	},
 	"author": "Clickerti Tech Consulting",
@@ -17,11 +18,11 @@
 	],
 	"contributors": [
 		{
-			"name": "Raúl Sanjuán Revilla",
+			"name": "Raúl",
 			"email": "rsanjuan@clickerti.es"
 		},
 		{
-			"name": "César Sanjuán Revilla",
+			"name": "César",
 			"email": "csanjuan@clickerti.es"
 		}
 	],
