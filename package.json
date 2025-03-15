@@ -1,10 +1,5 @@
 {
 	"name": "clickertigrid",
-<<<<<<< Updated upstream
-	"version": "2.4.3",
-	"description": "Conjunto de clases css para crear layouts responsive web y mobile first ",
-	"main": "clickertigrid.scss",
-=======
 	"version": "3.0.7",
 	"description": "Conjunto de clases css y complementos sass para crear layouts responsive web y mobile first ",
 	"main": "dist/clickertigrid.min.css",
@@ -15,20 +10,12 @@
 		},
 		"./scss": "./index.scss"
 	},
->>>>>>> Stashed changes
 	"scripts": {
 		"build_min": "sass --no-source-map src/static/static-import.scss dist/clickertigrid.min.css --style=compressed",
 		"build": "sass --no-source-map src/static/static-import.scss dist/clickertigrid.css",
 		"public": "npm publish ",
-<<<<<<< Updated upstream
-		"login": "npm login",
-		"sass": "node-sass --importer node_modules/node-sass-package-importer/dist/cli.js -o ./css/ ./clickertigrid.scss ",
-		"sass-compressed": "node-sass -o ./css/min/ ./css/clickertigrid.css --output-style compressed",
-		"rename": "node -e \"require('fs').rename('css/min/clickertigrid.css', 'css/min/clickertigrid.min.css', function(err) { if (err) console.log(err); console.log('CSS file renamed with .min suffix!') })\""
-=======
 		"unpublic version": "npm unpublish clickertigrid@3.0.3",
 		"login": "npm login"
->>>>>>> Stashed changes
 	},
 	"author": "Clickerti Tech Consulting",
 	"keywords": [

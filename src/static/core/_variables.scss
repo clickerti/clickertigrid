@@ -7,17 +7,10 @@ $max-width: 1200px !default;
 $l-unit: 0.5rem !default;
 $gap: $l-unit * 4 !default; // 2rem
 
-// Font sizes
-$fontSizes: (
-	bigger: var(--bigger-font-size),
-	title1: var(--h1-font-size),
-	title2: var(--h2-font-size),
-	title3: var(--h3-font-size),
-	normal: var(--normal-font-size),
-	small: var(--small-font-size),
-	smaller: var(--smaller-font-size),
-	supersmall: var(--supersmall-font-size),
-);
+:root {
+	--heading-font: "Work Sans", "Sulphur Point", sans-serif;
+	--body-font: "Source Sans 3", "Roboto", sans-serif;
+}
 
 :root {
 	--max-width: $max-width;
@@ -123,3 +116,15 @@ $fontSizes: (
 		); // ✅ Se mantiene después sin causar errores
 	}
 }
+
+// Font sizes
+$fontSizes: (
+	bigger: var(--bigger-font-size),
+	title1: var(--h1-font-size),
+	title2: var(--h2-font-size),
+	title3: var(--h3-font-size),
+	normal: var(--normal-font-size),
+	small: var(--small-font-size),
+	smaller: var(--smaller-font-size),
+	supersmall: var(--supersmall-font-size),
+);
