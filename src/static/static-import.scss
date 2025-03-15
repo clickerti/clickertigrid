@@ -1,4 +1,3 @@
-@forward "./core/variables";
 @forward "./core/reset-css";
 @forward "./core/alignment";
 @forward "./core/base";
@@ -15,6 +14,7 @@
 @forward "./core/size";
 @forward "./core/text";
 @forward "./core/typography";
+@forward "./core/variables";
 
 @forward "./states/state";
 
