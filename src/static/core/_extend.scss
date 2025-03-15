@@ -1,0 +1,5 @@
+@use "../../core/mixin" as mixin;
+
+.ellipsis {
+    @include mixin.ellipsis;
+}

@@ -1,0 +1,50 @@
+@use "../../core/functions" as function;
+@use "../../core/mixin" as mixin;
+@use "./variables" as var;
+
+// placeholder para ed-container
+.f-container {
+	display: flex;
+	flex-wrap: wrap;
+	max-width: var(--max-width);
+	margin-left: auto;
+	margin-right: auto;
+	width: 100%;
+}
+
+// placeholder para ckt-item
+.f-item {
+	margin: 0;
+	padding-left: calc(var.$gap / 2);
+	padding-right: calc(var.$gap / 2);
+}
+
+$flexline: (
+	fww: (
+		flex-wrap: wrap,
+	),
+	fwnw: (
+		flex-wrap: nowrap,
+	),
+	fwwr: (
+		flex-wrap: wrap-reverse,
+	),
+);
+
+@each $size in function.$sizes {
+	@include mixin.from($size) {
+		// Recorre el mapa de selectores
+
+		// Recorre el mapa de selectores
+		@each $selector, $property in $flexline {
+			// Construye el selector
+			.#{$selector}-#{$size} {
+				// Recorre el submapa de propiedades y valores
+				@each $prop, $value in $property {
+					// Imprime cada propiedad y valor
+					#{$prop}: $value;
+				}
+			}
+		}
+	}
+}

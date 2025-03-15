@@ -1,0 +1,102 @@
+@use "../../core/functions" as function;
+@use "../../core/mixin" as mixin;
+
+@for $i from 0 through 100 {
+	.m#{$i} {
+		@if $i==0 {
+			margin: $i;
+		} @else {
+			margin: function.toRem($i * 1px);
+		}
+	}
+	.mt#{$i} {
+		@if $i==0 {
+			margin-top: $i;
+		} @else {
+			margin-top: function.toRem($i * 1px);
+		}
+	}
+	.mr#{$i} {
+		@if $i==0 {
+			margin-right: $i;
+		} @else {
+			margin-right: function.toRem($i * 1px);
+		}
+	}
+	.mb#{$i} {
+		@if $i==0 {
+			margin-bottom: $i;
+		} @else {
+			margin-bottom: function.toRem($i * 1px);
+		}
+	}
+	.ml#{$i} {
+		@if $i==0 {
+			margin-left: $i;
+		} @else {
+			margin-left: function.toRem($i * 1px);
+		}
+	}
+}
+@each $size in function.$sizes {
+	@include mixin.from($size) {
+		@for $i from 0 through 100 {
+			.m#{$i}-#{$size} {
+				@if $i==0 {
+					margin: $i;
+				} @else {
+					margin: function.toRem($i * 1px);
+				}
+			}
+			.mt#{$i}-#{$size} {
+				@if $i==0 {
+					margin-top: $i;
+				} @else {
+					margin-top: function.toRem($i * 1px);
+				}
+			}
+			.ml#{$i}-#{$size} {
+				@if $i==0 {
+					margin-left: $i;
+				} @else {
+					margin-left: function.toRem($i * 1px);
+				}
+			}
+			.mr#{$i}-#{$size} {
+				@if $i==0 {
+					margin-right: $i;
+				} @else {
+					margin-right: function.toRem($i * 1px);
+				}
+			}
+			.mb#{$i}-#{$size} {
+				@if $i==0 {
+					margin-bottom: $i;
+				} @else {
+					margin-bottom: function.toRem($i * 1px);
+				}
+			}
+			.mtb#{$i}-#{$size} {
+				@if $i==0 {
+					margin-top: $i;
+					margin-bottom: $i;
+				} @else {
+					margin-top: function.toRem($i * 1px);
+					margin-bottom: function.toRem($i * 1px);
+				}
+			}
+			.mlr#{$i}-#{$size} {
+				@if $i==0 {
+					margin-left: $i;
+					margin-right: $i;
+				} @else {
+					margin-left: function.toRem($i * 1px);
+					margin-right: function.toRem($i * 1px);
+				}
+			}
+		}
+		.ma-#{$size} {
+			margin: auto;
+		}
+	}
+}

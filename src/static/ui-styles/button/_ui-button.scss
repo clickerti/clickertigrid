@@ -1,0 +1,183 @@
+@use "../../../core/functions" as function;
+@use "../../../core/mixin" as mixin;
+
+//Clases del buton por defecto
+.button {
+	display: inline-block;
+	padding: function.toRem(8px) function.toRem(16px);
+	font-size: var(--normal-font-size);
+	color: var(--color-button-text);
+	cursor: pointer;
+	text-decoration: none;
+	line-height: inherit;
+	-webkit-transition: -webkit-transform 0.05s;
+	transition: -webkit-transform 0.05s;
+	transition: transform 0.05s;
+	transition: transform 0.05s, -webkit-transform 0.05s;
+	border: function.toRem(1px) solid var(--color-button);
+	text-align: center;
+	user-select: none;
+	background: var(--color-button);
+	&:hover {
+		text-decoration: none;
+		@include mixin.from(lg) {
+			background: var(--color-button-alt);
+			color: var(--color-button-text);
+		}
+	}
+
+	&:active {
+		transform: scale(0.97);
+	}
+
+	&:disabled,
+	&[disabled] {
+		background: var(--color-button-disable);
+		border: solid var(--color-button-disable) function.toRem(1px);
+		color: var(--color-button-disable-text);
+		cursor: default;
+		pointer-events: none;
+	}
+}
+
+.disabled {
+	background: var(--color-button-disable);
+}
+
+//Clases base boton ghost
+.ghost {
+	border: solid var(--color-button) function.toRem(1px);
+	color: var(--color-button);
+	background: none;
+
+	&:disabled,
+	[class*="ghost"]:disabled,
+	&[disabled] {
+		background: none;
+		border: solid var(--color-button-disable) function.toRem(1px);
+		color: var(--color-button-disable);
+	}
+}
+
+.disabled {
+	background: var(--color-button-disable);
+	border: solid var(--color-button-disable) function.toRem(1px);
+	color: var(--color-button-disable-text);
+	cursor: default;
+	pointer-events: none;
+}
+
+[class*="ghost"][class*="disabled"] {
+	background: none;
+	color: var(--color-button-disable);
+}
+
+.b-full {
+	@extend .button;
+	width: 100%;
+	justify-content: center;
+}
+
+//Clases diferentes tipos de radio
+.radius-small {
+	border-radius: function.toRem(5px);
+}
+
+.radius-medium {
+	border-radius: function.toRem(10px);
+}
+
+.radius-rounded {
+	border-radius: function.toRem(20px);
+}
+
+// Variaciones de tamaños
+.big {
+	font-size: var(--h3-font-size);
+	padding: function.toRem(12px) function.toRem(24px);
+}
+
+.small {
+	font-size: var(--small-font-size);
+	padding: function.toRem(8px) function.toRem(16px);
+}
+
+.tiny {
+	font-size: var(--small-font-size);
+	padding: function.toRem(4px) function.toRem(8px);
+}
+
+.micro {
+	font-size: var(--small-font-size);
+	padding: 0 function.toRem(4px);
+}
+
+//Estilos para crear un boton redondo en tres tamaños
+.round {
+	width: var(--round-width);
+	height: var(--round-height);
+	border-radius: 50%;
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	line-height: 16px;
+	font-weight: bold;
+}
+
+.round-16 {
+	@extend .round;
+	--round-width: 16px;
+	--round-height: 16px;
+	padding: 0;
+	font-weight: normal;
+	line-height: 0.8;
+	@include mixin.supersmall;
+}
+
+.round-24 {
+	@extend .round;
+	--round-width: 24px;
+	--round-height: 24px;
+	padding: 0;
+	font-weight: normal;
+	line-height: 0.8;
+	@include mixin.smaller;
+}
+
+.round-32 {
+	@extend .round;
+	--round-width: 32px;
+	--round-height: 32px;
+	@include mixin.normal;
+}
+
+.round-40 {
+	@extend .round;
+	--round-width: 40px;
+	--round-height: 40px;
+	@include mixin.big;
+}
+
+.round-48 {
+	@extend .round;
+	--round-width: 48px;
+	--round-height: 48px;
+	@include mixin.bigger;
+}
+
+.round-64 {
+	@extend .round;
+	--round-width: 64px;
+	--round-height: 64px;
+	@include mixin.biggest;
+}
+
+//Estilos sombras en botones
+.btn-sh {
+	-webkit-box-shadow: 4px 4px 4px -3px rgba(0, 0, 0, 0.37);
+	box-shadow: 4px 4px 4px -3px rgba(0, 0, 0, 0.37);
+	// margin: function.toRem(2px);
+	&:active {
+		box-shadow: none;
+	}
+}

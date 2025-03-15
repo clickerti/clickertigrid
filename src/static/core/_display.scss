@@ -1,0 +1,59 @@
+@use "../../core/functions" as function;
+@use "../../core/mixin" as mixin;
+
+$display: (
+	db: (
+		display: block,
+	),
+	dc: (
+		display: contents,
+	),
+	df: (
+		display: flex,
+	),
+	dfr: (
+		display: flow-root,
+	),
+	dg: (
+		display: grid,
+	),
+	di: (
+		display: inline,
+	),
+	dib: (
+		display: inline-block,
+	),
+	dif: (
+		display: inline-flex,
+	),
+	dit: (
+		display: inline-table,
+	),
+	dli: (
+		display: list-item,
+	),
+	dn: (
+		display: none,
+	),
+	dh: (
+		visibility: hidden,
+	),
+);
+
+@each $size in function.$sizes {
+	@include mixin.from($size) {
+		// Recorre el mapa de selectores
+
+		// Recorre el mapa de selectores
+		@each $selector, $property in $display {
+			// Construye el selector
+			.#{$selector}-#{$size} {
+				// Recorre el submapa de propiedades y valores
+				@each $prop, $value in $property {
+					// Imprime cada propiedad y valor
+					#{$prop}: $value;
+				}
+			}
+		}
+	}
+}

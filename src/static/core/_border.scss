@@ -1,0 +1,128 @@
+@use "../../core/functions" as function;
+@use "../../core/mixin" as mixin;
+
+[class*="border"].blue-border {
+	--blue-border-color: #1192ee;
+	--border-color: var(--blue-border-color);
+}
+[class*="border"].green-border {
+	--green-border-color: #28a745;
+	--border-color: var(--green-border-color);
+}
+[class*="border"].red-border {
+	--red-border-color: #dc3545;
+	--border-color: var(--red-border-color);
+}
+[class*="border"].celeste-border {
+	--celeste-border-color: #4fc2f3;
+	--border-color: var(--celeste-border-color);
+}
+[class*="border"].orange-border {
+	--orange-border-color: #ffc107;
+	--border-color: var(--orange-border-color);
+}
+[class*="border"].dark-border {
+	--dark-border-color: #343a40;
+	--border-color: var(--dark-border-color);
+}
+[class*="border"].sea-border {
+	--sea-border-color: #30c6ab;
+	--border-color: var(--sea-border-color);
+}
+[class*="border"].text-border {
+	--text-border-color: #6c757d;
+	--border-color: var(--text-border-color);
+}
+[class*="border"].light-border {
+	--light-border-color: #eff3f5;
+	--border-color: var(--light-border-color);
+}
+[class*="border"].gray-border {
+	--gray-border-color: #dddddd;
+	--border-color: var(--gray-border-color);
+}
+
+[class*="border"].dotted {
+	--border-style: var(--dotted-style);
+}
+[class*="border"].dashed {
+	--border-style: var(--dashed-style);
+}
+[class*="border"].double {
+	--border-style: var(--double-style);
+	--border-size: 3px;
+}
+
+.border-size-2 {
+	--border-size: 2px;
+}
+.border-size-3 {
+	--border-size: 3px;
+}
+.border-size-4 {
+	--border-size: 2px;
+}
+.border-size-5 {
+	--border-size: 3px;
+}
+
+.border {
+	border: var(--border-size) var(--border-style) var(--border-color);
+}
+.border-top {
+	border-top: var(--border-size) var(--border-style) var(--border-color);
+}
+.border-left {
+	border-left: var(--border-size) var(--border-style) var(--border-color);
+}
+.border-right {
+	border-right: var(--border-size) var(--border-style) var(--border-color);
+}
+.border-bottom {
+	border-bottom: var(--border-size) var(--border-style) var(--border-color);
+}
+.border-null {
+	border: none;
+}
+
+@for $i from 1 through 200 {
+	.border-rounded-#{$i} {
+		border-radius: $i * 1px;
+	}
+	.border-rounded1-#{$i} {
+		border-radius: ($i * 1px) 0 0 0;
+	}
+	.border-rounded2-#{$i} {
+		border-radius: 0 ($i * 1px) 0 0;
+	}
+	.border-rounded3-#{$i} {
+		border-radius: 0 0 ($i * 1px) 0;
+	}
+	.border-rounded4-#{$i} {
+		border-radius: 0 0 0 ($i * 1px);
+	}
+}
+
+@each $size in function.$sizes {
+	@include mixin.from($size) {
+		.border-#{$size} {
+			border: var(--border-size) var(--border-style) var(--border-color);
+		}
+		.border-top-#{$size} {
+			border-top: var(--border-size) var(--border-style)
+				var(--border-color);
+		}
+		.border-left-#{$size} {
+			border-left: var(--border-size) var(--border-style)
+				var(--border-color);
+		}
+		.border-right-#{$size} {
+			border-right: var(--border-size) var(--border-style)
+				var(--border-color);
+		}
+		.border-bottom-#{$size} {
+			border-bottom: var(--border-size) var(--border-style)
+				var(--border-color);
+		}
+	}
+}

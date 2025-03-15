@@ -1,0 +1,104 @@
+@use "../../core/functions" as function;
+@use "../../core/mixin" as mixin;
+
+@for $i from 0 through 100 {
+	.p#{$i} {
+		@if $i==0 {
+			padding: $i;
+		} @else {
+			padding: function.toRem($i * 1px);
+		}
+	}
+	.pt#{$i} {
+		@if $i==0 {
+			padding-top: $i;
+		} @else {
+			padding-top: function.toRem($i * 1px);
+		}
+	}
+	.pr#{$i} {
+		@if $i==0 {
+			padding-right: $i;
+		} @else {
+			padding-right: function.toRem($i * 1px);
+		}
+	}
+	.pb#{$i} {
+		@if $i==0 {
+			padding-bottom: $i;
+		} @else {
+			padding-bottom: function.toRem($i * 1px);
+		}
+	}
+	.pl#{$i} {
+		@if $i==0 {
+			padding-left: $i;
+		} @else {
+			padding-left: function.toRem($i * 1px);
+		}
+	}
+}
+// }
+@each $size in function.$sizes {
+	// @each $size in $sizes {
+	@include mixin.from($size) {
+		@for $i from 0 through 100 {
+			.p#{$i}-#{$size} {
+				@if $i==0 {
+					padding: $i;
+				} @else {
+					padding: function.toRem($i * 1px);
+				}
+			}
+			.pt#{$i}-#{$size} {
+				@if $i==0 {
+					padding-top: $i;
+				} @else {
+					padding-top: function.toRem($i * 1px);
+				}
+			}
+			.pl#{$i}-#{$size} {
+				@if $i==0 {
+					padding-left: $i;
+				} @else {
+					padding-left: function.toRem($i * 1px);
+				}
+			}
+			.pr#{$i}-#{$size} {
+				@if $i==0 {
+					padding-right: $i;
+				} @else {
+					padding-right: function.toRem($i * 1px);
+				}
+			}
+			.pb#{$i}-#{$size} {
+				@if $i==0 {
+					padding-bottom: $i;
+				} @else {
+					padding-bottom: function.toRem($i * 1px);
+				}
+			}
+			.ptb#{$i}-#{$size} {
+				@if $i==0 {
+					padding-top: $i;
+					padding-bottom: $i;
+				} @else {
+					padding-top: function.toRem($i * 1px);
+					padding-bottom: function.toRem($i * 1px);
+				}
+			}
+			.plr#{$i}-#{$size} {
+				@if $i==0 {
+					padding-left: $i;
+					padding-right: $i;
+				} @else {
+					padding-left: function.toRem($i * 1px);
+					padding-right: function.toRem($i * 1px);
+				}
+			}
+		}
+		.pa-#{$size} {
+			padding: auto;
+		}
+	}
+}

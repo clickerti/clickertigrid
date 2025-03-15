@@ -1,0 +1,114 @@
+@use "../../core/functions" as function;
+@use "../../core/mixin" as mixin;
+
+$position: (
+	relative: (
+		position: relative,
+	),
+	absolute: (
+		position: absolute,
+	),
+	static: (
+		position: static,
+	),
+	sticky: (
+		position: sticky,
+	),
+);
+
+// Recorre el mapa de selectores
+@each $selector, $property in $position {
+	// Construye el selector
+	.#{$selector} {
+		// Recorre el submapa de propiedades y valores
+		@each $prop, $value in $property {
+			// Imprime cada propiedad y valor
+			#{$prop}: $value;
+		}
+	}
+}
+
+@each $size in function.$sizes {
+	@include mixin.from($size) {
+		// Recorre el mapa de selectores
+
+		// Recorre el mapa de selectores
+		@each $selector, $property in $position {
+			// Construye el selector
+			.#{$selector}-#{$size} {
+				// Recorre el submapa de propiedades y valores
+				@each $prop, $value in $property {
+					// Imprime cada propiedad y valor
+					#{$prop}: $value;
+				}
+			}
+		}
+	}
+}
+
+@for $i from 0 through 300 {
+	.top#{$i} {
+		@if $i==0 {
+			top: $i;
+		} @else {
+			top: function.toRem($i * 1px);
+		}
+	}
+	.right#{$i} {
+		@if $i==0 {
+			right: $i;
+		} @else {
+			right: function.toRem($i * 1px);
+		}
+	}
+	.bottom#{$i} {
+		@if $i==0 {
+			bottom: $i;
+		} @else {
+			bottom: function.toRem($i * 1px);
+		}
+	}
+	.left#{$i} {
+		@if $i==0 {
+			left: $i;
+		} @else {
+			left: function.toRem($i * 1px);
+		}
+	}
+}
+// }
+@each $size in function.$sizes {
+	// @each $size in $sizes {
+	@include mixin.from($size) {
+		@for $i from 0 through 300 {
+			.top#{$i}-#{$size} {
+				@if $i==0 {
+					top: $i;
+				} @else {
+					top: function.toRem($i * 1px);
+				}
+			}
+			.left#{$i}-#{$size} {
+				@if $i==0 {
+					left: $i;
+				} @else {
+					left: function.toRem($i * 1px);
+				}
+			}
+			.right#{$i}-#{$size} {
+				@if $i==0 {
+					right: $i;
+				} @else {
+					right: function.toRem($i * 1px);
+				}
+			}
+			.bottom#{$i}-#{$size} {
+				@if $i==0 {
+					bottom: $i;
+				} @else {
+					bottom: function.toRem($i * 1px);
+				}
+			}
+		}
+	}
+}

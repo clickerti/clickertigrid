@@ -1,33 +1,93 @@
+@use "sass:map";
+@use "sass:math";
+@use "sass:meta";
+
+/// Devuelve true si el breakpoint es parte del core
+/// @author Raúl Sanjuán
+/// @param   {number} $bp - breakpoint
+/// @example scss
+///
+
+// Breakpoints
+$breakpoints: (
+	s: 0,
+	//Todos los tamaños
+	fold: 280px,
+	sm: 320px,
+	lm: 360px,
+	m: 410px,
+	xm: 640px,
+	ipad: 768px,
+	lg: 1024px,
+	xl: 1440px,
+) !default;
+
+$sizes: map.keys($breakpoints);
+
+@function isCoreBreakpoint($bp) {
+	@if map.get($breakpoints, $bp) {
+		@return true;
+	} @else {
+		@return false;
+	}
+}
+
+/// Devuelve true si el breakpint es válido (em, rem, px)
+/// @author  Raul Sanjuan
+/// @param   {number} $bp - breakpoint a verificar.
+@function isValidBreakpoint($bp) {
+	@if meta.type-of($bp) ==
+		number and
+		(
+			math.unit($bp) ==
+				"px" or
+				math.unit($bp) ==
+				"em" or
+				math.unit($bp) ==
+				"rem"
+		)
+	{
+		@return true;
+	} @else {
+		@return false;
+	}
+}
+
+/// Obtiene un breakpoint del core
+/// @author  Raul Sanjuan
+/// @param   {number} $bp - breakpoint a obtener.
+@function getBp($bp) {
+	@return map.get($breakpoints, $bp);
+}
+
 /// Convierte un valor en em o rem a px
-/// @group   mq
 /// @author  Raul Sanjuan
 /// @param   {number} $value - var a convertir a pixeles.
 
 @function toPx($value) {
-	@if type-of($value) == number {
+	@if meta.type-of($value) == number {
 		@if unit($value) == "em" {
-			@return calc(($value / 1em) * 16px);
+			@return calc(#{math.div($value, 1em)} * 16px);
 		} @else if unit($value) == "rem" {
-			@return calc(($value / 1rem) * 16px);
+			@return calc(#{math.div($value, 1rem)} * 16px);
 		} @else if unit($value) == "px" {
 			@return $value;
 		} @else {
-			@error "La funcion toPx() solo acepta números en em o rem o px";
+			@error "La función toPx() solo acepta números en em, rem o px";
 		}
 	} @else {
-		@error "La funcion toPx() solo acepta números en px, em o rem";
+		@error "La función toPx() solo acepta números en px, em o rem";
 	}
 }
 
 /// Convierte un valor en em o px a rem
-/// @group   mq
 /// @author  Raul Sanjuan
 /// @param   {number} $value - var a convertir a rem.
 
 @function toRem($value) {
-	@if type-of($value) == number {
-		@if unit($value) == "px" {
-			@return ($value / 16px) * 1rem;
+	@if meta.type-of($value) == number {
+		@if math.unit($value) == "px" {
+			@return math.div($value, 16px) * 1rem;
 		} @else {
 			@error "La funcion toRem() solo acepta números en px";
 		}
@@ -37,23 +97,18 @@
 }
 
 /// Convierte un valor en rem o px a em
-/// @group   mq
 /// @author  Raul Sanjuan
 /// @param   {number} $value - var a convertir a em.
 
 @function toEm($value, $context: 16px) {
-	@if type-of($value) == number {
+	@if meta.type-of($value) == number {
 		@if unit($value) == "px" {
-			@return calc(($value / $context) * 1em);
-		}
-		// @else if unit($value) == "rem" {
-		// 	@return ($value / $context) * 1em;
-		// }
-		@else {
-			@error "La funcion toEm() solo acepta números en px";
+			@return calc(#{math.div($value, $context)} * 1em);
+		} @else {
+			@error "La función toEm() solo acepta números en px";
 		}
 	} @else {
-		@error 'La función em() requiere una unidad de pixeles como primer argumento (el segundo es opcional)';
+		@error 'La función toEm() requiere una unidad de pixeles como primer argumento (el segundo es opcional)';
 	}
 }
 
@@ -87,4 +142,13 @@
 
 @function hexToRGB($hex) {
 	@return red($hex), green($hex), blue($hex);
+}
+
+// Get font size from map
+@function fontSize($size) {
+	@if map-has-key($fontSizes, $size) {
+		@return map-get($fontSizes, $size);
+	} @else {
+		@error '$size is not valid, valid values are title1, title2, title3, normal, small, smaller, supersmall';
+	}
 }

@@ -1,0 +1,117 @@
+@use "sass:color"; // Importa el módulo de colores
+
+// Clases para el color del botón
+.blue-button-color {
+	$blue-color-button: #1192ee;
+	--color-button: #{$blue-color-button};
+	--color-button-alt: #{color.scale($blue-color-button, $lightness: -5%)};
+	--color-button-disable: #{color.scale($blue-color-button, $lightness: 20%)};
+}
+
+.green-button-color {
+	$green-color-button: #28a745;
+	--color-button: #{$green-color-button};
+	--color-button-alt: #{color.scale($green-color-button, $lightness: -5%)};
+	--color-button-disable: #{color.scale($green-color-button, $lightness: 20%)};
+}
+
+.red-button-color {
+	$red-color-button: #dc3545;
+	--color-button: #{$red-color-button};
+	--color-button-alt: #{color.scale($red-color-button, $lightness: -5%)};
+	--color-button-disable: #{color.scale($red-color-button, $lightness: 20%)};
+}
+
+.celeste-button-color {
+	$celeste-color-button: #4fc2f3;
+	--color-button: #{$celeste-color-button};
+	--color-button-alt: #{color.scale($celeste-color-button, $lightness: -5%)};
+	--color-button-disable: #{color.scale($celeste-color-button, $lightness: 20%)};
+}
+
+.orange-button-color {
+	$orange-green-color-button: #ffc107;
+	--color-button: #{$orange-green-color-button};
+	--color-button-alt: #{color.scale($orange-green-color-button, $lightness: -5%)};
+	--color-button-disable: #{color.scale($orange-green-color-button, $lightness: 20%)};
+}
+
+.dark-button-color {
+	$dark-color-button: #343a40;
+	--color-button: #{$dark-color-button};
+	--color-button-alt: #{color.scale($dark-color-button, $lightness: -5%)};
+	--color-button-disable: #{color.scale($dark-color-button, $lightness: 20%)};
+}
+
+.sea-button-color {
+	$sea-color-button: #30c6ab;
+	--color-button: #{$sea-color-button};
+	--color-button-alt: #{color.scale($sea-color-button, $lightness: -5%)};
+	--color-button-disable: #{color.scale($sea-color-button, $lightness: 20%)};
+}
+
+.gray-button-color {
+	$gray-color-button: #6c757d;
+	--color-button: #{$gray-color-button};
+	--color-button-alt: #{color.scale($gray-color-button, $lightness: -5%)};
+	--color-button-disable: #{color.scale($gray-color-button, $lightness: 10%)};
+}
+
+.light-button-color {
+	$light-color-button: #eeeeee;
+	--color-button: #{$light-color-button};
+	--color-button-alt: #{color.scale($light-color-button, $lightness: -5%)};
+	--color-button-disable: #{color.scale($light-color-button, $lightness: 1%)};
+	--color-button-text: #6d6c6c;
+}
+
+.softgray-button-color {
+	$softgray-color-button: #ddd;
+	--color-button: #{$softgray-color-button};
+	--color-button-alt: #{color.scale($softgray-color-button, $lightness: -5%)};
+	--color-button-disable: #{color.scale($softgray-color-button, $lightness: 5%)};
+	--color-button-text: #6d6c6c;
+}
+
+
+// Clases para el color del border
+.blue-form-color {
+	--border-form-color: #1192ee;
+	border-color: var(--border-form-color);
+}
+.green-form-color {
+	--border-form-color: #28a745;
+	border-color: var(--border-form-color);
+}
+.red-form-color {
+	--border-form-color: #dc3545;
+	border-color: var(--border-form-color);
+}
+.celeste-form-color {
+	--border-form-color: #4fc2f3;
+	border-color: var(--border-form-color);
+}
+.orange-form-color {
+	--border-form-color: #ffc107;
+	border-color: var(--border-form-color);
+}
+.dark-form-color {
+	--border-form-color: #343a40;
+	border-color: var(--border-form-color);
+}
+.sea-form-color {
+	--border-form-color: #30c6ab;
+	border-color: var(--border-form-color);
+}
+.gray-form-color {
+	--border-form-color: #6c757d;
+	border-color: var(--border-form-color);
+}
+.light-form-color {
+	--border-form-color: #eaeff1;
+	border-color: var(--border-form-color);
+}
+.softgray-form-color {
+	--border-form-color: #ddd;
+	border-color: var(--border-form-color);
+}

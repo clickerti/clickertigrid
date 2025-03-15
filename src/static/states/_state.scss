@@ -1,0 +1,25 @@
+@use "../../core/functions" as function;
+@use "../../core/mixin" as mixin;
+
+@each $size in function.$sizes {
+    @include mixin.from($size) {
+        .is {
+            &-hidden-from-#{$size} {
+                visibility: hidden !important;
+            }
+            &-none-from-#{$size} {
+                display: none !important;
+            }
+        }
+    }
+    @include mixin.to($size) {
+        .is {
+            &-hidden-to-#{$size} {
+                visibility: hidden !important;
+            }
+            &-none-to-#{$size} {
+                display: none !important;
+            }
+        }
+    }
+}
