@@ -2,11 +2,16 @@
 @use "sass:math";
 @use "sass:meta";
 
-/// Devuelve true si el breakpoint es parte del core
-/// @author Raúl Sanjuán
-/// @param   {number} $bp - breakpoint
-/// @example scss
-///
+$fontSizes: (
+	bigger: var(--bigger-font-size),
+	title1: var(--h1-font-size),
+	title2: var(--h2-font-size),
+	title3: var(--h3-font-size),
+	normal: var(--normal-font-size),
+	small: var(--small-font-size),
+	smaller: var(--smaller-font-size),
+	supersmall: var(--supersmall-font-size),
+);
 
 // Breakpoints
 $breakpoints: (
@@ -24,6 +29,11 @@ $breakpoints: (
 
 $sizes: map.keys($breakpoints);
 
+/// Devuelve true si el breakpoint es parte del core
+/// @author Raúl Sanjuán
+/// @param   {number} $bp - breakpoint
+/// @example scss
+///
 @function isCoreBreakpoint($bp) {
 	@if map.get($breakpoints, $bp) {
 		@return true;
@@ -63,7 +73,6 @@ $sizes: map.keys($breakpoints);
 /// Convierte un valor en em o rem a px
 /// @author  Raul Sanjuan
 /// @param   {number} $value - var a convertir a pixeles.
-
 @function toPx($value) {
 	@if meta.type-of($value) == number {
 		@if unit($value) == "em" {
@@ -83,7 +92,6 @@ $sizes: map.keys($breakpoints);
 /// Convierte un valor en em o px a rem
 /// @author  Raul Sanjuan
 /// @param   {number} $value - var a convertir a rem.
-
 @function toRem($value) {
 	@if meta.type-of($value) == number {
 		@if math.unit($value) == "px" {

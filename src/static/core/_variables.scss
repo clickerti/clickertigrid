@@ -7,24 +7,10 @@ $max-width: 1200px !default;
 $l-unit: 0.5rem !default;
 $gap: $l-unit * 4 !default; // 2rem
 
-// Font sizes
-$fontSizes: (
-	bigger: var(--bigger-font-size),
-	title1: var(--h1-font-size),
-	title2: var(--h2-font-size),
-	title3: var(--h3-font-size),
-	normal: var(--normal-font-size),
-	small: var(--small-font-size),
-	smaller: var(--smaller-font-size),
-	supersmall: var(--supersmall-font-size),
-);
-
 :root {
 	--max-width: $max-width;
-}
 
-// color default del tema
-:root {
+	// color default del tema
 	//Paleta de colores
 	$first-color: #279bee;
 	--first-color: $first-color;
@@ -57,10 +43,8 @@ $fontSizes: (
 	--color-button-disable-text: var(--color-button-disable-text-default);
 	--round-width: 32px;
 	--round-height: 32px;
-}
 
-//Variables para bordes
-:root {
+	//Variables para bordes
 	--border-color-default: #ddd;
 	--border-color: var(--border-color-default);
 	--solid-style: solid;
@@ -71,15 +55,11 @@ $fontSizes: (
 	--border-style: var(--border-style-default);
 	--border-size-default: 1px;
 	--border-size: var(--border-size-default);
-}
 
-//Espacio entre cajas en display grid
-:root {
+	//Espacio entre cajas en display grid
 	--gap-default: 1rem;
 	--gap: var(--gap-default);
-}
 
-:root {
 	--border-form-color-default: #dbdbdb;
 	--border-form-color: var(--border-form-color-default);
 	--text-form-color-default: #919191;
@@ -90,10 +70,8 @@ $fontSizes: (
 	--background-inside-form-color: var(--background-inside-form-color-default);
 	--placeholder-form-color-default: #bebebe;
 	--placeholder-form-color: var(--placeholder-form-color-default);
-}
 
-// CSS variables for typography
-:root {
+	// CSS variables for typography
 	// Font sizes
 	--bigger-font-size: #{function.toRem(28px)};
 	--h1-font-size: #{function.toRem(24px)};

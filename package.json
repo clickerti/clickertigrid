@@ -1,20 +1,29 @@
 {
 	"name": "clickertigrid",
-	"version": "3.0.7",
-	"description": "Conjunto de clases css y complementos sass para crear layouts responsive web y mobile first ",
+	"version": "3.0.10",
+	"description": "Conjunto de clases CSS y complementos Sass para crear layouts responsive web y mobile first",
 	"main": "dist/clickertigrid.min.css",
 	"style": "dist/clickertigrid.min.css",
 	"exports": {
-		".": {
-		"default": "./dist/clickertigrid.min.css"
+		"./dist": {
+			"default": "./dist/clickertigrid.min.css"
 		},
-		"./scss": "./index.scss"
+		".": {
+			"default": "./src/index.scss"
+		}
+	},
+	"files": [
+		"dist/",
+		"src/"
+	],
+	"alias": {
+		"clickertigrid/scss": "./node_modules/clickertigrid/src/index.scss"
 	},
 	"scripts": {
 		"build_min": "sass --no-source-map src/static/static-import.scss dist/clickertigrid.min.css --style=compressed",
 		"build": "sass --no-source-map src/static/static-import.scss dist/clickertigrid.css",
-		"public": "npm publish ",
-		"unpublic version": "npm unpublish clickertigrid@3.0.3",
+		"public": "npm publish",
+		"unpublic": "npm unpublish clickertigrid@3.0.7",
 		"login": "npm login"
 	},
 	"author": "Clickerti Tech Consulting",
