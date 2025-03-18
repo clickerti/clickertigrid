@@ -62,18 +62,6 @@
 	}
 }
 
-
-/// From (mayor que $bp)
-/// @group   mq
-/// @author  Raul Sanjuan
-/// @param   {number} $from - breakpoint
-/// @example scss
-///     .elemento {
-///       width: 30%;
-///       @include from(xm) {
-///         width: 50%;
-///       }
-///     }
 @mixin from($from) {
 	// Si el bp es del core de EDgrid
 	@if function.isCoreBreakpoint($from) {
@@ -101,17 +89,6 @@
 	}
 }
 
-/// To (es menor que $to)
-/// @group   mq
-/// @author  Raul Sanjuan
-/// @param   {number} $to - breakpoint
-/// @example scss
-///     .elemento {
-///       width: 50%;
-///       @include to(xm) {
-///         width: 30%;
-///       }
-///     }
 @mixin to($to) {
 	// Si es un breakpoint del core
 	@if function.isCoreBreakpoint($to) {
@@ -135,19 +112,6 @@
 	}
 }
 
-/// fromTo la regla se ejecuta entre ambos breakpoints.
-/// @group   mq
-/// @author  Raul Sanjuan
-/// @param   {number} $from - breakpoint desde que medida se iniciara la regla.
-/// @param   {number} $to - breakpoint hasta que medida se ejecutara la regla.
-/// @example scss
-///     .elemento {
-///       background-color: cyan;
-///       @include fromTo(s, l) {
-///         background-color: darken(cyan, .8);
-///       }
-///     }
-/// 
 @mixin fromTo($from, $to) {
 	// Si ambos son breakpoints del core
 	@if function.isCoreBreakpoint($from) and function.isCoreBreakpoint($to) {
@@ -207,13 +171,11 @@
 	}
 }
 
-
 @mixin ellipsis {
     white-space: nowrap;
     text-overflow: ellipsis;
     overflow: hidden;
 }
-
 
 // Mixins for heading styles
 @mixin heading-font($extrabold: false) {
@@ -259,7 +221,6 @@
 	font-size: var(--smaller-font-size);
 }
 
-// Mixins for text content styles
 @mixin body-font {
 	font-family: var(--body-font);
 	line-height: var(--body-line-height);

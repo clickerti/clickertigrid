@@ -3,9 +3,9 @@
 	"version": "3.0.10",
 	"description": "Conjunto de clases CSS y complementos Sass para crear layouts responsive web y mobile first",
 	"main": "dist/clickertigrid.min.css",
-	"style": "dist/clickertigrid.min.css",
+	"style": "src/index.scss",
 	"exports": {
-		"./dist": {
+		"./css": {
 			"default": "./dist/clickertigrid.min.css"
 		},
 		".": {
