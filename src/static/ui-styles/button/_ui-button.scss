@@ -18,6 +18,10 @@
 	text-align: center;
 	user-select: none;
 	background: var(--color-button);
+	width: fit-content; /* Hace que el ancho se ajuste al contenido */
+	padding: 8px 16px; /* Espaciado interno vertical y horizontal */
+	min-width: 100px; /* Ancho mínimo */
+	max-width: 300px; /* Ancho máximo */
 	&:hover {
 		text-decoration: none;
 		@include mixin.from(lg) {

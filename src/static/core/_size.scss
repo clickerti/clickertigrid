@@ -3,312 +3,411 @@
 
 // Clases sin !important
 @each $size in function.$sizes {
-  @include mixin.from($size) {
-    // Clases width px
-    @for $i from 1 through 500 {
-      .w#{$i}px-#{$size} {
-        width: #{$i}px;
-      }
-      .maxw#{$i}px-#{$size} {
-        max-width: #{$i}px;
-      }
-      .minw#{$i}px-#{$size} {
-        min-width: #{$i}px;
-      }
-    }
+	@include mixin.from($size) {
+		// Clases width px
+		@for $i from 1 through 1000 {
+			.w#{$i}px-#{$size} {
+				width: #{$i}px;
+			}
+			.maxw#{$i}px-#{$size} {
+				max-width: #{$i}px;
+			}
+			.minw#{$i}px-#{$size} {
+				min-width: #{$i}px;
+			}
+		}
 
-    // Clases height px
-    @for $i from 1 through 500 {
-      .h#{$i}px-#{$size} {
-        height: #{$i}px;
-      }
-      .maxh#{$i}px-#{$size} {
-        max-height: #{$i}px;
-      }
-      .minh#{$i}px-#{$size} {
-        min-height: #{$i}px;
-      }
-    }
+		// Clases height px
+		@for $i from 1 through 1000 {
+			.h#{$i}px-#{$size} {
+				height: #{$i}px;
+			}
+			.maxh#{$i}px-#{$size} {
+				max-height: #{$i}px;
+			}
+			.minh#{$i}px-#{$size} {
+				min-height: #{$i}px;
+			}
+		}
 
-    // Clases width %
-    @for $i from 1 through 100 {
-      .w#{$i}-#{$size} {
-        width: #{$i * 1%};
-      }
-      .maxw#{$i}-#{$size} {
-        max-width: #{$i * 1%};
-      }
-      .minw#{$i}-#{$size} {
-        min-width: #{$i * 1%};
-      }
-    }
+		// Clases width %
+		@for $i from 1 through 100 {
+			.w#{$i}-#{$size} {
+				width: #{$i * 1%};
+			}
+			.maxw#{$i}-#{$size} {
+				max-width: #{$i * 1%};
+			}
+			.minw#{$i}-#{$size} {
+				min-width: #{$i * 1%};
+			}
+		}
 
-    // Clases height %
-    @for $i from 1 through 100 {
-      .h#{$i}-#{$size} {
-        height: #{$i * 1%};
-      }
-      .maxh#{$i}-#{$size} {
-        max-height: #{$i * 1%};
-      }
-      .minh#{$i}-#{$size} {
-        min-height: #{$i * 1%};
-      }
-    }
+		// Clases height %
+		@for $i from 1 through 100 {
+			.h#{$i}-#{$size} {
+				height: #{$i * 1%};
+			}
+			.maxh#{$i}-#{$size} {
+				max-height: #{$i * 1%};
+			}
+			.minh#{$i}-#{$size} {
+				min-height: #{$i * 1%};
+			}
+		}
 
-    // Clases width vw
-    @for $i from 1 through 100 {
-      .w#{$i}vw-#{$size} {
-        width: #{$i}vw;
-      }
-      .maxw#{$i}vw-#{$size} {
-        max-width: #{$i}vw;
-      }
-      .minw#{$i}vw-#{$size} {
-        min-width: #{$i}vw;
-      }
-    }
+		// Clases width vw
+		@for $i from 1 through 100 {
+			.w#{$i}vw-#{$size} {
+				width: #{$i}vw;
+			}
+			.maxw#{$i}vw-#{$size} {
+				max-width: #{$i}vw;
+			}
+			.minw#{$i}vw-#{$size} {
+				min-width: #{$i}vw;
+			}
+		}
 
-    // Clases height vh
-    @for $i from 1 through 100 {
-      .h#{$i}vh-#{$size} {
-        height: #{$i}vh;
-      }
-      .maxh#{$i}vh-#{$size} {
-        max-height: #{$i}vh;
-      }
-      .minh#{$i}vh-#{$size} {
-        min-height: #{$i}vh;
-      }
-    }
-  }
+		// Clases height vh
+		@for $i from 1 through 100 {
+			.h#{$i}vh-#{$size} {
+				height: #{$i}vh;
+			}
+			.maxh#{$i}vh-#{$size} {
+				max-height: #{$i}vh;
+			}
+			.minh#{$i}vh-#{$size} {
+				min-height: #{$i}vh;
+			}
+		}
+		// Clases width rem
+		@for $i from 1 through 60 {
+			.w#{$i}rem-#{$size} {
+				width: #{$i}rem;
+			}
+			.maxw#{$i}rem-#{$size} {
+				max-width: #{$i}rem;
+			}
+			.minw#{$i}rem-#{$size} {
+				min-width: #{$i}rem;
+			}
+		}
+
+		// Clases height rem
+		@for $i from 1 through 60 {
+			.h#{$i}rem-#{$size} {
+				height: #{$i}rem;
+			}
+			.maxh#{$i}rem-#{$size} {
+				max-height: #{$i}rem;
+			}
+			.minh#{$i}rem-#{$size} {
+				min-height: #{$i}rem;
+			}
+		}
+	}
 }
 
 // Clases globales sin !important
-@for $i from 1 through 500 {
-  .w#{$i}px {
-    width: #{$i}px;
-  }
-  .maxw#{$i}px {
-    max-width: #{$i}px;
-  }
-  .minw#{$i}px {
-    min-width: #{$i}px;
-  }
+@for $i from 1 through 1000 {
+	.w#{$i}px {
+		width: #{$i}px;
+	}
+	.maxw#{$i}px {
+		max-width: #{$i}px;
+	}
+	.minw#{$i}px {
+		min-width: #{$i}px;
+	}
 }
 
-@for $i from 1 through 500 {
-  .h#{$i}px {
-    height: #{$i}px;
-  }
-  .maxh#{$i}px {
-    max-height: #{$i}px;
-  }
-  .minh#{$i}px {
-    min-height: #{$i}px;
-  }
-}
-
-@for $i from 1 through 100 {
-  .w#{$i} {
-    width: #{$i * 1%};
-  }
-  .maxw#{$i} {
-    max-width: #{$i * 1%};
-  }
-  .minw#{$i} {
-    min-width: #{$i * 1%};
-  }
+@for $i from 1 through 1000 {
+	.h#{$i}px {
+		height: #{$i}px;
+	}
+	.maxh#{$i}px {
+		max-height: #{$i}px;
+	}
+	.minh#{$i}px {
+		min-height: #{$i}px;
+	}
 }
 
 @for $i from 1 through 100 {
-  .h#{$i} {
-    height: #{$i * 1%};
-  }
-  .maxh#{$i} {
-    max-height: #{$i * 1%};
-  }
-  .minh#{$i} {
-    min-height: #{$i * 1%};
-  }
+	.w#{$i} {
+		width: #{$i * 1%};
+	}
+	.maxw#{$i} {
+		max-width: #{$i * 1%};
+	}
+	.minw#{$i} {
+		min-width: #{$i * 1%};
+	}
 }
 
 @for $i from 1 through 100 {
-  .w#{$i}vw {
-    width: #{$i}vw;
-  }
-  .maxw#{$i}vw {
-    max-width: #{$i}vw;
-  }
-  .minw#{$i}vw {
-    min-width: #{$i}vw;
-  }
+	.h#{$i} {
+		height: #{$i * 1%};
+	}
+	.maxh#{$i} {
+		max-height: #{$i * 1%};
+	}
+	.minh#{$i} {
+		min-height: #{$i * 1%};
+	}
 }
 
 @for $i from 1 through 100 {
-  .h#{$i}vh {
-    height: #{$i}vh;
-  }
-  .maxh#{$i}vh {
-    max-height: #{$i}vh;
-  }
-  .minh#{$i}vh {
-    min-height: #{$i}vh;
-  }
+	.w#{$i}vw {
+		width: #{$i}vw;
+	}
+	.maxw#{$i}vw {
+		max-width: #{$i}vw;
+	}
+	.minw#{$i}vw {
+		min-width: #{$i}vw;
+	}
+}
+
+@for $i from 1 through 100 {
+	.h#{$i}vh {
+		height: #{$i}vh;
+	}
+	.maxh#{$i}vh {
+		max-height: #{$i}vh;
+	}
+	.minh#{$i}vh {
+		min-height: #{$i}vh;
+	}
+}
+
+@for $i from 1 through 60 {
+	.w#{$i}rem {
+		width: #{$i}rem;
+	}
+	.maxw#{$i}rem {
+		max-width: #{$i}rem;
+	}
+	.minw#{$i}rem {
+		min-width: #{$i}rem;
+	}
+}
+
+@for $i from 1 through 60 {
+	.h#{$i}rem {
+		height: #{$i}rem;
+	}
+	.maxh#{$i}rem {
+		max-height: #{$i}rem;
+	}
+	.minh#{$i}rem {
+		min-height: #{$i}rem;
+	}
 }
 
 // Clases con !important
 @each $size in function.$sizes {
-  @include mixin.from($size) {
-    // Clases width px
-    @for $i from 1 through 500 {
-      .w#{$i}px-#{$size}-i {
-        width: #{$i}px !important;
-      }
-      .maxw#{$i}px-#{$size}-i {
-        max-width: #{$i}px !important;
-      }
-      .minw#{$i}px-#{$size}-i {
-        min-width: #{$i}px !important;
-      }
-    }
+	@include mixin.from($size) {
+		// Clases width px
+		@for $i from 1 through 1000 {
+			.w#{$i}px-#{$size}-i {
+				width: #{$i}px !important;
+			}
+			.maxw#{$i}px-#{$size}-i {
+				max-width: #{$i}px !important;
+			}
+			.minw#{$i}px-#{$size}-i {
+				min-width: #{$i}px !important;
+			}
+		}
 
-    // Clases height px
-    @for $i from 1 through 500 {
-      .h#{$i}px-#{$size}-i {
-        height: #{$i}px !important;
-      }
-      .maxh#{$i}px-#{$size}-i {
-        max-height: #{$i}px !important;
-      }
-      .minh#{$i}px-#{$size}-i {
-        min-height: #{$i}px !important;
-      }
-    }
+		// Clases height px
+		@for $i from 1 through 1000 {
+			.h#{$i}px-#{$size}-i {
+				height: #{$i}px !important;
+			}
+			.maxh#{$i}px-#{$size}-i {
+				max-height: #{$i}px !important;
+			}
+			.minh#{$i}px-#{$size}-i {
+				min-height: #{$i}px !important;
+			}
+		}
 
-    // Clases width %
-    @for $i from 1 through 100 {
-      .w#{$i}-#{$size}-i {
-        width: #{$i * 1%} !important;
-      }
-      .maxw#{$i}-#{$size}-i {
-        max-width: #{$i * 1%} !important;
-      }
-      .minw#{$i}-#{$size}-i {
-        min-width: #{$i * 1%} !important;
-      }
-    }
+		// Clases width %
+		@for $i from 1 through 100 {
+			.w#{$i}-#{$size}-i {
+				width: #{$i * 1%} !important;
+			}
+			.maxw#{$i}-#{$size}-i {
+				max-width: #{$i * 1%} !important;
+			}
+			.minw#{$i}-#{$size}-i {
+				min-width: #{$i * 1%} !important;
+			}
+		}
 
-    // Clases height %
-    @for $i from 1 through 100 {
-      .h#{$i}-#{$size}-i {
-        height: #{$i * 1%} !important;
-      }
-      .maxh#{$i}-#{$size}-i {
-        max-height: #{$i * 1%} !important;
-      }
-      .minh#{$i}-#{$size}-i {
-        min-height: #{$i * 1%} !important;
-      }
-    }
+		// Clases height %
+		@for $i from 1 through 100 {
+			.h#{$i}-#{$size}-i {
+				height: #{$i * 1%} !important;
+			}
+			.maxh#{$i}-#{$size}-i {
+				max-height: #{$i * 1%} !important;
+			}
+			.minh#{$i}-#{$size}-i {
+				min-height: #{$i * 1%} !important;
+			}
+		}
 
-    // Clases width vw
-    @for $i from 1 through 100 {
-      .w#{$i}vw-#{$size}-i {
-        width: #{$i}vw !important;
-      }
-      .maxw#{$i}vw-#{$size}-i {
-        max-width: #{$i}vw !important;
-      }
-      .minw#{$i}vw-#{$size}-i {
-        min-width: #{$i}vw !important;
-      }
-    }
+		// Clases width vw
+		@for $i from 1 through 100 {
+			.w#{$i}vw-#{$size}-i {
+				width: #{$i}vw !important;
+			}
+			.maxw#{$i}vw-#{$size}-i {
+				max-width: #{$i}vw !important;
+			}
+			.minw#{$i}vw-#{$size}-i {
+				min-width: #{$i}vw !important;
+			}
+		}
 
-    // Clases height vh
-    @for $i from 1 through 100 {
-      .h#{$i}vh-#{$size}-i {
-        height: #{$i}vh !important;
-      }
-      .maxh#{$i}vh-#{$size}-i {
-        max-height: #{$i}vh !important;
-      }
-      .minh#{$i}vh-#{$size}-i {
-        min-height: #{$i}vh !important;
-      }
-    }
-  }
+		// Clases height vh
+		@for $i from 1 through 100 {
+			.h#{$i}vh-#{$size}-i {
+				height: #{$i}vh !important;
+			}
+			.maxh#{$i}vh-#{$size}-i {
+				max-height: #{$i}vh !important;
+			}
+			.minh#{$i}vh-#{$size}-i {
+				min-height: #{$i}vh !important;
+			}
+		}
+		// Clases width rem
+		@for $i from 1 through 60 {
+			.w#{$i}rem-#{$size}-i {
+				width: #{$i}rem !important;
+			}
+			.maxw#{$i}rem-#{$size}-i {
+				max-width: #{$i}rem !important;
+			}
+			.minw#{$i}rem-#{$size}-i {
+				min-width: #{$i}rem !important;
+			}
+		}
+
+		// Clases height rem
+		@for $i from 1 through 60 {
+			.h#{$i}rem-#{$size}-i {
+				height: #{$i}rem !important;
+			}
+			.maxh#{$i}rem-#{$size}-i {
+				max-height: #{$i}rem !important;
+			}
+			.minh#{$i}rem-#{$size}-i {
+				min-height: #{$i}rem !important;
+			}
+		}
+	}
 }
 
 // Clases globales con !important
-@for $i from 1 through 500 {
-  .w#{$i}px-i {
-    width: #{$i}px !important;
-  }
-  .maxw#{$i}px-i {
-    max-width: #{$i}px !important;
-  }
-  .minw#{$i}px-i {
-    min-width: #{$i}px !important;
-  }
+@for $i from 1 through 1000 {
+	.w#{$i}px-i {
+		width: #{$i}px !important;
+	}
+	.maxw#{$i}px-i {
+		max-width: #{$i}px !important;
+	}
+	.minw#{$i}px-i {
+		min-width: #{$i}px !important;
+	}
 }
 
-@for $i from 1 through 500 {
-  .h#{$i}px-i {
-    height: #{$i}px !important;
-  }
-  .maxh#{$i}px-i {
-    max-height: #{$i}px !important;
-  }
-  .minh#{$i}px-i {
-    min-height: #{$i}px !important;
-  }
-}
-
-@for $i from 1 through 100 {
-  .w#{$i}-i {
-    width: #{$i * 1%} !important;
-  }
-  .maxw#{$i}-i {
-    max-width: #{$i * 1%} !important;
-  }
-  .minw#{$i}-i {
-    min-width: #{$i * 1%} !important;
-  }
+@for $i from 1 through 1000 {
+	.h#{$i}px-i {
+		height: #{$i}px !important;
+	}
+	.maxh#{$i}px-i {
+		max-height: #{$i}px !important;
+	}
+	.minh#{$i}px-i {
+		min-height: #{$i}px !important;
+	}
 }
 
 @for $i from 1 through 100 {
-  .h#{$i}-i {
-    height: #{$i * 1%} !important;
-  }
-  .maxh#{$i}-i {
-    max-height: #{$i * 1%} !important;
-  }
-  .minh#{$i}-i {
-    min-height: #{$i * 1%} !important;
-  }
+	.w#{$i}-i {
+		width: #{$i * 1%} !important;
+	}
+	.maxw#{$i}-i {
+		max-width: #{$i * 1%} !important;
+	}
+	.minw#{$i}-i {
+		min-width: #{$i * 1%} !important;
+	}
 }
 
 @for $i from 1 through 100 {
-  .w#{$i}vw-i {
-    width: #{$i}vw !important;
-  }
-  .maxw#{$i}vw-i {
-    max-width: #{$i}vw !important;
-  }
-  .minw#{$i}vw-i {
-    min-width: #{$i}vw !important;
-  }
+	.h#{$i}-i {
+		height: #{$i * 1%} !important;
+	}
+	.maxh#{$i}-i {
+		max-height: #{$i * 1%} !important;
+	}
+	.minh#{$i}-i {
+		min-height: #{$i * 1%} !important;
+	}
 }
 
 @for $i from 1 through 100 {
-  .h#{$i}vh-i {
-    height: #{$i}vh !important;
-  }
-  .maxh#{$i}vh-i {
-    max-height: #{$i}vh !important;
-  }
-  .minh#{$i}vh-i {
-    min-height: #{$i}vh !important;
-  }
+	.w#{$i}vw-i {
+		width: #{$i}vw !important;
+	}
+	.maxw#{$i}vw-i {
+		max-width: #{$i}vw !important;
+	}
+	.minw#{$i}vw-i {
+		min-width: #{$i}vw !important;
+	}
+}
+
+@for $i from 1 through 100 {
+	.h#{$i}vh-i {
+		height: #{$i}vh !important;
+	}
+	.maxh#{$i}vh-i {
+		max-height: #{$i}vh !important;
+	}
+	.minh#{$i}vh-i {
+		min-height: #{$i}vh !important;
+	}
+}
+// Clases width rem
+@for $i from 1 through 60 {
+	.w#{$i}rem-i {
+		width: #{$i}rem !important;
+	}
+	.maxw#{$i}rem-i {
+		max-width: #{$i}rem !important;
+	}
+	.minw#{$i}rem-i {
+		min-width: #{$i}rem !important;
+	}
+}
+
+// Clases height rem
+@for $i from 1 through 60 {
+	.h#{$i}rem-i {
+		height: #{$i}rem !important;
+	}
+	.maxh#{$i}rem-i {
+		max-height: #{$i}rem !important;
+	}
+	.minh#{$i}rem-i {
+		min-height: #{$i}rem !important;
+	}
 }

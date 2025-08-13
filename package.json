@@ -1,12 +1,16 @@
 {
 	"name": "clickertigrid",
-	"version": "3.0.11",
+	"version": "3.0.13",
 	"description": "Conjunto de clases CSS y complementos Sass para crear layouts responsive web y mobile first",
 	"main": "dist/clickertigrid.min.css",
-	"style": "src/index.scss",
+	"style": "dist/clickertigrid.css",
+	"sass": "src/index.scss",
 	"exports": {
 		"./css": {
-			"default": "./dist/clickertigrid.min.css"
+			"default": "./dist/clickertigrid.css"
+		},
+		"./mincss": {
+			"default": "./dist/clickertigrid.css"
 		},
 		".": {
 			"default": "./src/index.scss"
@@ -32,8 +36,8 @@
 		"sass",
 		"scss",
 		"react",
-		"ui",
-		"component-library"
+		"responsive",
+		"utilities"
 	],
 	"contributors": [
 		{
@@ -51,7 +55,7 @@
 		"type": "git",
 		"url": "git+https://github.com/clickerti/clickertigrid"
 	},
-	"dependencies": {
-		"sass": "^1.85.1"
+	"devDependencies": {
+		"sass": "^1.90.0"
 	}
 }
